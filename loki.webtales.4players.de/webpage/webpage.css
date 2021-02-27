@@ -1,0 +1,43 @@
+body { margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px }
+
+a,p,h1,h2,h3,h4,ul,ol,li,div,td,th,address,blockquote,nobr,b,i
+     { font-family:Verdana,Arial; font-size:8pt; c2olor:#dac9ab;}
+
+schorsch
+     { font-family:Verdana,Arial; font-size:8pt; color:#dac9ab;}
+
+h1 { color:#ffffff; font-size:20pt; }
+
+h2 { color:#dddddd; font-size:16pt; }
+
+h3 { color:#dddddd; font-size:13pt; }
+
+h4 { color:#ffffff; font-size:10pt; }
+
+td { color:#ffffff; font-size:8pt; }
+
+div.beispiel { font-family:Verdana,Arial; font-size:8pt; font-style:italic;
+              color:#ffffff; background-color:#444444; letter-spacing:1;}
+
+A:link    { font-weight: bold; font-size:8pt; color : #ead9bb; text-decoration: none; }
+A:visited { font-weight: bold; font-size:8pt; color : #ead9bb; text-decoration: none; }
+A:hover   { font-weight: bold; font-size:8pt; color : #ead9bb; text-decoration: underline; }
+
+
+input  {
+	background-image: url(edit.jpg);
+	font-family: Arial;
+	font-size:12px;
+  	border: 1px solid #777777;
+  	margin-left: 0px;
+	color: #000000;
+  	background-color: #000000;
+	}
+select  { color: black;  text-decoration: none; border: solid 1px black }
+option { color: black;  text-decoration: none; border: solid 1px black }
+textarea   { color: black;  text-decoration: none; background-image: url(m.jpg); border: solid 1px black }
+
+td
+{
+	border:0;
+}

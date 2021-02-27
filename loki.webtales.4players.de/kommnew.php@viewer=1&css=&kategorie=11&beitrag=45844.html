@@ -1,0 +1,432 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>Bewegung</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451586552' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=11.html">Off-Topic									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>Bewegung </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center">Hiigara (RIP)									</td>
+
+									<td width="75%"> Hallo alle zusammen.<br>
+<br>
+Vielleicht kennt sich ja jemand hier mit folgendem Problem aus:<br>
+Ich möchte, genau wie in Scherbenwelten, Figuren über eine Karte bewegen lassen. Dazu habe ich mir eine Tabelle angelegt und diese erst ein mal in 4x4 gleich große Bereiche geteilt (50px x 50px). Dann habe ich eine Karte gezeichnet und diese ebenfalls in 16 gleich große Teile geschnitten und als Hintergrundbilder in die Zellen eingefügt. Zuletzt habe ich dann noch eine Spielfigur mit transparentem Hintergrund erstellt. Nun zur Frage:<br>
+Wie erreiche ich es nun, dass die Figur genau in die Zelle geladen wird, in die ich hinein klicke? In Scherbenwelten wird das über PHP gelöst, soweit ich das im Quellcode einsehen konnte. Jemand vielleicht eine Idee wie das zu lösen ist - vielleicht auch mittels Javasgript und dem onClick - Befehl? Hat vielleicht jamand ein fertiges sgript (egal ob PHP oder JS)?<br>
+<br>
+Würde mich über eure Posts freuen<br>
+<br>
+Hiigara    </td>
+									<td width="100" align="center">27.08.04 18:39<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=45844&amp;votefor=609544"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Middyn Faraldar (RIP)									</td>
+
+									<td width="75%"> du könntest das ganze mit ner übergabe der Variablen in der url des links machen<br>
+<br>
+das schaut dann so aus: &lt;a href =&quot;phpdatei.php?variable1=1&amp;variable2=2<br>
+<br>
+da kannst du dann per $var1=$_GET[&quot;variable1&quot;]; wieder auslesen (wenn ich mich dank der uhrzeit nicht irre.... ;) )<br>
+<br>
+alternativ (und ineffizienter) natürlich auch per auslesen aus der datenbank über die aktuelee position    </td>
+									<td width="100" align="center">28.08.04 2:34<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=45844&amp;votefor=609881"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Flitwig ni Su (RIP)									</td>
+
+									<td width="75%"> In der Tat würde es am einfachsten mittels Übergabe funktionieren.<br>
+<br>
+<br>
+Angenommen du übergibst die Variable  $aktion=gehen sowie noch weiterhin die Variablen  $x und  $y.<br>
+<br>
+Wenn dann dein Hauptskript feststellt das die Variable  $aktion=gehen ist <br>
+( if ( $aktion == gehen) f_gehen ( $x,  $y,  $spieler,  $karte) )<br>
+<br>
+dann könnte eine Funktion in der Art wie die untere Aufgerufen werden. Im Beispiel sind spieler und karte Objekte aber das sollte ja kein Problem sein ggf. umzuändern.<br>
+Aus dem Spielerobjekt wird in meinem Falle zum einen die Userid, die Koordinaten und die AP gelesen, ob sich der Spieler auf einem Schiff oer Luftschiff befindet und sowas.<br>
+Aus dem Kartenobjekt wird gelesen was für ein Feld passiert wird (könnte wichtig sein für den AP-Verbrauch ;) ) und ob das gewünschte Feld überhaupt begehbar ist. Soll ja vorkommen das meine Spieler nicht überall hindürfen.<br>
+<br>
+Und nun hoffe ich erstmal das der Code hier einigermaßen richtig ankommt. Die Bewegungsfunktion ist im übrigen nicht ganz so elegant wie die aus SW, also nicht wundern wenn er das Ergebnis nicht immer ganz so um Hindernisse läuft wie man es aus SW gewohnt ist.<br>
+    </td>
+									<td width="100" align="center">28.08.04 21:56<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=45844&amp;votefor=610682"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Flitwig ni Su (RIP)									</td>
+
+									<td width="75%"> Das Forum ist hartnäckig...    </td>
+									<td width="100" align="center">28.08.04 22:01<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=45844&amp;votefor=610697"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Flitwig ni Su (RIP)									</td>
+
+									<td width="75%"> Ich habe alle Oders gegen || ausgetauscht, also bitte zurück ändern.<br>
+<br>
+function f_gehen( $x,  $y, &amp; $spieler, &amp; $karte) {<br>
+ $userid =  $spieler-&gt;zeige(userid);<br>
+ $ende = 0;<br>
+ $begehbar = 0;<br>
+ $ko||dsx = $spieler-&gt;zeige(x);<br>
+ $ko||dsy = $spieler-&gt;zeige(y);<br>
+ <br>
+ $count=0;<br>
+ <br>
+ While ( (($x &lt;&gt; $ko||dsx) || ($y &lt;&gt; $ko||dsy)) AND $begehbar == 0 AND $ende==0)<br>
+ {<br>
+     //Xk||rektur<br>
+     if ($x &lt;&gt; $ko||dsx) {<br>
+       if ($x &gt; $ko||dsx) {<br>
+         $x3 = $ko||dsx+1;<br>
+        }<br>
+        else {<br>
+         $x3 = $ko||dsx-1;<br>
+        }<br>
+      }<br>
+     else {<br>
+      $x3 = $ko||dsx;<br>
+     }<br>
+     //yk||rektur<br>
+     if ($y &lt;&gt; $ko||dsy) {<br>
+       if ($y &gt; $ko||dsy) {<br>
+         $y3 = $ko||dsy+1;<br>
+        }<br>
+        else {<br>
+         $y3 = $ko||dsy-1;<br>
+        }<br>
+      }<br>
+     else {<br>
+      $y3 = $ko||dsy;<br>
+     }<br>
+<br>
+    //$spieler-&gt;set_x($x3);<br>
+    //$spieler-&gt;set_y($y3);<br>
+    //$spieler-&gt;beenden();<br>
+<br>
+  If ($karte-&gt;begehbar($x3, $y3, $spieler-&gt;zeige(auf_schiff), $spieler-&gt;zeige(luftschiff) ) == 1) {<br>
+     //Wenn das nächste Feld kein erlaubtes ist<br>
+     $spieler-&gt;set_altx($spieler-&gt;zeige(x));<br>
+     $spieler-&gt;set_alty($spieler-&gt;zeige(y));<br>
+     $spieler-&gt;set_x($ko||dsx);<br>
+     $spieler-&gt;set_y($ko||dsy);<br>
+     $begehbar = 1;<br>
+    }<br>
+  else {<br>
+   //wenn das nächste Feld betretbar ist.<br>
+   //Geländetyp des neuen Felder holen<br>
+   $land = $karte-&gt;liesdaten($x3, $y3, gelaende);<br>
+   //APverbrauch je nach Feldtyp bestimmen<br>
+   switch ($land) {<br>
+     case 0    :<br>
+     case 1    :   $fakt||=4;<br>
+                   break;<br>
+     case 5    :<br>
+                   $fakt||=10;<br>
+                   break;<br>
+     case 100  :<br>
+     case 101  :<br>
+     case 102  :<br>
+     case 103  :<br>
+     case 105  :<br>
+     case 106  :<br>
+     case 107  :<br>
+     case 108  :<br>
+     case 109  :<br>
+     case 110  :<br>
+     case 111  :<br>
+     case 112  :<br>
+     case 113  :<br>
+     case 114  :<br>
+     case 3000 :<br>
+     case 3001 :<br>
+     case 3002 :<br>
+               	   $fakt||=10;<br>
+               	   break;<br>
+     case 104  :<br>
+                   $fakt||=14;<br>
+                   break;<br>
+<br>
+     case 633  :<br>
+     case 634  :<br>
+     case 637  :<br>
+     case 638  :<br>
+     case 639  :<br>
+     case 640  :<br>
+     case 700  :<br>
+     case 701  :<br>
+     case 702  :<br>
+     case 703  :<br>
+     case 751  :<br>
+                   $fakt||=7;<br>
+                   break;<br>
+<br>
+     case 200  :<br>
+     case 201  :<br>
+     case 202  :<br>
+     case 203  :<br>
+     case 205  :<br>
+     case 206  :<br>
+     case 207  :<br>
+     case 208  :<br>
+     case 221  :<br>
+     case 222  :<br>
+     case 223  :<br>
+     case 224  :<br>
+                   $fakt||=15;<br>
+                   break;<br>
+<br>
+     case 204  :<br>
+     case 632  :<br>
+     case 805  :<br>
+                   $fakt||=30;<br>
+                   break;<br>
+<br>
+     case 520  :<br>
+     case 521  :<br>
+     case 522  :<br>
+     case 523  :<br>
+     case 2000 :<br>
+                   $fakt||=3;<br>
+                   break;<br>
+    }<br>
+    //AP des Users ermitteln.<br>
+     $ap =  $spieler-&gt;zeige(ap);<br>
+    if ( $ap &gt;=  $fakt||) //Wenn Rest-AP des Users größer gleich des APverbrauches des Feldes<br>
+	{ <br>
+	   $spieler-&gt;set_ap(- $fakt||); //AP abziehen<br>
+	   $GLOBALS[basiskosten] =  $GLOBALS[basiskosten] +  $fakt||;		  //AP-Verbrauch zählen<br>
+	   $GLOBALS[echtekosten] =  $GLOBALS[echtekosten] +  $fakt||;		  //AP-Verbrauch zählen<br>
+           $spieler-&gt;set_altx( $spieler-&gt;zeige(x));<br>
+           $spieler-&gt;set_alty( $spieler-&gt;zeige(y));<br>
+           $spieler-&gt;set_x( $x3);<br>
+           $spieler-&gt;set_y( $y3);<br>
+	  if ( $karte-&gt;monster_da( $x3,  $y3) == TRUE) {<br>
+        $spieler-&gt;beenden();<br>
+	    $html-&gt;create_header(kampf.php);<br>
+	    $ende =1;<br>
+      }<br>
+	}<br>
+	else //ansonsten wenn weniger AP wie verbrauch da sind<br>
+	{<br>
+	 //set_ abbrechbedingung<br>
+	  $ende=1;<br>
+    $fehler = &lt;br&gt;&lt;div align=center STYLE=col||:red&gt;Du bist erschöpft. (Nicht genug AP)&lt;/div&gt;;<br>
+    $GLOBALS[fehlermeldung] .=  $fehler;<br>
+    }<br>
+<br>
+  }<br>
+  $ko||dsx =  $spieler-&gt;zeige(x);<br>
+  $ko||dsy =  $spieler-&gt;zeige(y);<br>
+  $spieler-&gt;beenden();<br>
+ }<br>
+//Variablen freigeben oder sonstiger Rotz.<br>
+}<br>
+    </td>
+									<td width="100" align="center">28.08.04 22:11<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=45844&amp;votefor=610730"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=11.html">Off-Topic									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 

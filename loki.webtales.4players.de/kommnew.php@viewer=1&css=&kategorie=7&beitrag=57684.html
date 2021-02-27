@@ -1,0 +1,446 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>Formel für Zustandsausbauten</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451557514' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=7.html">Gebäude, Städte und Produktion									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>Formel für Zustandsausbauten </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center">Fáin Cortez (RIP)									</td>
+
+									<td width="75%"> Sooo, hab wieder mal sinnlos zeit investiert, hab aber dafür ne Formel gefunden um die Ausbauten am Zustand eines Gebäudes zu errechnen an GS:<br>
+<br>
+<br>
+Stufe*500 + [ (Stufe-1) * 1000] * Stufe / 2<br>
+<br>
+Also als rechenbeispiel:<br>
+<br>
+Stufe 6 (160% zustand) kosten:<br>
+<br>
+110:   500<br>
+120:  1500<br>
+130:  2500<br>
+140:  3500<br>
+150:  4500<br>
+160:  5500<br>
+__________<br>
+insg:18000<br>
+<br>
+Mit Formel:<br>
+<br>
+x = 6 * 500 + [ ( 6-1 ) * 1000 ] * 6 / 2<br>
+<br>
+  =    3000 + [ ( 5 ) * 1000 ] * 3<br>
+  =    3000 +             5000 * 3<br>
+  =    3000 +            15000<br>
+  =    18000<br>
+<br>
+wzbw. :)<br>
+<br>
+    </td>
+									<td width="100" align="center">06.03.05 21:20<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=774210"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Fáin Cortez (RIP)									</td>
+
+									<td width="75%"> {Stufe*500 + [ (Stufe-1) * 1000] * Stufe / 2}<br>
+MINUS<br>
+{[VorhandeneStufe*500 + [ (VorhandeneStufe-1) * 1000] * VorhandeneStufe / 2 }<br>
+<br>
+Um die Kosten Auszurechnen die man braucht um von x ausbauten auf y ausbauten zu kommen ;D    </td>
+									<td width="100" align="center">06.03.05 21:31<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=774218"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Ja es war sinnlos:<br>
+<br>
+http://www.scherbenwelten.de/kommnew.php?css=&amp;kategorie=7&amp;beitrag=57576    </td>
+									<td width="100" align="center">07.03.05 9:16<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=774409"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Fáin Cortez (RIP)									</td>
+
+									<td width="75%"> meins ist auf jedenfall leichter verständlich ;D    </td>
+									<td width="100" align="center">07.03.05 9:31<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=774414"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Mibo van Draaken (RIP)									</td>
+
+									<td width="75%"> Moien,<br>
+ich zwar kein mathegenie und die hauptschule ist auch schon mehr als 20 jahre her<br>
+aber sollte das so nicht einfacher sein<br>
+<br>
+kosten=(iststufe²-sollstufe²)*500<br>
+wobei dann zb. 110% gleich stufe 1 wäre usw.<br>
+<br>
+sollte glaube ich funktionieren *grübel*    </td>
+									<td width="100" align="center">07.03.05 11:46<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=774478"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Mibo van Draaken (RIP)									</td>
+
+									<td width="75%"> ups,<br>
+soll natürlich<br>
+<br>
+kosten=(sollstufe²-iststufe²)*500<br>
+<br>
+heißen ;)<br>
+    </td>
+									<td width="100" align="center">07.03.05 12:45<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=774515"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Viele Wege führen nach Rom ;-)    </td>
+									<td width="100" align="center">07.03.05 16:13<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=774686"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Lancelot (RIP)									</td>
+
+									<td width="75%"> fain, du bis und bleibs ne komische flöte  *sich weglacht*<br>
+<br>
+deine dämliche formel ist das komplizierteste, was du aus diesem einfachen zusammenhang rausarbeiten konntest... mit jeder billigen exceltabelle krieg ich das in 1 min. hin, aber nimm ruhig deine formel *hehe    </td>
+									<td width="100" align="center">07.03.05 23:36<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=775202"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Fáin Cortez (RIP)									</td>
+
+									<td width="75%"> pffft, hauptsache ich hab mir die mühe gemacht ;D    </td>
+									<td width="100" align="center">08.03.05 1:11<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=775248"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Darken Rahl (RIP)									</td>
+
+									<td width="75%"> bekommst ein + für die mitarbeit ;)    </td>
+									<td width="100" align="center">08.03.05 18:12<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=775777"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Bhaal</b> </b><br>  <img width="60"
+										src="pics/Wappen-baal4.gif"> 									</td>
+
+									<td width="75%"> *Fain ein Bienchen auf die Wange stempel*<br>
+<br>
+haddu fein gemacht ;)    </td>
+									<td width="100" align="center">08.03.05 23:58<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=775971"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20196)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Mibo van Draaken (RIP)									</td>
+
+									<td width="75%"> Find ich ja mal wieder toll, der mit dem längsten.. ähm formel mein ich natürlich erntet mal wieder das ganze lob ^^    </td>
+									<td width="100" align="center">09.03.05 10:47<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=776127"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Slam ODR</b> </b><br>  <img width="60"
+										src="http://tress.homepage.t-online.de/Scherbenwelten/Slam2.gif"> 									</td>
+
+									<td width="75%"> Toll, dank der doofen Formel trauer ich jetzt knapp 700k nach die im Zustand meines BH stecken.<br>
+Ist doch viel schöner ab- und an mal 25-30k reinzuwerfen als so brutal offensichtlich geschröpft zu werden :-&gt;    </td>
+									<td width="100" align="center">04.04.05 22:38<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=7&amp;beitrag=57684&amp;votefor=796571"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20639)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=7.html">Gebäude, Städte und Produktion									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 

@@ -1,0 +1,161 @@
+body {
+margin:0;
+}
+
+p,h1,h2,h3,h4,ul,ol,li,div,td,th,address,blockquote,nobr,b,i {
+font-family:Verdana,Arial;
+font-size:8pt;
+}
+
+th {
+color:#FFF;
+}
+
+h1 {
+color:#FFF;
+font-size:20pt;
+}
+
+h2 {
+color:#DDD;
+font-size:16pt;
+}
+
+h3 {
+color:#DDD;
+font-size:13pt;
+}
+
+h4 {
+color:#FFF;
+font-size:10pt;
+}
+
+td {
+color:#FFF;
+font-size:8pt;
+border:0;
+}
+
+div.beispiel {
+font-family:Verdana,Arial;
+font-size:8pt;
+font-style:italic;
+color:#FFF;
+background-color:#444;
+letter-spacing:1px;
+}
+
+A:link {
+color:#FAA;
+text-decoration:none;
+}
+
+A:visited {
+color:#B77;
+text-decoration:none;
+}
+
+A:hover {
+color:#FF0;
+text-decoration:underline;
+}
+
+input.active {
+background-image:none;
+font-family:Arial;
+font-size:11px;
+border:1px solid #000;
+margin-left:0;
+color:#332313;
+background-color:#CD853F;
+}
+
+input.friend {
+background-image:none;
+font-family:Arial;
+font-size:11px;
+border:1px solid #000;
+margin-left:0;
+color:#332313;
+background-color:green;
+}
+
+input.foe {
+background-image:none;
+font-family:Arial;
+font-size:11px;
+border:1px solid #000;
+margin-left:0;
+color:#332313;
+background-color:#FF6347;
+}
+
+textarea {
+color:#000;
+text-decoration:none;
+background-image:url(m.jpg);
+border:solid 1px #000;
+}
+
+.subtab1 {
+border-top:1px solid #FFF;
+border-left:1px solid #FFF;
+border-right:1px solid #888;
+border-bottom:1px solid #888;
+}
+
+hr {
+size:1;
+color:gray;
+}
+
+tr.tr1 {
+background-color:#000;
+}
+
+tr.tr2 {
+background-color:#333;
+}
+
+INPUT2 {
+border-right:#777 1px solid;
+border-top:#777 1px solid;
+font-size:10px;
+background-image:url(m.jpg);
+margin-left:0;
+border-left:#777 1px solid;
+color:#FFF;
+border-bottom:#777 1px solid;
+font-family:Arial;
+background-color:#000;
+}
+
+SELECT2 {
+font-size:10px;
+background-color:#000;
+text-decoration:none;
+}
+
+OPTION2 {
+font-size:10px;
+color:#FFF;
+text-decoration:none;
+}
+
+input,button {
+background-color:#000;
+background-image:url(m.jpg);
+border:1px solid #777;
+color:#332313;
+font-family:Arial;
+font-size:11px;
+margin-left:0;
+}
+
+select,option {
+border:solid 1px #000;
+color:#000;
+font-size:10px;
+text-decoration:none;
+}

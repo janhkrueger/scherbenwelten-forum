@@ -1,0 +1,1007 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>System/Engine/Technisches - Wegen Stadtmilizen</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451565814' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>System/Engine/Technisches - Wegen Stadtmilizen </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center"><b>Krâtos</b> </b><br>  <img width="60"
+										src="http://yen.hexasaga.de/wappenneu.gif"> 									</td>
+
+									<td width="75%"> <b>So ist es momentan:</b><br>Wenn man in einer Stadt ein Gebäude attackiert und dabei Milizen &quot;fallen&quot;, dann stirbt als Kollateralschaden eine fixe Anzahl an Einwohnern der Stadt. Aktuell sind es als provisorische Lösung 5 Einwohner pro Miliz ( Zitat des Supports aus http://www.scherbenwelten.de/kommnew.php?viewer=&amp;css=&amp;kategorie=1&amp;beitrag=121284 : &quot;Bei weiteren Angriffen auf Stadtgebäude werden nur noch 5 Einwohner je getöteter Miliz abgezogen.&quot; ).<br>
+<br>
+Dadurch ist zwar die Auswirkung der Einwohnerverluste etwas weniger gruselig, als noch mit 50 toten Einwohner pro Miliz, aber es bleibt immer noch das Problem, dass die Stadt leichter angreifbar wird, je mehr Miliz sie beherbergt, was weder Sinn der Sache sein kann, noch dem Ziel dieser Änderung entspricht ( ein wenig Wirklichkeitsnähe zu generieren. ).<hr size=1><b>So soll es werden:</b><br>Da von einigen Spielern und auch vom Support selbst dargestellt wurde, dass eine prozentual regulierte Berechnung des Einwohnertodes durch Milizen gewünscht und angestrebt ist und explizit auf das Vorschlagsforum verwiesen wurde, stelle ich hier nun ein kleines Gedankenspiel meiner Seits vor.<br>
+<br>
+Der Kollateralschaden an Einwohner könnte sich so berechnen:<br>
+<br>
+max. 20 ( aufrunden von ( 10/(( X% Miliz )²/( 3 ) ) ) )<br>
+<br>
+[ Da ich programmiertechnisch nicht so versiert bin, wäre ich dankbar, wenn jemand mit mehr Ahnung davon, die entsprechend nötigen Befehle hier vermerken würde - für das Setzen einer Obergrenze, das Aufrunden des Ergebnis und das Quadrieren des Prozentsatzes. ]<br>
+<br>
+<br>
+Hieraus ergibts sich dann folgende Staffelung:<br>
+<br>
+1% Miliz -&gt; 10/(1²/3) = max. 20 (10*3/1²) = max. 20 (30) = 20 Einwohner werden der Stadt je Miliz entzogen, maximal 20% der Einwohnerzahl<br>
+<br>
+2% Miliz -&gt; 10/(2²/3) = aufrunden (30/4) = 7,5 ~ 8 Einwohner pro Miliz werden der Stadt entzogen, maximal 16% der Einwohnerzahl<br>
+<br>
+3% Miliz -&gt; 30/3² = aufrunden (3,33...) = 4 Einwohner pro Miliz werden der Stadt entzogen, maximal 12 % der Einwohnerzahl<br>
+<br>
+.<br>
+.<br>
+.<br>
+<br>
+Zwischen 4 und 5 % Miliz entsteht hier dummerweise ein Sprung, da in beiden Fällen 2 Einwohner je Miliz sterben und das bei 4% Miliz im Maximum 8% der Einwohnerzahl, bei 5% Miliz hingegen maximal 10% der Einwohnerzahl ausmacht... ist vielleicht nicht super toll, durch den recht geringen Unterschied aber meiner Meinung nach verkraftbar.<br>
+<br>
+Ab 6% Miliz entsteht dann das Phänomen, dass das Ergebnis vor dem Runden immer &lt;1 ergibt und damit immer auf 1 aufgerundet wird, also immer je Miliz 1 Einwohner stirbt und immer Maximal so viele Einwohner sterben können, wie die Stadt Miliz hat ( bei 15% beispielsweise auch wieder 15% der Einwohnerzahl. )<br>
+<br>
+Da aber Milizen jenseits der 10% eher unüblich sein dürften, in Ermangelung an Bauplatz innerhalb der Städte und durch den Wunsch nicht nur Verlust zu machen, sollte das ohnehin nicht allzu oft vorkommen... desweiteren wäre wohl ein Einwohnersterben von weniger als 1 je Milizionär etwas merkwürdig und fast noch krummer, als die zuvor aktiv gewesenen 50 - daher sicher dennoch mit den Ansichten der meisten hier vereinbar.<hr size=1><b>Vorteile für das Spiel:</b><br>- Eine nicht lineare Lösung zu dem Kollateralschadenproblem<br>
+- Es ist wieder/weiterhin sinnvoll und gemäß der Logik zum Erhöhen der Sicherheit der Stadt die Anzahl der Miliz zu erhöhen, welche dafür dann Steuergelder kosten<hr size=1><b>Nachteile für das Spiel:</b><br>- kleinere Städte, deren Bürgermeister sich nur 1 oder 2 &amp; Miliz leisten können/wollen können immer noch relativ schnell auf ein Einwohnerniveau geschliffen werden, durch das Ausbauten verfallen<hr size=1><b>Mögliche Problematiken:</b><br>- Ab 6% Miliz geht der Hintergrund dessen Verloren, warum eigentlich diese Änderung eingeführt wurde - der sogenannten Kollateralschaden - da nur noch die Miliz selbst sterben kann und keine armen, bemitleidenswerten Normalbürger, die sich in ihren Kellern und unter ihren Tischen verstecken<br>
+<br>
+- gerade kleinere Städte ( hierbei meine ich mit 50.000-100.000 Einwohnern oder darunter ) können leicht empfindlich angeschlagen werden<hr size=1><b>Sonstiges:</b><br>Ist ein kurzer Gedanke, den ich eben entwickelt habe. Ich stelle ihn euch hier mal lustig zur Verfügung und ihr ( meine geliebten Mitspieler =) ) und ihr ( lieber technischer Support ) könnt den &quot;Vorschlag&quot; betrachten, analysieren und bewerten, wie ihr es für richtig haltet =)<br>
+<br>
+Ich will einmal noch als kleine Abschlussverteidigung sagen, dass ich zwar den Nachteil und die Problematiken als solche erkenne und ( was ihr bitte durch meine folgenden Worte nicht fehlinterpretieren solltet ) auch voll und ganz anerkenne und verstehe.<br>
+Jedoch gibt es immer Schwierigkeiten und Problematiken mit Themen, die an der Dynamik des Spiels etwas ändern, da Entwicklung stets in beide Richtungen geht ( Verbesserung und Verschlechterung anhand der jeweiligen Perspektive ). Die Problematik, dass es ab 6% Miliz keinen Kollateralschaden mehr gibt, sondern immer nur noch die Miliz selbst sterben kann, wird vermutlich von keinem Spieler als Problem betrachtet sondern sogar eher begrüßt, sollte jemand 6 bis 7 % Miliz einschalten können und wollen - ich hoffe, dass dies auch euch ( unserem Support ) recht ist, da die Milizen immerhin auch Steuern kosten und bei 6,7,8% aufwärts auch gar nicht mal mehr so wenig vom Brutto-Sozial-Produkt der Stadt abziehen, sondern durchaus ein gewinnbringenden Konzeptionierung wieder in rote Zahlen zurück drehen können und meistens wohl auch tun ( würden ).<br>
+Auch haben zwar die Bürgermeister kleinerer Städte mit geringeren Prozenten an Miliz ein gewisses Leck in der Verteidigung, jedoch muss man das auch realistisch betrachten. Um bei denen die Milizen mit Armeen auf 0 zu schleifen braucht man trotzdem einige Armeen ( deutlich mehr als 10 ), mit denen man mehrmals angreifen, sie also in der Stadt zurücklassen, muss. Das bedeutet Aufwand in Sachen Organisation und Versorgung, damit die Armeen nicht am nächsten Tag verhungern oder zerrieben werden und wenn man so einen Aufwand betreibt, dann kann man die Stadt auch gleich richtig angreifen und einnehmen/sie einzunehmen versuchen - dann ists auch egal, ob am ersten Tag des Angriffs 16-20% der Einwohner weg sind und zur Stadtrunde Ausbauten verfallen und 1-3 PP fehlen.<br>
+Wer das mit 10-15 anderen Leuten per Hand machen will, um sich den Armeestress nicht zu geben, hat da wahrscheinlich auch wenig Freude dran, da siedendes Öl und damit verbundener AP-Verlust zum Wiederbeleben, Abnutzung der Ausrüstungen und ähnliche Aufwendungen den Schaden, den man dadurch anzurichten vermag, sicherlich weit übersteigen... da verfallen vielleicht 12 Ausbauten und... äh jo, zu dritt hat man die an einem Tag ohne große Probleme ersetzt und kann trotzdem noch nen bisserl was mit seinen AP machen, also kann man dann in Andenken an die 10-15 wackeren Angreifer einfach mal so richtig breit und dümmlich in sich rein Grinsen, weils denen sprichwörtlich mehr weh getan hat als einem selbst.<br>
+<br>
+In sofern sind das hier oben alle Ausführungen, die ich dazu machen wollte und hiermit wünsche ich euch viel Spaß und Erfolg beim drauf schauen, drüber Nachdenken und kritisieren ( bitte auch in positivem Sinne =) ).<br>
+<br>
+Aloha he,<br>
+Kratl    </td>
+									<td width="100" align="center">09.01.10 13:46<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432129"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(69778)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Krâtos</b> </b><br>  <img width="60"
+										src="http://yen.hexasaga.de/wappenneu.gif"> 									</td>
+
+									<td width="75%"> Äh, ja... verdammt. Schreibfehler sind Geschenke an die Allgemeineheit... ^^    </td>
+									<td width="100" align="center">09.01.10 13:52<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432131"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(69778)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Chevonne Siobhan (RIP)									</td>
+
+									<td width="75%"> In Analogie zu &quot;1% Miliz -&gt; 10/(1²/3)&quot; und &quot;2% Miliz -&gt; 10/(2²/3)&quot; muss es hier &quot;3% Miliz -&gt; 30/3²&quot; wohl eher &quot;3% Miliz -&gt; 30/(3²/3)&quot; also &quot;30&quot; heissen.  <br>
+<br>
+Oder nicht?    </td>
+									<td width="100" align="center">09.01.10 13:57<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432132"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Krâtos</b> </b><br>  <img width="60"
+										src="http://yen.hexasaga.de/wappenneu.gif"> 									</td>
+
+									<td width="75%"> Nein =)<br>
+<br>
+Ich hätte auch immer weiter die aufgelöste Formel nutzen können, was halt:<br>
+<br>
+10 / ((X%)²/3)<br>
+<br>
+gewesen ist.<br>
+<br>
+Die kann man aber auch einfacher schreiben, was mir erst im Nachhinein ( also während dem Schreiben selbst ) bewusst geworden ist, nämlich wie folgt:<br>
+<br>
+30 / ( X% Miliz )²<br>
+<br>
+<br>
+Sprich:<br>
+<br>
+30/1<br>
+<br>
+30/4<br>
+<br>
+30/9<br>
+<br>
+30/16<br>
+<br>
+30/25<br>
+<br>
+30/36<br>
+<br>
+.<br>
+.<br>
+.<br>
+<br>
+<br>
+Damit beim ersten halt nicht 30% gezogen werden können, was eine immer noch völlig überzogen brachiale Menge währe, habe ich die Begrenzung auf max. 20 davor gesetzt - passt auch gut in die restliche Analogie der Gesamttodesratenminderung am Anfang rein ( 20% - 16% - 12% - 8% ); jeweils 4% weniger, bis zu einem Tiefpunkt der Funktion bei 8% maximaler Einwohnerzahl, dann ein lokaler Hochpunkt bei 5% Miliz zu 10% tötbarer Einwohnerzahl, anschließend ein weiterer Tiefpunkt bei 6% und dann ein monotones Wachsen der Funktion gegen max. Miliz... =)    </td>
+									<td width="100" align="center">09.01.10 14:05<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432133"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(69778)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Auf jeden Fall sollte es so sein das bei einer starken Miliz weniger Einwohner sterben als bei einer schwachen.<br>
+<br>
+Kratos Sicht hat den Makel das jede Miliz irgendwann schwach wird und so deutlich mehr Einwohnerverlust ensteht als bei der aktuellen Regelung.<br>
+<br>
+1%--&gt; 20% Gesamteinwohnerverlust<br>
+2%--&gt; 28% Gesamteinwohnerverlust<br>
+3%--&gt; 32% Gesamteinwohnerverlust<br>
+4%--&gt; 34% Gesamteinwohnerverlust<br>
+5%--&gt; 36% Gesamteinwohnerverlust<br>
+6%--&gt; 37% Gesamteinwohnerverlust<br>
+<br>
+Aktuell sieht mir vorallem der Bodensatz zu stark aus, da dieser nun einmal für jede Stadt gilt.    </td>
+									<td width="100" align="center">09.01.10 15:18<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432141"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Zum Vergleich der aktuelle Verlauf:<br>
+<br>
+1%--&gt; 5% Gesamteinwohnerverlust<br>
+2%--&gt; 10% Gesamteinwohnerverlust<br>
+3%--&gt; 15% Gesamteinwohnerverlust<br>
+4%--&gt; 20% Gesamteinwohnerverlust<br>
+5%--&gt; 25% Gesamteinwohnerverlust<br>
+6%--&gt; 30% Gesamteinwohnerverlust    </td>
+									<td width="100" align="center">09.01.10 15:39<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432146"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Also ich habe mir jetzt auf dieser Basis auch meine Gedanken gemacht und folgende simple Formel ist dabei herausgekommen:<br>
+<br>
+V-&gt;Verlust Einwohner pro Miliz<br>
+<br>
+V = 0,2 / M<br>
+<br>
+Das ergibt folgende Werte:<br>
+<br>
+1% Miliz: 20<br>
+2% Miliz: 10<br>
+4% Miliz: 5<br>
+8% Miliz: 2,5<br>
+16% Miliz: 1,25<br>
+<br>
+Ich würde die Kommazahlen hier behalten und erst dann runden wenn der Einwohnerverlust berechnet wurde, damit kein zu starkes Ungleichgewicht entsteht. Der Fixwert 0,2 beträgt den maximalen prozentuellen Einwohnerverlust, wenn man maximale Milizen hat und alle verliert (ich hoffe ich habe die Problematik richtig erkannt, da ich selbst nie eine Stadt hatte)    </td>
+									<td width="100" align="center">09.01.10 16:20<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432152"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Krâtos</b> </b><br>  <img width="60"
+										src="http://yen.hexasaga.de/wappenneu.gif"> 									</td>
+
+									<td width="75%"> Ich ging bei meinem Vorschlag von der Milizprozentzahl aus, die zur letzten Hauptrunde vorhanden/eingestellt war.<br>
+<br>
+Wenn man die Verlustzahlen je Miliz an der sich danymisch verändernden, absoluten Anzahl der Milizen im Verhältnis zu der absoluten Bevölkerung berechnet, dann kommt man am Ende immer dazu, dass bei einem höheren Anfangsprozentsatz der Miliz am Ende auch ein höherer prozentualer Bevölkerungsverlust herauskommt, da die bereits verlorenen Einwohner auf den Gesamteinwohnerverlust der niedrigeren Kategorie aufaddiert würden.<br>
+<br>
+Sprich - bei dynamischer Berechnung hat man von der Entwixklung von 3% Stadtmiliz bis zu einem reellen Vorhandensein von 2% Stadtmiliz den dafür berechneten Verlust; anschließend hat man den berechneten Verlust für 2% Miliz bis diese auf 1% herunter ist und dann den gesamten Verlust, den man bei 1% Miliz hat ( entsprechend die 20% der Stadtbevölkerung + dem Verlust durch das Herabkämpfen der Miliz von 3 auf 2 und von 2 auf 1 Prozent, was, wie Zadar bereits ausgeführt hat, zu über 30% Einwohnerverlust führt ).<br>
+<br>
+Wobei Zadar gerade eine tolle Idee geäußert hat, die das zumindest eindämmt, mal schauen wann er schreibt =P =)    </td>
+									<td width="100" align="center">09.01.10 19:40<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432187"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(69778)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nalon din Adun (RIP)									</td>
+
+									<td width="75%"> Schwäche des aktuellen Systems: <br>
+Je mehr Miliz da ist, desto mehr EW können gekillt werden.<br>
+<br>
+Wunsch:<br>
+Realitätsnahe Verluste bei Milizkill, die Kollateralschäden an der Bevölkerung beachten.<br>
+<br>
+Wenn ich mir das überlege, dann sollte klar sein, je mehr Milizen noch vorhanden sind, desto geringer sollte der EW-Verlust sein, weil eben weniger EW durch den Angreifer überhaupt erwischt werden können.<br>
+<br>
+Von der Spielmechanik her ist eine Miliz = 1 EW, so werden sie abgezogen und hier greift das mit den 50 EW = 1 Armeeeinheit nicht.<br>
+<br>
+Trotzdem muss man irgendwie auch rechnen 1 Miliz = 1 Armeeeinheit. Wenn man das als problematisch erachtet, wäre es wohl ein besserer Weg, die Armee anzupassen, denn für den Stadtkampf ist obiges (also = 1 EW) wichtiger.<br>
+<br>
+So, betrachten wir nun einen Angriff auf ein Stadtgebäude, eine gewisse Menge an Miliz rückt aus und wird getötet.<br>
+<br>
+Ich würde an dieser Stelle genau 1 EW pro Miliz abziehen, solange NICHT ALLE Milizen im Angriff sterben.<br>
+<br>
+Das heißt, solange eine Miliz überlebt, haben sie den Angriff von den EW fern gehalten und alle Angreifer gebunden. <br>
+<br>
+Schafft es der Angreifer aber, alle Milizen zu töten, dann marodieren die restlichen Einheiten durch die Straßen, zünden Häuser an und töten EW.<br>
+<br>
+Hier würde ich folgende Staffelung vorschlagen:<br>
+- Kommen 1-9 Soldaten durch, töten diese die doppelte Anzahl EW, z.B. 6 kommen durch, wären 12 tote EW<br>
+- 10-99 kommen durch: Anzahl * 3, Beispiel: 44 kommen durch -&gt; 3*44 = 132 tote EW<br>
+- 100-999 kommen durch: Anzahl *4, also z.B. 150 kommen durch -&gt; 600 tote EW.<br>
+<br>
+Das heißt, ich staffele insgesamt gesehen von 1-4, was ich als ausreichend empfinde, da es wohl nicht das Ziel sein soll, dass man über Milizkill die Stadt schrumpft.<br>
+<br>
+Dabei verstehe ich unter &quot;durchkommen&quot; die Armeeeinheiten, die NICHT mehr zum Angriff kommen. Zum Beispiel wenn man mit 200 Kava auf 30 Milizen prügelt, sollten mit 60-80 Kavas alle Milizen weg sein und damit 120-140 Kavas durchkommen und marodieren.<br>
+<br>
+Für Katapulte würde ich aber einen höheren Satz verwenden, da diese über den Gegner hinweg schießen. Hier würde ich generell 5-10 zufallsbezogen also angemessen empfinden. Damit könnte man mit Katapulten tatsächlich direkt auf die EW feuern und ich würde hier auch je Katapult diese Abzüge durchführen, ähnlich dem Schaden an Gebäuden, der auch unabhängig von den Überlebenden ist, da jedes Kata mindestens einmal feuert.<br>
+<br>
+Beispiel:<br>
+300 Katapulte greifen an:<br>
+1500-3000 EW sterben<br>
+Dazu ggf. ein paar Milizen. Sollten hier Katas &quot;durchkommen&quot; greift aber nicht das obige, denn Katapulte rennen eher selten durch die Straßen ;)<br>
+Außerdem ist der Dauereffekt stark genug denke ich.<br>
+<br>
+Zusammengefasst:<br>
+- Milizen überleben den Angriff -&gt; 1 EW je toter Miliz weg<br>
+- alle Milizen tot -&gt; nicht gebundene Soldaten marodieren<br>
+-&gt; 1-9 = 2x Anzahl tote EW<br>
+-&gt; 10-99 = 3x Anzahl tote EW<br>
+-&gt; 100-999 = 4x Anzahl tote EW<br>
+usw.<br>
+<br>
+Katapulte generell 5-10 EW je Schuss, keine zusätzlichen über tote Milizen mit 1 Miliz = 1 EW.    </td>
+									<td width="100" align="center">10.01.10 2:56<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432270"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Falster von Distelflamme (RIP)									</td>
+
+									<td width="75%"> boah leute macht das doch noch komplizierter vor allem auch noch leute die eh kein krieg führn boa horror<br>
+ok oder anders ausgedrückt, vielleicht ist die jetzige regelung nicht logisch aber sie is ok...ich kann damit leben    </td>
+									<td width="100" align="center">10.01.10 3:06<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432271"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Falster von Distelflamme (RIP)									</td>
+
+									<td width="75%"> nalons text liest sich gut<br>
+<br>
+    </td>
+									<td width="100" align="center">10.01.10 3:09<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432272"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Iga Pelogran (RIP)									</td>
+
+									<td width="75%"> Die Abzuziehenden Einwohner sollten an die angreifende Armee angepasst sein:<br>
+<br>
+Nachkämpfer -&gt; Miliz stellt sich vor die Einwohner, demnach wird nur die Miliz gekillt<br>
+Fernkämpfer -&gt; Schiessen auch mal übers Ziel heraus und können so Einwohner Verletzen<br>
+Reiterei -&gt; Kann u.U. die Reihen der Milizen durchbrechen und dahinter auch Einwohner killen<br>
+Ballista, Katas -&gt; Sind sehr ungenau und töten immer recht viele Zivilisten.<br>
+<br>
+Mit Zahlen jonglieren tu ich jetz hier nicht, da ich sonst nur Müll laber...    </td>
+									<td width="100" align="center">10.01.10 6:41<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432280"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Falster von Distelflamme (RIP)									</td>
+
+									<td width="75%"> klar fernkämpfer ballern sich einen weit über mauern und durch dächer...kann ma passieren aber wie oft also äh naja...<br>
+<br>
+und die reiterei die springt ma über die mauer und trabt dann durch die gassen ja klar, bleibt ma auf dem teppich.<br>
+<br>
+bitte eine einfache transparente regelung denn zerstörungen und krieg wird es oft geben und es wird keinem spass machen wenn das dann durch übertriebenen realismus noch krasser wird.    </td>
+									<td width="100" align="center">10.01.10 7:13<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432282"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Falster von Distelflamme (RIP)									</td>
+
+									<td width="75%"> klar fernkämpfer ballern sich einen weit über mauern und durch dächer...kann ma passieren aber wie oft also äh naja...<br>
+<br>
+und die reiterei die springt ma über die mauer und trabt dann durch die gassen ja klar, bleibt ma auf dem teppich.<br>
+<br>
+bitte eine einfache transparente regelung denn zerstörungen und krieg wird es oft geben und es wird keinem spass machen wenn das dann durch übertriebenen realismus noch krasser wird.    </td>
+									<td width="100" align="center">10.01.10 7:13<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432283"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Nalons Idee ist nicht schlecht aber kleine Städte können dabei recht leicht überrannt werden.    </td>
+									<td width="100" align="center">10.01.10 9:28<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432288"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Mich würde interessieren was an meiner Lösung so absolut verkehrt ist, dass sie nicht beachtet wird (ich will nicht mein Geltungsbedürfnis befriedigen, sondern mich einfach nur Weiterbilden *g*)    </td>
+									<td width="100" align="center">10.01.10 9:43<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432290"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Dein Vorschlag entspricht entweder dem von Krâtos oder du müsstest definieren wie genau festgelegt werden soll das maximal 20% der Bebölkerung verfallen können.    </td>
+									<td width="100" align="center">10.01.10 10:21<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432291"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Das passiert doch ganz genau durch diese &quot;Formel&quot;:<br>
+<br>
+V = 0,2 / M<br>
+<br>
+Die 0,2 entsprechen dem maximalen Verlust, also 20% (will man nur 10% max Verlust, dann nimmt man halt 0,1)<br>
+Das ergibt dann folgenden Einwohnerverlust pro getöteter Miliz:<br>
+<br>
+1% Miliz: 20<br>
+2% Miliz: 10<br>
+4% Miliz: 5<br>
+8% Miliz: 2,5<br>
+16% Miliz: 1,25<br>
+<br>
+Am Beispiel einer 80.000 Einwohner Stadt:<br>
+<br>
+2% Miliz = 1600 maximale Miliz<br>
+bei 2% Miliz sterben pro getöteter Miliz laut obiger Formel dann 10 Einwohner, somit können maximal 16.000 Einwohner sterben was wiederum den 20% entspricht. <br>
+<br>
+Natürlich passt sich das dann nicht dynamisch an tatsächlich vorhandene Miliz an (wie ich herausgelesen habe, bekommt man pro Tag ja max. 50 dazu), aber der Maximale Einwohnerverlust ist in jedem Fall auf die 20% beschränkt.<br>
+<br>
+<br>
+    </td>
+									<td width="100" align="center">10.01.10 12:48<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432308"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> S.o. Miliz und Einwohnerzahl werden nach einem Angriff (oder zur nächsten Stadtrunde) aktualisiert wodurch die reale Milizrate nicht mehr bei 2% liegt und ein Kurvenverlauf entsteht.<br>
+<br>
+Beispielstadt mit 80.000 Einwohnern, 40 Gebäuden und 1.600 Milizen.<br>
+<br>
+Beim ersten Angriff verteidigen 20 Milizen, diese sterben alle.<br>
+Die Milizzahl sinkt auf 1.580, die Einwohnerzahl auf 79.800. Der Anteil der Miliz liegt nun nur noch bei 1,979%.<br>
+Beim zweiten Angriff werden nun bereits 10,1 Einwohner pro Miliz sterben usw...    </td>
+									<td width="100" align="center">10.01.10 13:07<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432316"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Meine Lösung würde auf die eingestellte Milizzahl gehen und nicht mitangepasst. So wie ich das verstehe kann ein BM ja die Prozent an Milizen einstellen, hat der jetzt 1% eingestellt, dann sterben immer 20 Einwohner pro Miliz. Natürlich ist das vielleicht nicht die 100% akurate Lösung, aber meiner Meinung nach ein guter Kompromiss. Allerdings fällt mir da grad noch was auf, es müsste der Milizwert von der Hauptrunde genommen werden, sonst stellt der BM bei einem Angriff einfach mehr Milizen ein, wodurch dann weniger sterben würden.    </td>
+									<td width="100" align="center">10.01.10 13:19<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432318"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Du hast wie gesagt die gleiche Idee wie Krâtos. Problem dabei ist halt eine enorme Missbrauchsgefahr da die reale Milizzahl fast nichts mit der Sollzahl zu tun hat.    </td>
+									<td width="100" align="center">10.01.10 13:24<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432319"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Ah ok, verstehe. Dann werde ich mit meiner komplexeren Formel weitermachen *g*    </td>
+									<td width="100" align="center">10.01.10 13:33<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432320"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nalon din Adun (RIP)									</td>
+
+									<td width="75%"> Zadar du meinst wegen der Katas, die in einer 50k EW Stadt sehr verheerend wirken könnten? Stimmt, da sollte noch die EW-Menge Berücksichtigung finden. Wobei ich das eigentlich nur für die Katapulte sehe, bei Armee gegen Miliz passt es egal bei welcher Größe, allenfalls sollte man, wenn schon die halbe Stadt tot ist, weniger EW finden und damit auch weniger umbringen können.<br>
+<br>
+Für die Katas fallen mir spontan 2 Ansätze ein:<br>
+- Die diversen Stadtgebäude, die &quot;Sprünge&quot; bei der maximalen Größe einer Stadt darstellen, liefern Faktoren für den EW-Verlust<br>
+- Max-Größe der Stadt zu aktuellen EW liefert einen Faktor für den EW-Verlust<br>
+<br>
+Ich würde obige Zahlen einfach mal lassen und denke mal, für ca. 200k EW passen die ganz gut.<br>
+<br>
+Damit würde ich für Variante 1 folgende Faktoren vorschlagen:<br>
+- nur Tavernen: Faktor 0,2, also 1-2 EW je Schuss<br>
+- Arenen aktiv: Faktor 0,5, also 3-5 EW je Schuss<br>
+- Theater aktiv: Faktor 0,8, also 4-8 EW je Schuss<br>
+- Magistratur aktiv: Faktor 1,2, also 6-12 EW je Schuss<br>
+- Markt aktiv: Faktor 1,8, also 9-18 EW je Schuss<br>
+- Siechenhaus aktiv: Faktor 2,5, also 13-25 EW je Schuss<br>
+Hätte auch wieder die Schwäche, dass man konstant EW killt, gefällt mir daher nicht wirklich.<br>
+<br>
+Also auf zu Variante 2, die dann auch für alle Armeeeinheiten interessant wäre: EW zu Max-EW geben einen Faktor.<br>
+<br>
+Auf die Frage, warum nicht zu Start-EW: einerseits muss man sich dann den Wert merken und festlegen, ob eine 2-stündige Kampfpause nun was verändert, anderereits sind die Gebäude ja vorhanden, stehen nur ggf. leer, aber trotzdem könnte ein Soldat reinstürmen und nachsehen.<br>
+<br>
+Schadensfaktor = Min (2* (Max-EW/aktuelle EW);1)<br>
+Das heißt, bis zur halben Stadtgröße greifen die Schadenszahlen von oben voll, dann fangen sie an zu sinken. Dabei würde ich mit dem Kommawert rechnen, mit den Armeeeinheiten multiplizieren und dann erst runden.<br>
+<br>
+Für die Katapulte würde ich mischen, Treffermenge je Schuss nach der Tabelle und dann eben den Schadensfaktor dazu.<br>
+<br>
+Nochmal zusammengefasst:<br>
+- Milizen überleben den Angriff -&gt; 1 EW je toter Miliz weg<br>
+- alle Milizen tot -&gt; nicht gebundene Soldaten marodieren<br>
+-&gt; 1-9 = 2x Anzahl tote EW<br>
+-&gt; 10-99 = 3x Anzahl tote EW<br>
+-&gt; 100-999 = 4x Anzahl tote EW<br>
+usw.<br>
+<br>
+Katas in Abhängigkeit aktiver Stadtgebäude (zur Hautrunde):<br>
+- Tavernen: 1-2 EW je Schuss<br>
+- Arenen: 2-4 EW je Schuss<br>
+- Theater: 4-8 EW je Schuss<br>
+- Magistratur: 6-12 EW je Schuss<br>
+- Markt: 9-18 EW je Schuss<br>
+- Siechenhaus: 13-25 EW je Schuss<br>
+<br>
+Dazu ein Schadensfaktor, der maximal 1 ist, also den obigen Tabellen entspricht und sich wie folgt errechnet:<br>
+2* (Max-EW/aktuelle EW)    </td>
+									<td width="100" align="center">10.01.10 14:41<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432333"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> So ich habe mir jetzt nochmal meine Gedanken zu dem Problem gemacht und folgendes ist dabei herausgekommen:<br>
+<br>
+1) Jedern Tag nach der der Milizsteigerung werden folgende Berechnungen durchgeführt und die Zahlen gespeichert:<br>
+- Abhängig von Gebäudeanzahl, Anzahl Milizen und Einwohner wird die Anzahl der Angriffe berechnet, die es brauchen würde, bis keine Milizen mehr da sind.<br>
+- Es wird der Durchschnittsmilizverlust pro Angriff berechnet: Anzahl Milizen / Anzahl Angriffe<br>
+- Es wird der Durchschnittseinwohnerverlust pro Angriff berechnet (unter Berücksichtigung der 20% Maximalverlust): (Anzahl Einwohner * 0,2) / Anzahl Angriffe<br>
+<br>
+<br>
+<br>
+Kommt des dann zu einem Angriff finden pro Angriff folgende Berechnungen statt:<br>
+<br>
+- Miliztode = Anzahl Miliz / Anzahl Gebäude<br>
+- Unterschied zu Durchschnittsmilizverlust in Prozent = Miliztode / Durchschnittsmilizverlust<br>
+- Einwohnerverlust = Durschschnittseinwohnerverlust * Unterschied zu Durchschnittsmilizverlust in Prozent<br>
+- Anzahl Miliz = Anzahl Miliz - Miliztode<br>
+- Anzahl Einwohner = Anzahl Einwohner - Einwohnerverlust<br>
+<br>
+Damit kommt man ziemlich genau auf die 20% Einwohnerverlust wenn keine Milizen mehr da sind. <br>
+<br>
+Es gibt bei der ganzen Sache allerdings ein Problem. Wenn der Angriff zum Zeitpunkt der Milizauswertung erfolgt und vorher zB 50 Angriffe erfolgen und danch weitere 50, so steigt der Einwohnerverlust über die 20%, weil die Durchschnittswerte anhand der aktuellen Zahlen neu berechnet werden.<br>
+<br>
+Folgendes kleines php Skript habe ich dazu noch geschrieben, vielleicht hilfts ja dem ein oder anderen bei seinen Überlegungen:<br>
+<br>
+&lt;?php<br>
+<br>
+$MILIZ_START = 120;<br>
+$EW_START = 73600;<br>
+<br>
+$ew = $EW_START;<br>
+$miliz = $MILIZ_START;<br>
+$buildingCount = 22;<br>
+$attackCount = 0;<br>
+$ewTodeGesamt = 0;<br>
+$i = 0;<br>
+<br>
+while ($miliz &gt; 0)<br>
+{<br>
+    $attackCount++;<br>
+    $milizTode = ceil($miliz / $buildingCount);<br>
+    $miliz -= $milizTode;<br>
+}<br>
+<br>
+echo &quot;Angriffe: $attackCount&lt;br/&gt;&quot;;<br>
+<br>
+$miliz = $MILIZ_START;<br>
+<br>
+$durchschnittMilizVerlust = $miliz / $attackCount;<br>
+$durchschnittEWVerlust = ($ew * 0.2) / $attackCount;<br>
+<br>
+echo &quot;Durchschnitt Miliz Verlust: $durchschnittMilizVerlust&lt;br/&gt;&quot;;<br>
+echo &quot;Durchschnitt EW Verlust: $durchschnittEWVerlust&lt;br/&gt;&lt;br/&gt;&quot;;<br>
+<br>
+while ($miliz &gt; 0)<br>
+{<br>
+    $i++;<br>
+    $milizTode = ceil($miliz / $buildingCount);<br>
+    $percent = 0;<br>
+    $percent = $milizTode / $durchschnittMilizVerlust;<br>
+    $ewTode = ceil($durchschnittEWVerlust * $percent);<br>
+<br>
+    echo &quot;$i. Angriff&lt;br/&gt;&quot;;<br>
+    echo &quot;Einwohner: $ew&lt;br/&gt;&quot;;<br>
+    echo &quot;Miliz: $miliz&lt;br/&gt;&quot;;<br>
+    echo &quot;Miliz Tode: $milizTode&lt;br/&gt;&quot;;<br>
+    echo &quot;EW Tode: $ewTode&lt;br/&gt;&quot;;<br>
+    echo &quot;Prozent: $percent&lt;br/&gt;&quot;;<br>
+    <br>
+    $miliz -= $milizTode;<br>
+    $ew -= $ewTode;<br>
+    $ewTodeGesamt += $ewTode;<br>
+    <br>
+    echo &quot;-------&lt;br/&gt;&quot;;<br>
+}<br>
+<br>
+echo &quot;Einwohner: $ew&lt;br/&gt;&quot;;<br>
+echo &quot;Miliz: $miliz&lt;br/&gt;&quot;;<br>
+echo &quot;&lt;b&gt;EW Tode Gesamt: $ewTodeGesamt&lt;/b&gt;&lt;br/&gt;&quot;;<br>
+<br>
+?&gt;<br>
+<br>
+    </td>
+									<td width="100" align="center">10.01.10 15:47<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1432343"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Falster von Distelflamme (RIP)									</td>
+
+									<td width="75%"> Problem ist das beim jetzigen System Städte die Miliz für teures Geld und weniger Arbeiter aufgebaut haben bestraft werden.<br>
+Das ist letztlich schlicht gesagt widersinnig.<br>
+<br>
+Ein Vorschlag von mir:<br>
+<br>
+<b><br>
+-Solange in der Stadt noch ausreichend Milz vorhanden ist das der Miliz-Counter nach unten zählt(stoppt wegen Rundung irgendwann) wird je getöteter Miliz 1 Einwohner abgezogen<br>
+<br>
+-Solange die angreifenden Truppen durch sonstige Verteidiger aufgehalten werden wie Chars in Stadttoren oder Armeen dann werden Einwohner erst abgezogen wenn alle sonstigen Verteidiger besiegt wurden.<br>
+<br>
+-Wenn die obige Bedingung nicht mehr erfüllt ist und die Miliz getötet wurde dann wird je angreifendem Soldat/Charackter eine fixe Einwohnerzahl getötet<br>
+--&gt;:<br>
+<br>
+Infantrist 1 Ew<br>
+Bogenschütze 2 Ew<br>
+Pikeniere 1 Ew<br>
+Kavallerie 2 Ew<br>
+Wache 0.5 Ew<br>
+Katapult 10 Ew<br>
+Armbrustschützen 2 Ew<br>
+Zwergenberserker 2 Ew<br>
+Zwergenkrieger 1 Ew<br>
+Feuerwerfer 20 Ew<br>
+Elfenkämpfer 1 Ew<br>
+Elfen-Bogenschütze 2 Ew<br>
+Elfenreiter 2 Ew<br>
+Ballista 15 Ew<br>
+Milizionär 0.5 Ew<br>
+Schleuderer 2 Ew<br>
+Höhlenwühler 0.5 Ew<br>
+<br>
+beschworene Monster und Chars:<br>
+<br>
+Krieger 2 Ew<br>
+andere Chars 1 Ew<br>
+Ratten, Fledis, Fliegen, Bäume 0,5 Ew<br>
+Elementare, Dämonen, Riesen, Drachen 5 Ew<br>
+Restliche 1 Ew </b><br>
+<br>
+Dadurch werden BM die Miliz haben wieder bevorteilt denn alles was kostet muss auch nutzen haben!<br>
+Alle Zahlen sind aus dem Bauch heraus genannte Pi mal Daumen Beträge.<br>
+Elementare, Riesen usw sind nur in geringer Zahl zu beschwören daher machen das nur eigenartige Leute im Angriff auf Städte, die 5 EW je sind eher nette Zahlen die in der Realität wohl kaum je ins Gewicht fallen.<br>
+Die hochwertigen Höhlenwühler sind defensiv und darum eher geringwertig beim Sturm auf eine Stadt, Reiterei und Berserker wüten natürlich ordentlich.<br>
+Belagerungsgerät ist gestaffelt, nicht so extrem wie bei den Kosten aber dennoch merkbar.<br>
+<br>
+Grundstätzlich fände ich so ein System besser als eines das nur auf Basis des miliztötens Einwohner abzieht.<br>
+<br>
+Als Beispielsrechnung:<br>
+Greift man eine 200k Stadt in der keine Miliz mehr vorhanden ist mit 20 100er Kavas und 5 500er Kavas an, bei 3 Angriffen auf das erste Gebäude der Innenstadt am ersten Tag des Angriffes gegen 20 Uhr,<br>
+dann würde man 27.000 Einwohner töten, eine hohe Menge aber angesichts der riesigen Truppenmenge (45 Mio gs teuer) nicht übermächtig viel.    </td>
+									<td width="100" align="center">14.01.10 18:21<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1433105"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Falster von Distelflamme (RIP)									</td>
+
+									<td width="75%"> Zur Beispielsrechnung angemerkt, am ersten Tag eines Angriffes ist normalerweise immer Miliz vorhanden.<br>
+Bei diesem System beginnt also das Einwohnerkillen im grösseren Stil erst wenn reichlich Milizkill vorarbeit geleistet wurde, der Verteidiger hat also gut Zeit irgendwie, so er kann, zu reagieren....    </td>
+									<td width="100" align="center">14.01.10 18:36<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=121303&amp;votefor=1433109"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 

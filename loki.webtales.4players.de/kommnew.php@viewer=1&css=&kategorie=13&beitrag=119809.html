@@ -1,0 +1,370 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>System/Engine/Technisches - Gerede Deluxe</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451565908' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>System/Engine/Technisches - Gerede Deluxe (1 <img border="0" src="smile.gif">) </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center">Ruut van Houten (RIP)									</td>
+
+									<td width="75%"> <b>So ist es momentan:</b><br>Als Beispiel habe ich zwei Sätze angelegt. Der erste Satz (&quot;Gib Token&quot;) sorgt dafür, daß der Spieler das Token &quot;TEST&quot; erhält. Der Zweite Satz (&quot;Prüfe Token&quot;) fragt ab, ob der Spieler das Token &quot;TEST&quot; besitzt und gibt als Antwort &quot;Ja Du hast den Token&quot;.<br>
+<br>
+a) beim zweiten Satz kann ich nur abfragen, ob der Spieler das Token hat<br>
+<br>
+b) wenn der Spieler den Token nicht hat (generell: die Bedingung nicht erfüllt ist), kommt &quot;Tut mir leid, Ruut van Houten, ich verstehe Dich nicht...&quot;<br>
+<br>
+c) bestimmte Bedingungen sind nicht vorhanden, die für ein Rollenspiel (und somit Quest) aber durchaus relevant sind<br>
+<br>
+d) Bedingungen können nicht verknüpft werden (und/oder)<hr size=1><b>So soll es werden:</b><br>a) es sollte auch abgefragt werden können, ob der Spieler ein Token NICHT hat. Es fehlen &quot;Umkehrbedingungen&quot; für:<br>
+cname=z<br>
+hasgold=x<br>
+hasrohstoff=y&amp;romenge=x<br>
+isgroup=z<br>
+hastoken=z<br>
+hasitem=y<br>
+haskilled=x&amp;killid=y<br>
+lastsaid=y<br>
+crace=y	<br>
+<br>
+<br>
+b) es sollte auch ein Antwortfeld für &quot;Antworten wenn Bedingung nicht erfüllt&quot; geben.<br>
+<br>
+c) relevante Bedingungen sollten noch aufgenommen werden, zb:<br>
+- Glaubenszugehörigkeit=y<br>
+- AnzahlMordeMindestens=x   (für böses RPG)<br>
+- AnzahlMordeMaximal=x<br>
+- BösartigkeitMindestens=x  (für böses RPG)<br>
+- BösartigkeitMaximal=x<br>
+- IstImKriegMitMir<br>
+<br>
+d) wäre schön, wenn Bedingungen auch verknüpft werden könnten, zb. &quot;hasgold=x OR hastoken=z&quot; bzw  &quot;hasgold=x AND hastoken=z&quot;, denn häufig sind Bedingungen eben nicht so einfach gestrickt ...<hr size=1><b>Vorteile für das Spiel:</b><br>jede Menge mehr RPG-Potential<hr size=1><b>Nachteile für das Spiel:</b><br>sind mir nicht ersichtlich<hr size=1><b>Mögliche Problematiken:</b><br>Programmieraufwand, wenngleich ich den nicht all zu hoch einschätze<hr size=1><b>Sonstiges:</b><br>- keine -    </td>
+									<td width="100" align="center">28.10.09 8:45<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417763"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Bibi Biberzahn (RIP)									</td>
+
+									<td width="75%"> a) Du baust einen Antwortsatz zweimal ein. Der erste fragt das Token ab. Wenn der Satz nicht greift, wird automatisch der zweite Satz genommen. Damit hast du deine Negierung.<br>
+<br>
+b) siehe a)<br>
+<br>
+c) Glaubenszugehörigkeit -&gt; Paktierer enttarnen?<br>
+<br>
+d) AND verknüpfung ist möglich.<br>
+OR Verknüpfung über verschieden gestaltete Sätze (siehe a)<br>
+    </td>
+									<td width="100" align="center">28.10.09 9:47<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417770"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Ruut van Houten (RIP)									</td>
+
+									<td width="75%"> a) + b) + d) habe ich soeben getestet - funktioniert. <b>Das sollte dann unbedingt in die Hilfe aufgenommen werden!</b><br>
+<br>
+c) da mir der npc (soweit ich weiß) keine diplo schicken kann, würde ich als spieler das ja nicht mitbekommen, also fände keine enttarnung statt. zur not kann man das ja auf die &quot;lichtsieben&quot;-glauben einschränken. desweiteren kann es ja als &quot;muss freigeschaltet&quot; markiert sein, sodaß die SL da eine hand drauf hat.<br>
+<br>
+    </td>
+									<td width="100" align="center">28.10.09 9:59<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417772"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Bibi Biberzahn (RIP)									</td>
+
+									<td width="75%"> Im Gerede können auch Diplos verschickt werden, frag mich aber bitte nicht wie es geht. Ich habs mir nicht gemerkt.    </td>
+									<td width="100" align="center">28.10.09 10:02<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417773"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Ruut van Houten (RIP)									</td>
+
+									<td width="75%"> Dann sollte das halt als &quot;SL muss es freischalten&quot; gesetzt sein - dann ist keine Enttarnungsgefahr gegeben. Aber nur so kann man Quests explizit für die eigene Glaubensrichtung gestalten.<br>
+<br>
+Ich würde zu (c) sogar noch den Glaubensrang hinzufügen. So könnte man zb. eine Quest machen, die einem Bendurgläubigen Kaplan - und eben NUR DEM - mit ein paar Tran unterstützen oder sowas. Den Tran würde ich niemand anderem geben wollen ;)    </td>
+									<td width="100" align="center">28.10.09 10:06<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417776"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Galaton Dragus</b> </b><br>  <img width="60"
+										src="http://img692.imageshack.us/img692/143/legionstandarte3.gif"> 									</td>
+
+									<td width="75%"> Himmelhilf....Morde sind doch kein Zeichen für böses RP!!! Sondern für aufopferungsvollen Kampf gegen das Böse und die Feinde! Weise mir treuem Urvaner mal böses RP nach ;)<br>
+<br>
+Morde:  	624<br>
+    </td>
+									<td width="100" align="center">28.10.09 10:18<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417777"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(36456)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Ruut van Houten (RIP)									</td>
+
+									<td width="75%"> Naja, kann man sehen wie man will, Galaton. Mord ist und bleibt Mord ... eine Pazifisten-Quest wird man allerdings nur mit solch einer Abfrage machen können ^^    </td>
+									<td width="100" align="center">28.10.09 10:24<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417779"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Iga Pelogran (RIP)									</td>
+
+									<td width="75%"> Mord ist nicht gleich Mord!!!!<br>
+<br>
+ -&gt; Mord zur Belustigung (BÖSE)<br>
+ -&gt; Mord im Krieg (teilweise notwendig)<br>
+ -&gt; Mord als Verteidigung (nich Böse)<br>
+ -&gt; Mord bei einem Duell...<br>
+<br>
+und und und... also Mord ist nicht gleich Mord...    </td>
+									<td width="100" align="center">28.10.09 10:30<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417782"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Ruut van Houten (RIP)									</td>
+
+									<td width="75%"> Iga, das artet in eine Grundsatzdiskussion aus. RPG ist eben jedem selbst überlassen und somit ist es Ansichtssache, ob/wann ein Mord legitim ist und ob/wann nicht. Du kannst niemandem vorschreiben, wie er/sie das zu sehen hat ^^    </td>
+									<td width="100" align="center">28.10.09 10:37<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=119809&amp;votefor=1417785"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 

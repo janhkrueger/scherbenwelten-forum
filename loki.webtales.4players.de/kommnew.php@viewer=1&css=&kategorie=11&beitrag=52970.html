@@ -1,0 +1,505 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>Netzwerk Problem</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451586327' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=11.html">Off-Topic									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>Netzwerk Problem </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center">Nemo van Delving (RIP)									</td>
+
+									<td width="75%"> Ahoi :)<br>
+<br>
+Ich hab hier ein Problem mit meinem Heimnetzwerk, vielleicht weiß jemand von euch weiter. <br>
+<br>
+Also es geht darum. Ich hab hier einen PC und einen Laptop. Über den PC stelle ich die Verbindung zum Internet her über ein DSL Modem, Flatrate, T-DSL usw.<br>
+<br>
+Mein Laptop bekommt dann also sozusagen das Internet durch den PC, über ein Crossover Netzwerkkabel und der stinknormalen Windows Internet Freigabe.<br>
+<br>
+Jetzt das Problem: Am PC (Server) funzt das Internet wunderbar, alle Onlinegames gehen, alle I-Net Seiten lassen sich laden. Am Laptop aber nicht. Ich komm z.B. nicht auf www.ebay.de oder kann ganz normale Onlinegames wie Gunbound (www.gunbound.net) nicht benutzen. Warum auch immer, aber diese Anwendungen &quot;finden&quot; einfach kein Internet bzw. die http Seiten wei eBay oder sogar die Windows Update Seite von Microsoft bring ich nicht zum laufen.<br>
+<br>
+Auf beiden Rechnern ist Norton Internet Security drauf, auf dem Server die 2003 Version, auf dem Laptop die 2005 Version. <br>
+<br>
+Am Server hab ich die IP des Laptops freigegeben (192.168.0.2), und auch schon beide Firewalls ausgeschaltet. Kein Erfolg. eBay und Co. laufen noch immer nicht.<br>
+<br>
+Kann das sein das bestimmte Seiten/Games irgendwelche besonderen Ports brauchen die über die Windows Internetfreigabe geblockt werden? Wenn ja, wie finde ich die benötigten Ports heraus und vor allem, wie gebe ich sie frei?<br>
+<br>
+Hoffe mir kann jemand weiterhelfen, ich weiß nicht weiter     </td>
+									<td width="100" align="center">19.12.04 23:55<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711039"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Armenakian (RIP)									</td>
+
+									<td width="75%"> Hmm, schwer eine Ferndiagnose zu machen, aber probier mal aus, zu pingen (vom Laptop aus):<br>
+Start -&gt; Ausführen -&gt; &quot;cmd&quot; eingeben -&gt; &quot;ping &lt;serveripadresse&gt;&quot;<br>
+<br>
+Dann siehst du mal, ob du überhaupt eine Verbindung zum Server hast. Wenn ja, dann solltest du noch probieren, eine IP im Netz zu pingen. Wenn das auch geht, liegt das Problem wahrscheinlich am DNS-Server. Wenn nicht, an der Internetfreigabe oder Firewall oder was auch immer du für Software im Netzwerk verwendest.<br>
+<br>
+Wenn du den Server nicht erreichst, überprüfe Hardware und vor allem, ob du den Gateway richtig eingerichtet hast (müsste ip des servers sein). Wenn du mit dem Latein am Ende bist, versuch mal, den Laptop mit einem anderen Rechner zu verbinden. Wenn das auch nicht geht, liegts wahrscheinlich an der Hardware oder an den Treibern...?    </td>
+									<td width="100" align="center">20.12.04 0:51<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711067"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nemo van Delving (RIP)									</td>
+
+									<td width="75%"> Pingen läuft wunderbar, Verbindung zwischen den beiden Rechnern habe ich ja. Datenaustausch funktioniert wunderbar. Und wie gesagt ich schreib hier auch grad vom Laptop aus, es läuft alles bis auf ein paar bestimmte Seiten. Hab auch schon verschiedene Betriebssysteme ausprobiert, angefangen von Win 98 über Win 2000 bis zu Win XP SP 1 / 2, immer das gleiche Problem.<br>
+<br>
+An der Hardware kann es ja schlecht liegen, außer man braucht neuerdings für eBay einen 64 Bit Prozessor *g*<br>
+<br>
+Gateway ist klar, Server hat 192.168.0.1 und das ist auch auf dem Clienten (Laptop -&gt; 192.168.0.2) so eingstellt das er auf ihn zugreift.<br>
+<br>
+Ich hab das Modem auch schon direkt am Laptop angeschlossen und die ganze Sache mal spiegelverkehrt ausprobiert, also eben den Laptop als Server und den PC als Clienten, selbes Problem :/<br>
+    </td>
+									<td width="100" align="center">20.12.04 1:58<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711090"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Takehiko (RIP)									</td>
+
+									<td width="75%"> Auf dem Rechner muss doch auch n Server/Proxy laufen, damit du überhaupt ins Netz kommst?    </td>
+									<td width="100" align="center">20.12.04 2:01<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711091"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nemo van Delving (RIP)									</td>
+
+									<td width="75%"> Öhmm.. ich geh beim Server über ne ganz einfache DFÜ Verbindung ins Netz, mit den Daten meiner T-DSL Flatrate. <br>
+<br>
+Der Server gibt dann über die Windows I-Net Freigabe die DFÜ Verbindung frei und der Client stellt die IP Adresse des Servers als Gateway ein, das wars auch schon.    </td>
+									<td width="100" align="center">20.12.04 2:49<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711106"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> *grübl*<br>
+<br>
+Bei mir zuhause war das immer Krieg den Laptop dazu zu bringen ins Internet zu gehen.<br>
+<br>
+Zum Schluss hab ich einfach alles auf Standard gelassen dann ging zwar nur Internet und keine Netzwerkumgebung aber man kann halt nicht alles haben...    </td>
+									<td width="100" align="center">20.12.04 10:10<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711170"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nevnár Stain (RIP)									</td>
+
+									<td width="75%"> Guck mal ob ActiveX Komponenten usw. aus den Internetoptionen in Deinem Browser frei sind, also nicht deaktiviert!<br>
+<br>
+Sonst guck mal ob die Seiten die nicht funzen vielleicht als unsichere Seiten vermerkt sind in Deinen Einstellungen!<br>
+<br>
+Probiers auch mal mit anderen Browsern vielleicht liegts ja am Browser das einige seiten nicht erreichbar sind!<br>
+<br>
+<br>
+    </td>
+									<td width="100" align="center">20.12.04 11:15<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711205"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nalon din Adun (RIP)									</td>
+
+									<td width="75%"> Kauf dir für 30-50 Euro nen Router *gg*<br>
+<br>
+Das Problem wird wohl an der &quot;Windows Internet Freigabe&quot; liegen, was auch immer ich mir darunter vorstellen soll. Da es spiegelverkehrt ebenfalls nicht geht, liegt es nahe, daß diese diverse Seiten blockt oder eben nicht versenden kann.    </td>
+									<td width="100" align="center">20.12.04 11:21<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711210"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Drago Schattenläufer (RIP)									</td>
+
+									<td width="75%"> Gib mal im Internetexplorer unter :<br>
+<br>
+Extras -&gt; Internetoptionen -&gt; Verbindungen -&gt; LAN-Einstellungen<br>
+<br>
+Den Proxy-Server mit an.<br>
+Adresse: www-proxy.t-online.de <br>
+Port: 80    </td>
+									<td width="100" align="center">20.12.04 11:28<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711213"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Ich verbuche das einfach mal unter den Selbstzerstörungs Effekt von Windows damit man sich die neue Version holt.<br>
+<br>
+Als ich den Kram das erste mal eingerichtet habe lief alles wunderbar beim zweiten mal wars schon sonderbar...<br>
+<br>
+<br>
+Router ist auf jeden Fall stressfreier...    </td>
+									<td width="100" align="center">20.12.04 12:14<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711235"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nemo van Delving (RIP)									</td>
+
+									<td width="75%"> Juhu!!!!<br>
+<br>
+@Drago Schattenläufer :)<br>
+<br>
+hab den Proxy mal eingegeben und siehe da, es FUNKTIONIERT, sowohl im IE als auch im Firefox!<br>
+<br>
+Das heißt aber wiederrum wenn ich bei bestimmten Onlinegames keine Möglichkeit habe einen Proxy anzugeben laufen diese nicht, oder?      </td>
+									<td width="100" align="center">20.12.04 15:20<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711332"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Mizu Elfendrachen (RIP)									</td>
+
+									<td width="75%"> ich schliesse mich mal Nalon an, auch wenn manche Funktionen da auch nicht immer logisch sind ^^    </td>
+									<td width="100" align="center">20.12.04 21:07<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711675"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nemo van Delving (RIP)									</td>
+
+									<td width="75%"> Ich brauch keinen Router, das muss auch so gehen :)    </td>
+									<td width="100" align="center">20.12.04 23:44<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711830"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Rand alThor</b> </b><br>  <img width="60"
+										src="http://www.sebastianvockel.maxdsl.de/rand60papyrus.png"> 									</td>
+
+									<td width="75%"> dns, und wins haste auch richtig eingetragen?    </td>
+									<td width="100" align="center">21.12.04 6:29<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711950"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20932)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nalon din Adun (RIP)									</td>
+
+									<td width="75%"> Es tut ja nun ;)<br>
+<br>
+Lustig wirds nur, wenn der Proxy mal ned da ist :)<br>
+<br>
+Dann geht nix mehr, kenn ich von mir auch *g*    </td>
+									<td width="100" align="center">21.12.04 7:07<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=711960"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nemo van Delving (RIP)									</td>
+
+									<td width="75%"> Jo es funzt ja jetzt ohne Probleme mit dem T-Online Proxy... Frag mich nur was ich machen sollen wenn ich irgendwelche Games online zocken will bei denen ich keine Proxys eintragen kann     </td>
+									<td width="100" align="center">22.12.04 4:59<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=52970&amp;votefor=712899"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=11.html">Off-Topic									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 

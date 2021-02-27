@@ -1,0 +1,686 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>Frage: Tosion berechnen...</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451583276' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=11.html">Off-Topic									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>Frage: Tosion berechnen... </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> Hallo, <br>
+<br>
+da ich nun schon ne weile drüber brüte und einfach nicht mehr weiter komme wollt ich mal fragen ob hier vielleicht wer ne ahnung hat. <br>
+<br>
+zuerst mal mein Messaufbau: <br>
+<br>
+Ein Stab ist 10mm lang und hat einen Radius von ca. 40*10^-6m und an beiden enden eingespannt. Der Stab wird durch einen Edelstahlblock in der Mitte belastet der Block at die Abemessungen von 1mm*8mm*2mm (H*B*T).<br>
+<br>
+Draufsicht:<br>
+<br>
+....**....<br>
+....**....<br>
+....**....<br>
+----**----<br>
+....**....<br>
+....**....<br>
+....**....<br>
+<br>
+----&gt; Stab<br>
+** -&gt; Block<br>
+<br>
+Der Stab fürt dabei durch den Schweremittelpunkt des Blocks. Der Stab wird nun an beiden enden mit einer winkelgeschwindigkeit von 0,5 Grad/s verdreht. Nun wird der Block ja auf einer Seite geneigt. Der Block drückt nun mit einem ende auf einen Kraftsensor und ich Messe eine Kraft von 1,5mN bei Phi = 80 Grad.<br>
+<br>
+So und aus diesen Angaben muss ich nun das Torsiounmodul G des Stabes errechnen. <br>
+<br>
+Mein Ansatz ist:<br>
+<br>
+es Wird ja ein Drehmoment auf den Stab durch den Block ausgeübt. Daher hab ich folgendes gemacht:<br>
+<br>
+M = (PI*G*r^4*Phi)/(2*l)<br>
+<br>
+M = F*r<br>
+<br>
+F1 = (PI*G*r^3*Phi)/(2*l)<br>
+<br>
+G = (2*l)/(PI*F*r^3*Phi)<br>
+<br>
+Diese Formel gilt aber nut für einen Stab bzw. Voll Zylinder? <br>
+<br>
+So die ergebnisse sind aber soweiter weg von meinen Erwartungswerten das ich annehme das ich was vergessen habe... (ich bin viel zu Groß bei G bzw. die gemessene Kraft F sollte viel Kleiner sein)<br>
+<br>
+Der Edelstahlblock muss wohl berücksichtigt werden? ich gehe im mom. davon aus das ich dessen Trägheit mit einrechnen muss da dessen Masse ja viel höher ist als die des Stabes? nur wie mache ich das? <br>
+<br>
+Für den Block gilt doch?<br>
+<br>
+M = I*alpha<br>
+<br>
+I = (m*H*B)/12<br>
+<br>
+F2 = (m*H*B*alpha)/(12*r)<br>
+<br>
+alpha = Winkelbeschleunigung<br>
+<br>
+<br>
+kann ich nun hingehn und sagen <br>
+<br>
+Fg = F1 + F2<br>
+<br>
+also: <br>
+<br>
+Fg = ((PI*G*r^3*Phi)/(2*l))+((m*H*B*alpha)/(12*r))<br>
+<br>
+Nun steh ich aber auf dem Schlauch ^^ denn alpha is 0 wenn das System in bewegung ist da ja nicht weiter beschleunigt wird. (es wird mit 150Grad/s^2 auf 0,5Grad/s beschleunigt danach ist die winkelgeschwindigkeit konstant)<br>
+<br>
+Randbedingungen:<br>
+<br>
+Der Stab hat einen Unbekannten querschnitt zur näherung kann eine Ellipse angenommen werden. Die Große- und Kleine halbachse wird ebenfallse gemessen. der Angegebene Radius ist auf einen Kreis bezogen nachdem die Fläche der Ellipse berechnet wurde. Ich weis, nich ganz richtig... Wenn da wer ne Bessere Idee hat immer herdamit ^^<br>
+<br>
+Wenn man es aber ganz genau nimmt ist der Stab auch ein Zylinder da das Außenmaterial anders ist als das innere. Der Querschnitt kann dabei von Rund über Ellipsenförmig bis Nierenform oder fast Drei bzw. Vierekick sein. Alle möglichen kombinationen sind dabei auch denkbar. Ebenfalls kann der Stab schon in sich verdrillt sein. <br>
+<br>
+Müsste ich bei dieser Bedingung dann die Wölbkrafttorsion berücksichtigen oder gar noch sachen beachten an die ich noch garnicht dachte?<br>
+<br>
+Im mom. mach ich es mir ja schon recht einfach das ich diese bedingungen ja eigendlich alle unberücksichtigt lasse... <br>
+<br>
+So und wer sich jetzt nicht abgeschreckt fühlt ^^ und helfen möchte ich bin wirklich dankbar für neue denk ansätze...    </td>
+									<td width="100" align="center">21.05.09 11:32<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1388883"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Eran von Aibheisgârd (RIP)									</td>
+
+									<td width="75%"> 42    </td>
+									<td width="100" align="center">21.05.09 13:19<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1388896"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> ;) daran dachte ich auch schon...    </td>
+									<td width="100" align="center">21.05.09 13:27<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1388900"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Glorfindel von Gondolin (RIP)									</td>
+
+									<td width="75%"> STREUNER! Hilfe!!    </td>
+									<td width="100" align="center">21.05.09 19:33<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1388945"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Agesha Goldsucher (RIP)									</td>
+
+									<td width="75%"> Oder Eilis Fraech, die macht auch was mathematisches. *guggt wie ein Kanninchen wenns donnert* Was auch immer ne Tosion ist. ^^    </td>
+									<td width="100" align="center">21.05.09 22:39<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1388973"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Zur-du-quin (RIP)									</td>
+
+									<td width="75%"> Mathematisch? Sie schnueffelt sich durch ihren Job.    </td>
+									<td width="100" align="center">21.05.09 23:12<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1388976"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Hector von Troja (RIP)									</td>
+
+									<td width="75%"> das is physik und nich mathe, sonst würd ich das begreifen.    </td>
+									<td width="100" align="center">22.05.09 0:01<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1388982"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Agesha Goldsucher (RIP)									</td>
+
+									<td width="75%"> Von mir aus auch das *gg*    </td>
+									<td width="100" align="center">22.05.09 5:30<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1388994"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Eran von Aibheisgârd (RIP)									</td>
+
+									<td width="75%"> Nalons Beiträge sind ja bisweilen schon ne Qual, aber wenn das dann auch noch mit Mathe zu tun hat...<br>
+*grusel*<br>
+<br>
+Also ich bin bis zur Draufsicht gekommen! *g    </td>
+									<td width="100" align="center">22.05.09 8:36<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389004"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> hmm... wenn ich jetzt noch sage für was ich das brauche ^^ dann halten mich alle für verrückt... aber mal sehn was noch nen par physik bücher dazu sagen (die schweigen sich alle in großen teilen zu solchen problemen aus)    </td>
+									<td width="100" align="center">22.05.09 9:40<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389012"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Eran von Aibheisgârd (RIP)									</td>
+
+									<td width="75%"> Die schweigen sich aus dem Grund dazu aus, da es weniger mit Physik zu tun hat als mit Materialkunde.<br>
+<br>
+kleiner Tip:<br>
+Infos über Torsionsberechnungen findest du mehr oder weniger anschaulich erklärt in jedem Fachkundebuch für Schlosser bis hin zur Lektüre für Maschinenbau.    </td>
+									<td width="100" align="center">22.05.09 12:05<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389041"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Rejäl</b> </b><br>  <img width="60"
+										src="grafik/wappen/wa24.gif"> 									</td>
+
+									<td width="75%"> Wenn ich nach so etwas suchen würde - was mir nun wahrlich ferne liegt, dann wohl weniger bei Physik und eher im Fachbareich Maschinenbau, vielleicht unter dem Stichwort Technische Mechanik.    </td>
+									<td width="100" align="center">22.05.09 14:39<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389059"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(35410)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> na mit dem tipp kann ich schon was anfangen... werd ich wohl mal die bib besuchen... nur mit mechanik hatte ich so wenig bisher am hut da hab ich im ersten mom. mal an die physik gedacht...      </td>
+									<td width="100" align="center">22.05.09 14:57<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389065"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Kantar</b> </b><br>  <img width="60"
+										src="http://www.kroeters-paradise.de/WappenKantar.gif"> 									</td>
+
+									<td width="75%"> Torsion ist die Auswirkungen einer parallel zur Grundfläche und tangential zur Seitenfläche eines Körpers wirkenden Kraft ^^<br>
+<br>
+vieleicht kannste damit was anfangen<br>
+<br>
+<br>
+<br>
+http://www.roboternetz.de/wissen/index.php/Technische_Mechanik_(_Statik_/_Elastomechanik_)<br>
+    </td>
+									<td width="100" align="center">22.05.09 20:39<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389116"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(26179)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Kage Hitomi (RIP)									</td>
+
+									<td width="75%"> Äh... Bahnhof...    </td>
+									<td width="100" align="center">25.05.09 12:26<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389537"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Hannes Ge Laber (RIP)									</td>
+
+									<td width="75%"> STATIK!!!!!! HIIIILLLLLFFRFFFFÄÄÄÄÄÄÄÄÄ *wegrenn* nenene statik war schon im studium nen buch mit 42 siegeln.... das ham die illuminaten verbrochen!!!!    </td>
+									<td width="100" align="center">26.05.09 1:06<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389645"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> und alle maschbauer die ich so kenne haben anscheinend das thema ausgeklammert... oder erfolgreich verträngt ^^ naja wird schon irgendwie gehn... auch wenn ich noch nen par std. mehr in der bib zubringen muss...     </td>
+									<td width="100" align="center">26.05.09 15:18<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1389689"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Turiandor Dragus</b> </b><br>  <img width="60"
+										src="http://grafik.scherbenwelten.de/wappen/nad328.gif"> 									</td>
+
+									<td width="75%"> Ich frage mich, wie misst du die Kraft von 1,5 mN, wenn das ganze doch konstant weiter verdreht wird. <br>
+<br>
+<br>
+<br>
+<br>
+    </td>
+									<td width="100" align="center">28.05.09 23:04<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1390113"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(41624)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Turiandor Dragus</b> </b><br>  <img width="60"
+										src="http://grafik.scherbenwelten.de/wappen/nad328.gif"> 									</td>
+
+									<td width="75%"> Eine richtige Zeichnung zu, Versuchsaufbau würd sicher helfen.<br>
+    </td>
+									<td width="100" align="center">28.05.09 23:34<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1390115"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(41624)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Rejäl</b> </b><br>  <img width="60"
+										src="grafik/wappen/wa24.gif"> 									</td>
+
+									<td width="75%"> hmm, ich habs so verstanden, daß die Kraft bei erreichen eines Winkels von 80 Grad gemessen wird.<br>
+Also nicht unbedingt konstant.<br>
+<br>
+Wozu das ganze würde mich ja schon interessieren *g*    </td>
+									<td width="100" align="center">29.05.09 9:14<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1390137"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(35410)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Kantar</b> </b><br>  <img width="60"
+										src="http://www.kroeters-paradise.de/WappenKantar.gif"> 									</td>
+
+									<td width="75%"> Ja genau die Messung soll zu dem zeitpunkt erfolgen wo genau 80° erreicht sind..<br>
+<br>
+vieleicht findest hier was ist zwar in englisch sollte aber kein problem sein.. Maschinenbau<br>
+<br>
+http://www.wisemanengine.com/    </td>
+									<td width="100" align="center">29.05.09 10:07<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1390142"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(26179)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Eilis v. glänzenen Wolfstern (RIP)									</td>
+
+									<td width="75%"> Also ich hab jobmäßig was mit Düften zu tun, aber hab eigentlich was anderes gelernt und studiere nebenbei im Fernstudium Mechatronik. Technische Mechanik kommt dort auch in einigen Monaten vor. Dauert also noch etwas, steh ja grad noch am Anfang. Von meinem letztem Studium ist mir dieses Fach aber nicht ganz unbekannt und Unformtechnik auch nicht, wo auch Torsion behandelt wurde. Aber wir haben nur Grundlagen durchgenommen und ich bin mir nicht sicher, ob ich wirklich helfen kann. Ist schon einige Zeit her und wie schon erwähnt das Fach kommt erst noch in meinem Fernstudium.<br>
+<br>
+Hier in dieser Aufgabe wird nach dem Torsionsmodul, auch Schermodul(Gleitmodul) oder Schubmodul genannt, gefragt. Das Schermodul steht für lineare elastische Verformung eines Bauteils in Folge einer Scherkraft und beschreibt das Verhältnis von Schubspannung und Schubwinkel..<br>
+<br>
+G = t/tan gamma<br>
+<br>
+t = Schubspannung<br>
+gamma = Schubwinkel (Gleitwinkel)<br>
+<br>
+Doch diese Aufgabe scheint mir etwas sehr knifflig zu sein, wegen dem Block in der Mitte. Glaub nicht, dass man einfach Stab und Block einzeln berechnen und die Gleichung dann zusammensetzen kann. Der Block selbst erfährt keine Torsion, er dreht sich nur mit dem Stab mit, welcher eine Torsion erfährt. Wenn ich den Aufbau richtig verstanden habe. Oder bin ich grad auf nem verkehrten Dampfer aufgesprungen? *g*<br>
+<br>
+Eine Skizze des Versuchsaufbau´ s in der man alle Größen einträgt, würde das ganze etwas veranschaulichen. Vielleicht kannst Du diese einmal einscannen, Melindor? Und vielleicht den richtigen Originaltext kopieren? Das wäre fein;)<br>
+<br>
+Mir fällt zu den Gleichungen noch etwas ein. Erst einmal nur zum Stab.<br>
+<br>
+<br>
+G = T*l/Phi*I<br>
+<br>
+Phi = Verdrehwinkel<br>
+T = Torsionsmoment<br>
+l = Länge des Stabes<br>
+I = Torsionsträgheitsmoment<br>
+<br>
+T =F *r<br>
+<br>
+Leider hab ich grad nicht viel Zeit und meine Aufzeichnungen nicht bei der Hand, falls ich dort eventuell etwas stehen haben könnte. Wir haben wie gesagt auch nur eine Einführung in solch Thematik gehabt. Irgendwie stört mich der Block in der Mitte des Stabes. Wölbkrafttorsion muss man wohl dann mit einbeziehen.<br>
+<br>
+Und das Drehmoment M, wird dies nicht integral berechnet? Von 0 bis r des Stabes? Vielleicht schaffe ich es ja mir das noch mal genauer unter die Lupe zu nehmen. Versprechen kann ich aber nichts.<br>
+<br>
+<br>
+*Nach dem Mann für alle Fälle ruft:*;)<br>
+<br>
+STREUNER!!!!! Hilfeeee!!!! <br>
+<br>
+    </td>
+									<td width="100" align="center">31.05.09 10:18<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=116453&amp;votefor=1390481"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=11.html">Off-Topic									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 

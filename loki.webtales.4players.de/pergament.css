@@ -1,0 +1,44 @@
+#Standard {
+font-family:Verdana,Arial;
+font-size:12px;
+}
+
+TBODY {
+font-family:Verdan,Arial;
+font-size:12px;
+}
+
+BODY {
+background-color:#FFF;
+color:#000;
+}
+
+Aasd {
+text-decoration:underline;
+color:#003A4E;
+}
+
+A:hover {
+text-decoration:none;
+color:blue;
+}
+
+input {
+background-image:url(m.jpg);
+font-family:Arial;
+font-size:12px;
+border:1px solid #777;
+margin-left:0;
+color:#332313;
+background-color:#000;
+}
+
+TR,TH,TD,P {
+font-weight:400;
+vertical-align:top;
+}
+
+A:visited,A:active,A:link {
+color:blue;
+text-decoration:underline;
+}

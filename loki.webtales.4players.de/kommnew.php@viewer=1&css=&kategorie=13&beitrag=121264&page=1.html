@@ -1,0 +1,517 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>_Sonstiges - Spionierte Daten</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451565716' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>_Sonstiges - Spionierte Daten (60 <img border="0" src="smile.gif">) </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Speicherbedarf als Grund zu nennen wieso das nicht umgesetzt wird wäre aber eher lächerlich. Beispiel:<br>
+<br>
+- 1.000 Spieler, von denen jeder jeden ausspioniert:<br>
+also 1.000.000 Datensätze<br>
+- 14 sichtbare abzuspeichernde Felder und 2 user ids: also 16 Felder<br>
+- durchschnittliche Spaltengröße von 30 Byte (da ich keine Ahnung habe wie groß die Namen definiert sind)<br>
+<br>
+Das würde auf einen Speicherbedarf von 1.000.000 * 16 * 30 = 480.000.000 Byte kommen. 460MB sollten in der heutigen Zeit der Terrabytespeicher nicht das Problem sein zumal das alles in einer eigenen neuen Tabelle gespeichert werden könnte und somit keine anderen Datenzugriffe beeinflusst würden. <br>
+<br>
+Aber ich spinn hier nur herum *g*    </td>
+									<td width="100" align="center">07.01.10 20:47<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1431807"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Iga Pelogran (RIP)									</td>
+
+									<td width="75%"> Emil, wesentlich kleinere Spaltengröße, vor allem wenn Zahlen in Hex umgewandelt werden, dann hat man vielleicht bei Ruhm und Gold max. 4 Byte (Float) udn die anderen Zahlen 2 Byte  (Integer oder Long -&gt; max. Wert 130.000)<br>
+Texte: Namen vielleicht 30B, Glaube als Zahl-&gt; umgerechnete Wiedergabe, Wohnung nur Stadt ID umgewandelt also auch 2Byte.<br>
+Komme ich auf 3 Namen. (Name, Nat, LeH)<br>
+2 IDs<br>
+4 Float (Ruhm, Gold)<br>
+6 Int (Zahlen)<br>
+2 Int (Umrechnung StadtID-&gt;Wohnung/Glaube/Rang)<br>
+Sin dann ungefähr 126 Byte pro Satz<br>
+Runden wir auf 128 auf.<br>
+128B*1M=128 MByte    </td>
+									<td width="100" align="center">08.01.10 7:36<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1431879"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Mir ist klar dass es wesentlich weniger sein wird, aber bei Softwareplanungen finde ich es nicht verkehrt wenn man extrem pessimistisch an die Sache herangeht, vor allem wenn man das System und die Entwicklungsgewohnheiten der Programmierer nicht kennt. Aber danke, du hast mir damit nur bestätigt, dass ich das &quot;Horrorszenario&quot; den Speicherverbrauch betreffend dargestellt habe ;)    </td>
+									<td width="100" align="center">08.01.10 11:51<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1431930"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Zur-du-quin (RIP)									</td>
+
+									<td width="75%"> Auch wenns völlig vom Thema weg ist... die Floats kannst dir schenken.    </td>
+									<td width="100" align="center">08.01.10 12:41<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1431942"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Iga Pelogran (RIP)									</td>
+
+									<td width="75%"> ich weis long reicht...    </td>
+									<td width="100" align="center">08.01.10 15:22<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1431988"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Parrakus (RIP)									</td>
+
+									<td width="75%"> @Emil und Iga:<br>
+<br>
+Nun nicht ganz richtig gedacht. Theoretisch könnte man ja meinen dass jeder jeden ausspioniert zu unterschiedlichen Zeiten, ergo hat jeder einen eigenen Datensatz zu jeder Person. Macht folglich bei 1300 Spielen:<br>
+ 1300 x 1300 Datensätze.<br>
+<br>
+Aber trotzdem finde ich das Arument Speicherplatz nciht wirklich passend. Aber das wurde ja schon sooo oft durchgekaut! :)<br>
+<br>
+Aber immernoch dafür! :)    </td>
+									<td width="100" align="center">13.01.10 21:33<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1432939"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Ich bin von den Zahlen unter Login ausgegangen und das sind knapp 1000 Spieler (ja, können schon noch mehr Spieler sein, die sich nur halt nicht jede Woche einloggen), aber wie kommst du auf deine 1300?    </td>
+									<td width="100" align="center">13.01.10 21:37<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1432941"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Parrakus (RIP)									</td>
+
+									<td width="75%"> war einfach mal ein geschätzter wert in den raum geworfen!<br>
+<br>
+Auch unter der berücksichtiogung meines traumes, dass die spielerzahl wieder steigt! :)    </td>
+									<td width="100" align="center">14.01.10 8:48<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1432989"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emil Vörshagen (RIP)									</td>
+
+									<td width="75%"> Ein lobenswerter Traum :D    </td>
+									<td width="100" align="center">14.01.10 10:34<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1433014"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Faránia (RIP)									</td>
+
+									<td width="75%"> Man sollte auch mal dabei an die neuen Spieler denken, die nicht so viel GS haben und dankankbar dafür sind,wenn sie GS sparen können.<br>
+<br>
+Ich meine damit, das wenn man die Daten länger behalten kann, das die neuen Spieler so wie auch dieälteren Spieler, GS sparen und trotzdem aufdie Daten zurück greifen können.<br>
+<br>
+Manch Spieler freut sich darüber die GS für die Spionage zu sparen, wenn er sie eh schon mal aus spioniert hat.    </td>
+									<td width="100" align="center">03.02.10 7:48<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1436495"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Chevonne Siobhan (RIP)									</td>
+
+									<td width="75%"> Man könnte die spionierten Daten auch bei jedem lokal ablegen, schliesslich hat ja auch nur der Spieler zugriff drauf. Und wer von verschiedenen Geräten Zugriff nimmt, muss halt öfter spionieren.    </td>
+									<td width="100" align="center">03.02.10 12:33<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1436529"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Jolina (RIP)									</td>
+
+									<td width="75%"> Ihr Nasen habt den Zeitstempel vergessen, wie soll an sonst wissen wie alt die Daten sind, als Spieler, ich merk mir sowas nicht und das will ich drunter stehen haben, am besten noch mit IG-Datum/Zeit und RL-Datum/Zeit.<br>
+<br>
+kleiner Zusatz: Ausserdem kann man mit dem TimeStamp ne Einschränkung der Spionage machen, je mehr man jemanden nachspioniert(in dem Fall wohl eher &quot;je schneller&quot;) des so höher ist die Chance dass &quot;das Opfer es mitbekommt per Systemnachricht. ;D    </td>
+									<td width="100" align="center">03.02.10 18:13<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1436561"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Faránia (RIP)									</td>
+
+									<td width="75%"> Da gebe ich dir Recht Jolina. Der Stempel ist auch eine gut Variante und auch Sinnvoll inmeinen Augen.<br>
+<br>
+Die Daten sollen ja behalten werden, damit man nicht immer die GS dafür ausgeben muss. Also, auch von Siocán ein guter aspekt den man noch mit einbringen könnte<br>
+    </td>
+									<td width="100" align="center">04.02.10 8:00<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1436638"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>someone</b> </b><br>  <img width="60"
+										src="pics/someone-wappen.gif"> 									</td>
+
+									<td width="75%"> nicht das dieser vorschlag in vergessenheit gerät..<br>
+find ich sehr wichtig!    </td>
+									<td width="100" align="center">12.03.10 18:50<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1443767"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(86175)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Parrakus (RIP)									</td>
+
+									<td width="75%"> Und die Version, dass sich die spionierten Daten <b>nicht</b> aktualisieren, gefällt mir richtig gut.<br>
+<br>
+Also heute spioniere ich und in 5 Monaten sind die Daten immernoch die, die ich heute sponiert abe! :)    </td>
+									<td width="100" align="center">14.03.10 18:44<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1444046"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Faránia (RIP)									</td>
+
+									<td width="75%"> ich bin immer noch für den Vorschlag, <br>
+<br>
+vor allem weil man auch mal an die neuen denken muss, die nicht soviel Gs übrig haben    </td>
+									<td width="100" align="center">08.05.10 16:38<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1453860"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Parrakus (RIP)									</td>
+
+									<td width="75%"> Für alle die meinen dies wäre ein &quot;ich wills einfacher&quot; :)<br>
+<br>
+Hab vorhin jemanden ausspioniert und war erschrocken wie sich der char entwickelt hatte in relativ kurzer Zeit (vor rund 1 Monat ausspioniert).<br>
+<br>
+Wenn die Daten bestehen geblieben wären, hätte ihc mir das sicher gespart und wäre vetl. in ein offenes Messer gelaufen - dennoch unterstütze ich den Vorschlag    </td>
+									<td width="100" align="center">16.06.10 16:22<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1459697"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Thorin Eichenschild</b> </b><br>  <img width="60"
+										src="grafik/wappen/wa27.gif"> 									</td>
+
+									<td width="75%"> finde ich gut! Und ja der Speicherbedarf hierfür  ist tatsächlich kein Problem heutzutage.    </td>
+									<td width="100" align="center">29.06.10 16:54<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=121264&amp;votefor=1461622"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(35076)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 

@@ -1,0 +1,281 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>Gebäude/Rezepte/Produktion - Handelshaus</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451567412' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>Gebäude/Rezepte/Produktion - Handelshaus </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center">Nalon din Adun (RIP)									</td>
+
+									<td width="75%"> <b>So ist es momentan:</b><br>Viele beschweren sich jetzt schon, dass so viele Karawaren überbleiben und so wenig Sonderwaren vorhanden sind und dass es sehr schwer werden wird, Uniwaffen zu haben oder Waren loszuwerden.<hr size=1><b>So soll es werden:</b><br>Ein Spieler kann ein Handelshaus errichten, in diesem Handelshaus können Waren gegeneinander getauscht werden, ähnlich den Handwerkeraufträgen der Städten, nur eben nicht gegen GS, sondern Waren gegen Waren.
+
+Genauer gesagt, tauchen in einem Handelshaus solche Aufträge auf, die zufällig 2 Waren miteinander kombinieren und diese dann im Schwarzmarktpreisverhältnis gegeneinander tauschbar sind. Um es ein wenig interessanter zu gestalten, kommt ein Zufallsfaktor von 0,8-1,2 dazu.
+
+Beispiel: Gesucht: Brot, Geboten: Wein -&gt; SM-Preise 10 bzw. 20, Zufallsfaktor 1,1 -&gt; Für gesuchte 100 Brot werden 100*10*1,1 / 20 = 55 Wein geboten (Menge*SM-Preis-Suchware*Zufallsfaktor / SM-Preis-Bietware)
+
+Soviel zum Grundprinzip. Als Reglementierungen für diese Aufträge gibt es dann folgende Ausbauten:
+- Händler: Je Händler kann eine Ware mehr in den Tauschpott geworfen werden, diese sind aber nicht frei wählbar, sondern werden nach Schwarzmarktwert bestimmt. 5 Händler würde als bedeuten, dass nur die Waren Fisch, Holz, Stein, Fleisch und Getreide getauscht werden können, 38 bzw. 39 Händler bedeuten dann alle Waren sind möglich (Handelswaren fallen definitiv raus, ob Sklaven raus sollen, naja bei Karas ist es so)
+- Verwalter: Je Verwalter gibt es 1 Auftrag im Handelshaus
+- Agenten: Jeder Agent kann pro SW-Jahreszeit 1 Handelsauftrag ins Handelshaus bringen, sprich einen Auftrag alle 3 Wochen, 2 Agenten brauchen 1,5 Wochen für einen neuen und mit 126 Agenten bekommt man jede Produktionsrunde einen Auftrag neu dazu, sofern ein Verwalter frei ist, sonst wird der älteste Auftrag ersetzt. Die kleinste Zeiteinheit ist hier die Produktionsrunde, also 4 Stunden, damit es darauf passt, muss natürlich gerundet werden.
+- Lagerstätten: je Lagerstätte erhöht sich die maximale Angebotswarenmenge um 50, 20 Lagerstätten lassen also eine Warenmenge von 1000 Waren zu
+
+Es sind also insgesamt 4 verschiedene Ausbautypen in doch recht großen Dimensionen nötig, um ein wirksames Handelshaus zu erhalten, das dürfte die Zahl derselben wohl auf 1 je Nation vielleicht 2 bei sehr großen Nationen drosseln.
+
+Ausbaukosten:
+- Händler: 1 Gold, 3 Schmuck, 3 Edelsteine (aus HP abgeschaut, allerdings ohne die 10 Grundwert)
+- Verwalter: 20 Gold, 10 Möbel, 10 Ziegel, 10 Bekleidung, 10 Bücher
+- Agenten: 5 Gold, 5 Pferde, 5 Leder, 5 Bücher
+- Lagerstätten: 30 Holz, 30 Stein, 10 Möbel
+
+Die Preise und Anforderungen sollten deutlich machen, dass dies kaum von einzelnen Personen mal so eben aufgebaut werden kann, es sind Nationsprojekte und das soll es auch sein. Damit der einzelne Spieler trotzdem etwas davon hat, kann er eine Provision von 0-5% auf die Waren erheben, er bekommt dann entsprechend den Prozentwerten von den Waren, die der Tauschende erhält, also Provision 5%, 200 Endurium werden ertauscht, dann bleiben 10 Endurium beim Besitzer des Handelshauses.
+
+Das Handelshaus selber soll, wie ein Handelsposten nicht plünderbar, aber bestehlbar sein, der Schutz eines solchen, sehr groß ausgebauten Gebäudes, dürfte selbstverständlich sein und in Kriegen könnte sowas ein sehr lohnendes Ziel sein. Ein Bau innerhalb der Stadt ist nicht zulässig, diese hat ihre eigenen Handwerkeraufträge und Martkplätze.
+
+Als letztes kleines Hindernis, wie bei den Handwerkeraufträgen benötigt man Händlervertrauen, um Waren zu ertauschen, hierbei wird ein HV in halber Höhe der angebotenen Ware benötigt. Liegen also 2000 Waren im Angebot, brauche ich auch ein HV von 1000 um da dran zu kommen.<hr size=1><b>Vorteile für das Spiel:</b><br>Es stellt eine gewisse Kompensation zu den Karawanen dar und ermöglicht den Warentausch wenig wertvoller Waren gegen wertvollere Waren und das für jeden ohne die Notwendigkeit großer Karawanenroute, aber mit dem gleichen Zufall und im Regelfall einem schlechteren Gewinnfaktor.
+
+Und es ist schlicht eine nette Ergänzung.<hr size=1><b>Nachteile für das Spiel:</b><br>Die gewünschte Eindämmung von Sonderwaren könnte gänzlich wegfallen und bei sehr massiven Ausbauten das ganze noch stärker ausgenutzt werden, als die Karawanen bisher, daher vielleicht gewisse Deckelungen der Werte, um das zu unterbinden:
+- Nicht mehr als 126 Agenten sinnig, damit maximal 6 Aufträge je Tag entstehen können.
+- Deckelung der maximalen Warenmenge auf 100.000 / SM-Preis, damit kann man von den sehr begehrten Waren, nicht mehr wie derzeit ca. 1850 je Ware erstehen. Oder allgemein die Warenmenge, sprich Lagerstätten auf 100 drosseln, was 5k je Ware ermöglichen würde. Die geforderte Ware passt sich dabei in der Menge an und kann daher auch locker höher steigen. (Angebot: 1500 Harz, gefordert Holz, Faktor 1 -&gt; 1500*54*1 / 1 = 81.000 Holz oder im Maximum dann bei 5k Harz 270k Holz bzw. mehr bei steigenden SM-Preisen)<hr size=1><b>Mögliche Problematiken:</b><br>Schwer absehbar, ob dies das Spiel interessanter macht oder eine neue Möglichkeit bietet, günstig an Waren zu kommen. Eine Exploitmöglichkeit scheint gegeben, auch wenn die Kosten hoch genug scheinen, um das zu unterbinden. Vielleicht wäre es sinnig, die Handelshäuser ähnlich wie Städte in nicht zu nahem Abstand zueinander zu erlauben, ein sinniger Wert wäre vermutlich 100 Felder Abstand um die Zahl der Handelshäuser zu limitieren, was für kleinere Nationen natürlich sehr nachteilhaft sein kann, weil sie dann kein &quot;Eigenes&quot; Handelshaus bauen könnten, da aber ohne KE der Handel bzw. Tausch für jeden in diesem Handelshaus möglich ist, würde das vermutlich nicht stark ins Gewicht fallen.<hr size=1><b>Sonstiges:</b><br>Ich glaub, ich hab jetzt alles schon in den anderen Punkten drin, nur eins noch, der Betreiber des Handelshauses sollte je Tausch eine Diplo bekommen, um nachvollziehen zu können, was getauscht wurde etc. und um das ganze nochmal zu erschweren könnte man diese Täusche an die maximale Zahl der Handwerkeraufträge von 3 koppeln oder dieses dann auf 4 je Tag erhöhen. Da sie kein HV geben, im Gegensatz zu Handwerkeraufträgen, muss man sich dann überlegen, womit man sein Geld macht oder eben viele Transportaufträge machen und dann im Handelshaus tauschen gehen.    </td>
+									<td width="100" align="center">18.10.05 15:02<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=70550&amp;votefor=938089"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Tordhúr Dunkelschmied (RIP)									</td>
+
+									<td width="75%"> Hm, klingt für mich so, als ob man es ziemlich schnell wieder ausnutzen kann, z.B. durch massive Ausbauten, die für große Nationen kein Problem sind, oder auch indem eine Nation viele Warenhäuser unterhält, und zu diesem Zweck z.B. kleinere Nationen verdrängt. Dann sind widerum die großen stark bevorteilt. Und das sollte durch die Änderungen ja gerade verhindert werden.<br>
+Durch die Deckelung, die du vorschlägst kann man das verhindern, allerdings sehe ich dann widerum keinen Sinn in dem Vorschlag. Den gleichen Effekt brächten Karawanen mit Faktor 1, die dann auch reine Warentauscher sind.    </td>
+									<td width="100" align="center">18.10.05 15:11<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=70550&amp;votefor=938098"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Leandran (RIP)									</td>
+
+									<td width="75%"> Öhm jo... auf gut deutsch der von Karas gewohnte Tausch von zb Waffen gegen Tran, nur dass man nicht ne Woche oder so warten muss bis die Kara ankommt sondern täglich tauschen kann?<br>
+<br>
+Noch dazu ohne das Risiko von Drachen und ohne Verluste durch schlechte Karas (zb Fisch... wenn sowas im Handelshaus angeboten wird nimmt man es einfach nicht an)<br>
+Klingt nach ner eierlegenden Wollmilchsau und die Kosten der Ausbauten finde ich spontan nicht so hoch? Für 40 Händler zb wenns wie im HP ist grad mal 1010 Gold, 3060 Schmuck, 3060 Edelsteine - find ich nicht wirklich viel.    </td>
+									<td width="100" align="center">18.10.05 16:21<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=70550&amp;votefor=938134"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nalon din Adun (RIP)									</td>
+
+									<td width="75%"> Die Aufträge kommen zufällig Leandran, du kannst dir nicht aussuchen, was gerade angeboten oder auch dagegen gefordert wird, zudem wird es dir kaum was bringen, wenn alle 3 Wochen gerade mal 1 einziger Auftrag reinkommt und der lautet dann Holz gegen Fisch ;)<br>
+<br>
+Du brauchst alle Ausbauten, um damit effektiv hantieren zu können, sonst hast du entweder zu wenige Aufträge (Agenten) oder mit zu kleinem Volumen (Lagerstätten) oder eben zu schnellen Wechsel (Verwalter).<br>
+<br>
+Es sind keine kleinen Kosten um diese Aufträge zu bekommen, es ist halt die Frage, ob es billiger oder teurer gegenüber einer Karawane ist und das dürfte von Gegebenheit zu Gegebenheit unterschiedlich sein.    </td>
+									<td width="100" align="center">18.10.05 18:13<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=70550&amp;votefor=938214"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Sataii (RIP)									</td>
+
+									<td width="75%"> Der Grundgedanke ist ganz nett, jedoch fände ich es besser solche Haneldhäuser in Gaias Hände zu geben. Also 5-10 von den dingern auf der Scherbe verteilt, dafür häufig wechselde aufträge, ein tauschverhältniss von 10:1 und ein Händlervertrauen abhängige maximaltauschmenge von 100.000 Waren pro Woche die eingehen, d.h. das z.b. 100.000 Brot (schwarzmarktpreis 10 GS) gegen ca. 100 Schneemänner (abgerundet 1000GS weils einfacher zu rechnen ist).     </td>
+									<td width="100" align="center">19.10.05 6:42<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=70550&amp;votefor=938694"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 

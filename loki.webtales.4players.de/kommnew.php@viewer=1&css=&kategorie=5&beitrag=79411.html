@@ -1,0 +1,1821 @@
+ 
+				<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Page-Exit"
+	content="RevealTrans(Duration=0,Transition=6 )">
+<link rel=stylesheet type="text/css" href="pergament.css">
+<title>howto: lokale Grafiken erlauben</title>
+</head>
+
+<body background="pics/bg.gif">
+
+	<table align="center" border="0" width="90%" cellspacing="0"
+		cellpadding="0">
+
+		<tr>
+
+			<td width="8" height="8" background="pics/ol.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td background="pics/om.jpg" height="8" width="*"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+			<td width="8" height="8" background="pics/or.jpg"><img
+				src="pics/netscape.gif" width="38" height="38">
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="8" background="pics/lm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+			<td background="pics/m.jpg" width="*"
+				align="center">
+
+
+
+				<table width="100%" border="0">
+					<tr>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+						<td align="center" width="70%">
+
+							<h1>
+							Das schwarze Brett							</h1>
+						</td>
+						<td width="15%" align="center"><aa href="game.html"> <img
+								border="0" src="pics/town.gif"> <br>
+							<b></b> </a>
+						
+						</td>
+					</tr>
+				</table>  <script language=javascript>
+		function oeffne(ot_id)
+		{
+			try { 
+    if (parent.mus && parent.mus.Assi==true) 
+    {
+      parent.mus.Merlin.StopAll();
+      parent.mus.Merlin.Play("Write"); 
+      parent.mus.Merlin.Play("WriteReturn"); 
+    }
+    } catch (err) {
+
+    }
+
+			test = String(Math.floor(Math.random()*10000));
+
+			window.open("message.php?targetid="+ot_id,'menue1451556632' + test,'width=550,height=350');
+		}
+		</script>  
+
+
+				<table cellpadding="3" cellspacing="0" width="95%" align="center"
+					border="0">
+					<tr>
+						<td width="100%" align="center"><table align="center"
+								cellpadding="3" cellspacing="0" width="100%" border="0">
+
+
+																<tr>
+									<td colspan="2"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=5.html">Newbies und Fragen									</a></td>
+									<td></td>
+								</tr>
+																<tr>
+									<td colspan="3" align="left"><b>howto: lokale Grafiken erlauben (9 <img border="0" src="smile.gif">) </b> <br>
+										<hr></td>
+								</tr>
+								
+								
+								<tr >
+									<td width="10%" align="center">Freya san Gordar (RIP)									</td>
+
+									<td width="75%"> <b>Seamonkey, Firefox ab 1.5, Mozilla ab 1.8</b><br>
+1. Eine neue Textdatei erstellen. Da muss folgendes rein:<br>
+<br>
+user_pref(&quot;capability.policy.policynames&quot;, &quot;localfilelinks&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.sites&quot;, &quot;http://www.scherbenwelten.de&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.checkloaduri.enabled&quot;, &quot;allAccess&quot;);<br>
+<br>
+Wenn du noch anderen Games erlauben willst, auf lokale Grafiken zuzugreifen, musst du die url mit Leerzeichen abtrennen. Die Zeile sieht dann so aus:<br>
+<br>
+user_pref(&quot;capability.policy.localfilelinks.sites&quot;, &quot;http://www.scherbenwelten.de http://www.browsergame.de http://www.nocheinbrowsergame.de&quot;);<br>
+<br>
+2. Die Datei user.js (ohne .txt hinten!) nennen und im Ordner ProfilesZUFALLSWERT.slt ablegen.<br>
+<br>
+Für Win XP und Mozilla/Seamonkey liegt der Ordner dort:<br>
+<br>
+C:Dokumente und EinstellungenBENUTZERNAMEAnwendungsdatenMozillaProfilesdefault ZUFALLSNAME.slt<br>
+<br>
+Alle anderen verwis ich ma hierhin:<br>
+http://kb.mozillazine.org/Profile_folder<br>
+<br>
+3. Den Browser zu beenden und neu aufzurufen reicht nicht, man muss den (ohne grafische Ausabe laufenden) Prozess beenden. Wer jetzt verwirrt ist, kann auch einfach den Rechner neu starten.<br>
+Danach funzt es.<br>
+<br>
+    </td>
+									<td width="100" align="center">11.03.06 0:51<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1035367"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Robin LaRoux (RIP)									</td>
+
+									<td width="75%"> <b>für Mac OS X</b><br>
+<br>
+- Die (oben beschriebene) user.js Datei muß in folgenden Ordner kopiert werden:<br>
+<br>
+  <b><i>User</i></b>/Library/Application Support/Firefox/Profiles/<b><i>XYZ</i></b>.default/<br>
+<br>
+<b><i>User</i></b> steht für den jeweiligen Benutzer(namen)<br>
+<b><i>XYZ</i></b> steht für den Namen der Profildatei (je nach User unterschiedlich)<br>
+<br>
+Anmerkung: das Erstellen der user.js funktioniert <b>nicht</b> mit TextEdit, sondern mit z.B. BBEdit. Hat man das nicht zur Hand kann man mich wegen der Datei auch gern anschreiben.<br>
+<br>
+In manchen Anleitungen wird auch die Änderung der about:config beschrieben, das ist hier nicht nötig.<br>
+<br>
+Der Pfad in SW sieht dann beispielsweise so aus:<br>
+<br>
+Users/<i>NameDesUsers</i>/<i>Ordnername</i>/sw/<br>
+<br>
+Firefox beenden und neu starten reicht.<br>
+<br>
+hth ;-)    </td>
+									<td width="100" align="center">16.09.06 15:29<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1124205"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Athândira Anúldor (RIP)									</td>
+
+									<td width="75%"> *hochschieb*    </td>
+									<td width="100" align="center">06.10.06 21:02<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1136539"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Robinson Crusoe (RIP)									</td>
+
+									<td width="75%"> Bei mir gibts keinen Ordner &quot;Anwendungsdaten&quot;, geschweigedenn Mozilla.. kann es daran liegen, dass ich mein OS auf D: installiert hab und Mozilla den Ordner nur auf C: schreibt?<br>
+Bin soeben erst von IE auf Firefox umgestiegen.. ;)    </td>
+									<td width="100" align="center">12.10.06 20:44<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1138646"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Galaton Dragus</b> </b><br>  <img width="60"
+										src="http://img692.imageshack.us/img692/143/legionstandarte3.gif"> 									</td>
+
+									<td width="75%"> versuchs mal mit &quot;versteckte Systemdateien einblenden&quot;...hab auch lang gesucht bis ich sie gefunden habe^^    </td>
+									<td width="100" align="center">12.10.06 20:45<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1138647"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(36456)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Johannes Gualbertus (RIP)									</td>
+
+									<td width="75%"> Ich habe seit gestern Firefox V2.0 und mit der Variante die Ihr hier anbietet funzt es leider nicht mehr. Kann mir bitte jemand weiter helfen?    </td>
+									<td width="100" align="center">11.11.06 11:39<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1149269"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> darum hab ich den neuen noch nich aufem rechner ich hab noch keine anleitung gefunden wie man das da freigibt ^^ aber müsste den mir mal anschaun vielleicht gehtsja relativ einfach und man muss erst mal wissen wo *g*    </td>
+									<td width="100" align="center">11.11.06 14:00<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1149317"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Fydrax (RIP)									</td>
+
+									<td width="75%"> Hat denn inzwischen jemand eine Lösung gefunden?    </td>
+									<td width="100" align="center">21.11.06 7:07<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1153244"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Amon Ti Annuan (RIP)									</td>
+
+									<td width="75%"> es gibt ein eigenes plugin für &quot;local files&quot; - vielleicht kommt ja damit wer weiter <br>
+<br>
+http://locallink.mozdev.org/    </td>
+									<td width="100" align="center">22.11.06 15:47<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1153765"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Amon Ti Annuan (RIP)									</td>
+
+									<td width="75%"> ne, vergesst es wieder - damit kann man nur einzelne files anzeigen lassen. das ist keine hilfe für das grafikpack<br>
+<br>
+aber tröstet euch - bei opera gehts auch nicht    </td>
+									<td width="100" align="center">22.11.06 15:50<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1153767"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> so hab nun den 2.0<br>
+<br>
+und meine user.js schaut nun so aus...<br>
+<br>
+user_pref(&quot;capability.policy.localfilelinks.checkloaduri.enabled&quot;, &quot;allAccess&quot;);<br>
+user_pref(&quot;capability.policy.policynames&quot;, &quot;localfilelinks&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.sites&quot;, &quot;http://www.scherbenwelten.de&quot;);<br>
+<br>
+also ich hab die letzte zeile an erster stelle... das hat bei mir geklappt hab ich aus nem andern forum... wer nett wenn hier jemand das auch mal testen könnte obs nur daran gelegen hat ^^ ??    </td>
+									<td width="100" align="center">22.11.06 18:05<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1153811"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> args... gelogen... <br>
+<br>
+user_pref(&quot;capability.policy.localfilelinks.checkloaduri.enabled&quot;, &quot;allAccess&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.sites&quot;, &quot;http://www.scherbenwelten.de&quot;);<br>
+user_pref(&quot;capability.policy.policynames&quot;, &quot;localfilelinks&quot;);<br>
+<br>
+so muss das...    </td>
+									<td width="100" align="center">22.11.06 18:07<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1153812"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Melindor (RIP)									</td>
+
+									<td width="75%"> wobei ich mich grad frag welchen unterschied das machen soll wenn was zuerst in der datei steht ^^... <br>
+<br>
+aber naja wie gesagt hier gehts =)    </td>
+									<td width="100" align="center">22.11.06 18:17<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1153814"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Ogli van Dogli (RIP)									</td>
+
+									<td width="75%"> ich benutze opera (firefox läuft bei mir nicht stabil)<br>
+unter Linux OpenSuse. ( mit | meine ich Shift + 7 )<br>
+Mein eingegebener Pfad lautet:<br>
+localhost|home|ok|Documents|scherben|grafik|sw|<br>
+<br>
+Leider mogelt sich bei mir immer ein dritter Slash mit ein.<br>
+file:||<b>|<b>localhost|home|ok|Documents|scherben|grafik|sw|busy.gif<br>
+<br>
+Die Ratte sehe ich wenn ich in der Adressleiste folgendes eingebe:<br>
+file:||localhost|home|ok|Documents|scherben|grafik|sw|busy.gif <br>
+Eigentlich reicht hier auch ab &quot;home|...&quot;, aber nach der Eingabe als Grafikpfad sind wieder drei ||| da.<br>
+Ihr könnt mir da bestimmt weiterhelfen. Vieleicht stelle ich mich auch einfach nur etwas ungeschickt an.<br>
+<br>
+Vielen Dank    </td>
+									<td width="100" align="center">21.06.07 1:51<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1226864"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Rian Almaren</b> </b><br>  <img width="60"
+										src="pics/wapp.gif"> 									</td>
+
+									<td width="75%"> Also erst mal ist der dritte Slash bei Linux (und auch Mac) normal und steht einfach für das Root-Verzeichnis. Aber das nur am Rande.<br>
+<br>
+Zu deinem Problem:<br>
+Also die schlechte Nachricht ist das Opera lokale Grafiken eigentlich gar nicht erlaubt, jedenfalls nicht aus Webseiten heraus. Du kannst zwar lokale Adressen selber in der Adresszeile eingeben, das geht, aber als Links innerhalb von Webseiten werden sie dennoch nicht angezeigt.<br>
+<br>
+Als Workaround kenne ich 3 Möglichkeiten:<br>
+1.<br>
+Du öffnest die opera6.ini in einem Editor.<br>
+Im Abschnitt <b>[User Prefs]</b> fügst du die Zeile <b>Help Directory=/localhost/home/ok/Documents/scherben/grafik/sw/</b><br>
+ein oder änderst sie entsprechend ab.<br>
+Nun gibst du in Scherbenwelten als Grafikpfad <b>opera:/help/</b> ein.<br>
+Das ganze hat aber einen Haken, die eingebaute Operahilfe geht nun nicht mehr!<br>
+<br>
+2.<br>
+Das Grafikpaket auf einem eigenen Webspace ablegen. Das bringt nur marginale Geschwindigkeitsvorteile, entlastet aber zumindest die Scherbenwelten-Server.<br>
+<br>
+3.<br>
+Wenn du schon unter Linux bist hast du vielleicht eh einen lokalen Apache laufen? Dann könntest du die Grafiken dort im webroot ablegen und dann per http://lokalhost/... erreichen.<br>
+<br>
+hth<br>
+Rian    </td>
+									<td width="100" align="center">21.06.07 10:34<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1226935"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(21462)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Gwydion de Ville (RIP)									</td>
+
+									<td width="75%"> *mal wieder hochzieht*    </td>
+									<td width="100" align="center">08.08.07 18:54<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1243128"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zorra</b> </b><br>  <img width="60"
+										src="pics/th_mond7_gold-klein.gif"> 									</td>
+
+									<td width="75%"> Finde die genannten verzeichnisse nicht, in denen das user.js soll    </td>
+									<td width="100" align="center">08.08.07 19:43<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1243146"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20199)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Stryke</b> </b><br>  <img width="60"
+										src="http://home.arcor.de/neilonna/wappen10.gif"> 									</td>
+
+									<td width="75%"> Die datei user.js sollst du ja auch erst erstellen.    </td>
+									<td width="100" align="center">08.08.07 20:03<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1243155"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(21197)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Valius (RIP)									</td>
+
+									<td width="75%"> Die Verzeichnisse, in denen du die user.js speichern musst, sind versteckt.<br>
+<br>
+Sehen kannst du sie, indem du in einem Ordner unter Extras -&gt; Ordneroptionen -&gt; Ansicht &quot;Alle Dateien und Ordner anzeigen&quot; aktivierst.    </td>
+									<td width="100" align="center">09.08.07 12:57<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1243323"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zorra</b> </b><br>  <img width="60"
+										src="pics/th_mond7_gold-klein.gif"> 									</td>
+
+									<td width="75%"> <i>Die datei user.js sollst du ja auch erst erstellen.</i><br>
+<br>
+habe ich, wie ich auch angedeutete hatte, bloss wohin damit... es geht nicht um die DATEI, sondern ein VERZEICHNIS.<br>
+<br>
+Zudem habe ich FF 2.0.*<br>
+<br>
+Habe es jetzt in alle Verzeichnise getan die annaehrend was in der Richtung mit FF zu tun haben. Aber keine Chance.<br>
+<br>
+<i>Sehen kannst du sie, indem du in einem Ordner unter Extras -&gt; Ordneroptionen -&gt; Ansicht &quot;Alle Dateien und Ordner anzeigen&quot; aktivierst.</i><br>
+<br>
+Gibt es nicht bei FF 2.0.*<br>
+    </td>
+									<td width="100" align="center">09.08.07 14:32<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1243351"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20199)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Hassour Morvayn (RIP)									</td>
+
+									<td width="75%"> tipp mal %appdata% in die aufgabeeinforderung ein, dann kommt ein ordner mit sämtlichen anwendungsdatein <br>
+(bei winXP zumindest)    </td>
+									<td width="100" align="center">04.10.07 0:31<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1259200"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Hassour Morvayn (RIP)									</td>
+
+									<td width="75%"> blödsinn, die eingabeaufforderung war gemeint, also start-&gt; ausführen...<br>
+naja, hat sich wohl eh erledigt, 2 Monate zu spät:D<br>
+    </td>
+									<td width="100" align="center">04.10.07 0:34<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1259201"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Peroigo Futterbacke (RIP)									</td>
+
+									<td width="75%"> Auch wenn es alt ist, aber:<br>
+<br>
+&quot;Sehen kannst du sie, indem du in einem Ordner unter Extras -&gt; Ordneroptionen -&gt; Ansicht &quot;Alle Dateien und Ordner anzeigen&quot; aktivierst.<br>
+<br>
+Gibt es nicht bei FF 2.0.*&quot;<br>
+<br>
+Nicht im Firefox auf Extras sondern im Windowsexplorer oder &quot;Arbeitsplatz&quot;. Da kann man dann auch Ordneroptionen auswählen.    </td>
+									<td width="100" align="center">04.10.07 8:31<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1259214"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Peroigo Futterbacke (RIP)									</td>
+
+									<td width="75%"> Oh und noch etwas:<br>
+<br>
+Man muss darauf achten, ob man Scherbenwelten.de oder www.scherbenwelten.de erlaubt. In users.js hatte ich es mit www. eingegeben, mein Lesezeichen ging aber auf Scherbenwelten.de ohne www.. Der ist da scheinbar etwas sensibel.<br>
+<br>
+Hat ziemlich lang gedauert, bis ich gemerkt habe, warum es nicht funktioniert hat.    </td>
+									<td width="100" align="center">04.10.07 8:35<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1259216"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Jolina (RIP)									</td>
+
+									<td width="75%"> deswegen stehen bei mir beide Varianten drin ;)    </td>
+									<td width="100" align="center">05.10.07 23:33<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1259751"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">PapaLonestar (RIP)									</td>
+
+									<td width="75%"> Ich hab nun ie7 und kann plötzlich die lokalen Grafiken nicht mehr nutzen. Weiss jemand, wie man es unter ie7 in den Griff bekommt?    </td>
+									<td width="100" align="center">04.11.07 20:22<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1267124"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Klaus Störtebeker</b> </b><br>  <img width="60"
+										src="pics/KlausStoertebeckerWappen.gif"> 									</td>
+
+									<td width="75%"> Rian Almaren schrieb dazu im Beitrag http://www.scherbenwelten.de/kommnew.php?&amp;kategorie=11&amp;beitrag=91454:<br>
+<br>
+<i>Um lokale Grafiken unter IE7 verwenden zu können, muss Scherbenwelten zu einer &quot;vertrauenswürdige Site&quot; ernannt werden. Das gehlt folgendermaßen:<br>
+<br>
+Im Menü -&gt; Extras -&gt; Internetoptionen -&gt; Sicherheit -&gt; Vertrauenswürdige Sites -&gt; Sites<br>
+<br>
+Dort &quot;http://www.scherbenwelten.de&quot; als Adresse hinzufügen (ggf vorher unten den Hacken an der Checkbox entfernen, die HTTPS erzwingt.<br>
+<br>
+Hoffe das Hilft den IE7-Spielern.<br>
+<br>
+( Übernommen von: http://galactic-tales.4players.de/juwelboard/index.php?action=view&amp;id=5328&amp;board=3 ) </i>    </td>
+									<td width="100" align="center">05.11.07 0:34<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1267200"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20415)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Athândira Anúldor (RIP)									</td>
+
+									<td width="75%"> Weiß jemand wie´s bei Windoof Vista ausschaut?<br>
+Den Profilordner wie unter xp scheints da nicht mehr zugeben...    </td>
+									<td width="100" align="center">05.11.07 17:49<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1267332"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Rian Almaren</b> </b><br>  <img width="60"
+										src="pics/wapp.gif"> 									</td>
+
+									<td width="75%"> Also ganz allgemein liegen die Profile (ich nehm mal an du meinst Firefox) hier:<br>
+%AppData%MozillaFirefoxProfiles[xxxxxxxx].default <br>
+<br>
+Unter XP/2000 ist das folgender Pfad:<br>
+C:Documents and Settings[User Name]Application DataMozillaFirefoxProfiles[xxxxxxxx].default  <br>
+<br>
+Und unter Vista der hier:<br>
+C:users[User Name]AppDataRoamingMozillaFirefoxProfiles[xxxxxxxx].default<br>
+<br>
+[die 8 x-se sind einfach irgendwelche zufälligen Buchstaben]<br>
+[User Name ist der Name mit dem du unter Windows angemeldet bist]<br>
+<br>
+hth    </td>
+									<td width="100" align="center">07.11.07 10:42<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1267747"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(21462)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Ahrsat Diago Kenastin (RIP)									</td>
+
+									<td width="75%"> Funktioniert der Firefox 3 auch problemlos mit dem Grafikpaket? Haben doch sicher schon viele probiert.. :-) (Bevor ich ihn unnötig installiere.)    </td>
+									<td width="100" align="center">18.06.08 20:08<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327411"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Gnaar</b> </b><br>  <img width="60"
+										src="pics/wappen_gnaar.gif"> 									</td>
+
+									<td width="75%"> Irgendwie hab ich allg Probleme mit FF3 und Scherbenwelten (ohne Grafikpaket)    </td>
+									<td width="100" align="center">18.06.08 21:03<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327422"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(21557)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Marduc (RIP)									</td>
+
+									<td width="75%"> Bei mir läuft der FF3 stabil, jedoch bekomme ich meine lokalen Grafiken nicht eingebunden.<br>
+<br>
+Die normale user.js scheint nicht mehr zu funktionieren oder ich mal das was falsch. :D    </td>
+									<td width="100" align="center">18.06.08 21:15<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327428"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Marduc (RIP)									</td>
+
+									<td width="75%"> Ich habe meinen Fehler gefunden!<br>
+<br>
+Die user.js anlegen und folgendes eintragen:<br>
+<br>
+user_pref(&quot;capability.policy.policynames&quot;, &quot;localfilelinks&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.sites&quot;, &quot;http://www.scherbenwelten.de http://scherbenwelten.de&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.checkloaduri.enabled&quot;, &quot;allAccess&quot;);<br>
+<br>
+<br>
+Anschließend vorhandene AddOn überprüfen, sollte NoSkript installiert sein dann:<br>
+<br>
+Linksklick auf das Symbol-&gt;Einstellungen<br>
+<br>
+Erweitert-&gt;Vertrauenswürdig: und ´Links auf lokale Dateien erlauben´ aktivieren.    </td>
+									<td width="100" align="center">18.06.08 22:32<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327444"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Athândira Anúldor (RIP)									</td>
+
+									<td width="75%"> Kann Gnaar nur Zustimmen....<br>
+<br>
+FF3 ist zwar Superschnell, aber macht einige Probleme. Unter andrem:<br>
+Klick auf Diplomatie zwingt ja die Navigationsleiste zum Neuladen, hier brauch FF3 sehr lange, erst nach neuaufrufen des Spieles ist die Leiste wieder vorhanden.    </td>
+									<td width="100" align="center">19.06.08 8:41<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327487"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Gnaar</b> </b><br>  <img width="60"
+										src="pics/wappen_gnaar.gif"> 									</td>
+
+									<td width="75%"> Bei mir reicht F5...<br>
+<br>
+Aber wenn ich auf die Gruppe klicke kommt die isoansicht in der mitte und der rest drum herum is weiß o.O erst ein 2. Klick auf &quot;Gruppe&quot; macht´s wieder normal...<br>
+Ich werde wohl mal ebenfalls ne user.js anlegen vlt wirds dann besser...<br>
+    </td>
+									<td width="100" align="center">19.06.08 12:13<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327518"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(21557)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Raphael (RIP)									</td>
+
+									<td width="75%"> Mein Vista hat weder einen User-Ordner mit meinem Benutzernamen, sondern nur einen &quot;Öffentlich&quot; und einen &quot;Benutzer&quot;, und da drin gibts keine Ordner &quot;Application Data&quot; und darin folglich auch keinen Firefox Ordner...<br>
+<br>
+Allerdings hab ich irgendwo tief im Installationsverezeichnis von FF3 einen Ordner &quot;profile&quot; gefunden...    </td>
+									<td width="100" align="center">19.06.08 14:14<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327533"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Raphael (RIP)									</td>
+
+									<td width="75%"> Eigentlich hasse ich ja Vista...Der APPDATA-Ordner war vorhanden, aber der Explorer hat ihn mir konsequent nicht angezeigt. Die Ordnersuche hat ihne ohne murren angegeben...<br>
+<br>
+Und jetzt? Ich hab diese user.js in den Ordner gespeichert, geändert hats nix :/    </td>
+									<td width="100" align="center">19.06.08 14:26<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327536"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nalon din Adun (RIP)									</td>
+
+									<td width="75%"> Auch wenn keine Hilfe, kann ich nur sagen, unter Windows2000 rennt der FF3 mit SW sauber und ohne Zicken, ich hab auch die user.js nicht anfassen müssen, die Einstellungen vom FF2 wurden da sauber übernommen.<br>
+<br>
+Raphael: Downgrade auf XP? *duck und renn*    </td>
+									<td width="100" align="center">19.06.08 14:32<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327537"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Braniag (RIP)									</td>
+
+									<td width="75%"> siehe Nalon. Mein Upgrade auf Windows XP hat auch keine Zicken gemacht. Sehr schicke neue Version    </td>
+									<td width="100" align="center">19.06.08 14:36<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327538"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Raphael (RIP)									</td>
+
+									<td width="75%"> Ok...Fehler gefunden...Ich hab unter AppData einen profile-Ordner in jeweils einem Firefox-Ordner unter &quot;Local&quot; und &quot;Roaming&quot;.<br>
+<br>
+Der in Local ist nicht der richtige^^    </td>
+									<td width="100" align="center">19.06.08 14:43<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327541"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Narndil Biunda v. Tacheless (RIP)									</td>
+
+									<td width="75%"> Wie sieht es aus mit FF3 auf nem Windows-ME-Rechner der schon bissele schwach auf der Brust ist? Mir macht schon der FF2 n bissle Zicken ab und an, daher trau ich mich nicht auf FF3 upzugraden    </td>
+									<td width="100" align="center">19.06.08 14:43<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327542"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Raphael (RIP)									</td>
+
+									<td width="75%"> versuchs...wenn ers nicht macht, wirfst ihn halt wieder runter, der rechner geht jedenfalls nciht kaputt deshalb oO    </td>
+									<td width="100" align="center">19.06.08 14:55<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327543"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Hasenblut (RIP)									</td>
+
+									<td width="75%"> Also unter Ubuntu(Linux) gibt es auch immer wieder Probleme mit dem Menü. Die Windows-Version unter Wine läuft aber tadellos(wenn auch langsamer).    </td>
+									<td width="100" align="center">19.06.08 15:01<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327544"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Gnaar</b> </b><br>  <img width="60"
+										src="pics/wappen_gnaar.gif"> 									</td>
+
+									<td width="75%"> Bei mir geht sw zZ gar nich mehr xD    </td>
+									<td width="100" align="center">19.06.08 15:02<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327545"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(21557)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Hasenblut (RIP)									</td>
+
+									<td width="75%"> Also besser gehts wenn man den Haken bei keine automatischen Aktualisierungen setzt.    </td>
+									<td width="100" align="center">19.06.08 15:44<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327551"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Gnaar</b> </b><br>  <img width="60"
+										src="pics/wappen_gnaar.gif"> 									</td>
+
+									<td width="75%"> Kuhl. Danke :) ich kann jetz endlich wieder durch die Gegend laufen(speziell Tunnel waren vorher gar nicht mehr möglich...)    </td>
+									<td width="100" align="center">21.06.08 9:10<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327736"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(21557)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Athândira Anúldor (RIP)									</td>
+
+									<td width="75%"> Die Probleme mit nicht-laden des Menüs usw. wurden heute bei uns erneut festgestellt und mit einer kompletten neuinstallation von Firefox gelöst. Allem Anschein nach macht der zicken, wenn es nurn upgrade ist.    </td>
+									<td width="100" align="center">22.06.08 15:56<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1327916"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Glorfindel von Gondolin (RIP)									</td>
+
+									<td width="75%"> Hat schon wer eine Lösung für CHROME?    </td>
+									<td width="100" align="center">02.09.08 23:42<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1341540"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emlyg ò Dúathheithol (RIP)									</td>
+
+									<td width="75%"> das ding nennt sich Chrome...<br>
+nicht zu verwechseln mit der &quot;Nation&quot; CHROME    </td>
+									<td width="100" align="center">03.09.08 6:22<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1341565"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Glorfindel von Gondolin (RIP)									</td>
+
+									<td width="75%"> Naja ich persönlich fände eine Lösung für CHROME genauso nützlich wie eine für das Grafikproblem bei Chrome :P    </td>
+									<td width="100" align="center">03.09.08 9:59<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1341588"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Elamo (RIP)									</td>
+
+									<td width="75%"> Euch ist bewusst das Chrome jede Menge eurer Daten speichert und versendet?    </td>
+									<td width="100" align="center">11.09.08 14:23<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1343063"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Emlyg ò Dúathheithol (RIP)									</td>
+
+									<td width="75%"> ja. Es ist aber abschaltbar.    </td>
+									<td width="100" align="center">11.09.08 14:40<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1343067"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Elamo (RIP)									</td>
+
+									<td width="75%"> Jaja klar...<br>
+&quot;abschalten&quot; und so...<br>
+und das die polizeit telefonate abhört, kann man auch abstellen...<br>
+Big Boss is watching you...    </td>
+									<td width="100" align="center">11.09.08 17:42<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1343099"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Nathan von Xanthias (RIP)									</td>
+
+									<td width="75%"> ja Elamo das tut allerdings hier nicht zur sache. <br>
+Jedem hier der Chrome verwendet, ist die sache bekannt was google macht. Wenn nicht, may hat pech gehabt, da sich jeder selbst informieren kann und jenes alles Tages-/Wochenzeitungen veröffentlich haben mit diesem hinweis.<br>
+<br>
+hmmmm gibt es auch eine Lösung für die Probs bei Safari?<br>
+eh ich jetzt anfange den Support damit zu nerven...    </td>
+									<td width="100" align="center">11.09.08 19:10<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1343108"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Fjokel ok Schnjokel</b> </b><br>  <img width="60"
+										src="pics/waldwaechter.gif"> 									</td>
+
+									<td width="75%"> gibts eigentlich schon was neues zu Windows Vista?<br>
+Ich bin eben von XP zu Vista64 umgestiegen, bereue es bisher eigentlich nicht, nur die Grafiken laden nicht.<br>
+Ich hatte mir extra die user.js gespeichert und wieder in den Profilordner kopiert, aber geht nicht.<br>
+<br>
+Vielleicht liegts aber auch an Vista bzw. der Pfadangabe, weil trotz vertrauenswürdiger Seite gehts auch im IE nicht.    </td>
+									<td width="100" align="center">05.10.08 8:54<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1347255"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(40147)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Muradian Wawuschel (RIP)									</td>
+
+									<td width="75%"> Gibt es mittlerweile eine Lösung für Google Chrome?    </td>
+									<td width="100" align="center">29.01.09 11:58<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1369855"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Fjokel, bei mir funktioniert alles bei Vista Business 64.<br>
+<br>
+Was bei Vista leider nicht ordentlich geht ist der Mapper von Tiwen.    </td>
+									<td width="100" align="center">29.01.09 12:05<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1369857"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Falster von Distelflamme (RIP)									</td>
+
+									<td width="75%"> war der nicht von sweini und tiwen hatte ihn nur fortgeführt? *denk*    </td>
+									<td width="100" align="center">30.01.09 15:01<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1370041"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Thorgrim Trotzstirn (RIP)									</td>
+
+									<td width="75%"> Also wirklich es sind mitlerweile so viele Beiträge das ich mich garnicht mehr zurecht finde.<br>
+<br>
+Kann mir wer bitte eine kurze und prägnante Hilfe für die Einstellung beim Firefox 3 geben?!    </td>
+									<td width="100" align="center">01.02.09 21:48<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1370477"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Thorgrim Trotzstirn (RIP)									</td>
+
+									<td width="75%"> Ach ja wichtig dabei ist noch, das ich mit Vista arbeite!    </td>
+									<td width="100" align="center">01.02.09 23:14<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1370512"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Amhlaidh Doireann</b> </b><br>  <img width="60"
+										src="pics/wappen_utha.gif"> 									</td>
+
+									<td width="75%"> Gibt es schon nen lösungsansatz wie das beim IE 8 (BETA) geht?    </td>
+									<td width="100" align="center">01.03.09 22:33<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1376153"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(89439)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Amhlaidh Doireann</b> </b><br>  <img width="60"
+										src="pics/wappen_utha.gif"> 									</td>
+
+									<td width="75%"> hmm seh gerade ging gleich wie beim IE 7, musste halt den hacken entfernen für https und dann nochmal die seite unter http://www.scherbenwelten.de hinzufügen :)    </td>
+									<td width="100" align="center">01.03.09 22:46<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1376161"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(89439)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Fjokel ok Schnjokel</b> </b><br>  <img width="60"
+										src="pics/waldwaechter.gif"> 									</td>
+
+									<td width="75%"> gibts eigentlich schon eine neue Methode für opera? Ich teste den Browser gerade und finde ihn eigentlich ganz gut.    </td>
+									<td width="100" align="center">31.07.09 11:41<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1400858"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(40147)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Thorgrim Trotzstirn (RIP)									</td>
+
+									<td width="75%"> Also ich habe Win7 und FF 3.6<br>
+<br>
+Ich habe die user-Datei erstellt und habe sie auch in den entsprechenden Ordner getan, doch es funktioniert nicht... kann mir jemand helfen?    </td>
+									<td width="100" align="center">06.04.10 10:31<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1447821"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Wohin hast du sie denn genau gepackt?    </td>
+									<td width="100" align="center">06.04.10 16:36<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1447861"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Thorgrim Trotzstirn (RIP)									</td>
+
+									<td width="75%"> USER(MeinNutzername)/AppData/local/Mozilla/Firefox/profiles/xyz123default/    </td>
+									<td width="100" align="center">06.04.10 17:47<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1447869"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> nimm mal:<br>
+<br>
+%appdata%MozillaFirefoxProfilesxyz123default    </td>
+									<td width="100" align="center">06.04.10 18:45<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1447883"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> %appdata%/Mozilla/Firefox/Profiles/xyz123default    </td>
+									<td width="100" align="center">06.04.10 18:46<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1447884"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Thorgrim Trotzstirn (RIP)									</td>
+
+									<td width="75%"> Wo soll der der Beginn des Pfades zu finden sein: %appdata% ???    </td>
+									<td width="100" align="center">06.04.10 19:35<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1447895"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> %appdata% ist Umgebungsvariable. Einfach im Explorer eingeben dann landet bei C:/Users/user/AppData/Roaming<br>
+<br>
+Also mit %appdata%/Mozilla/Firefox/Profiles/<br>
+bei C:/Users/user/AppData/Roaming/Mozilla/Firefox/Profiles    </td>
+									<td width="100" align="center">06.04.10 20:10<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1447904"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Thorgrim Trotzstirn (RIP)									</td>
+
+									<td width="75%"> Danke, es funktioniert nun, war also im falschen Ordner!    </td>
+									<td width="100" align="center">06.04.10 21:05<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1447922"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Rufus Dreyer vom Stutengarten (RIP)									</td>
+
+									<td width="75%"> Nach Stunden komme ich immer noch nicht zurecht...<br>
+<br>
+Ich verwende Win 7<br>
+Firefox 18.0.2<br>
+<br>
+Das habe ich in einer user.js Datei gespeichert:<br>
+<br>
+user_pref(&quot;capability.policy.policynames&quot;, &quot;localfilelinks&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.sites&quot;, &quot;http://www.scherbenwelten.de http://scherbenwelten.de www.scherbenwelten.de&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.checkloaduri.enabled&quot;, &quot;allAccess&quot;);<br>
+<br>
+Die Datei liegt im Ordner:<br>
+<br>
+C:UsersUserAppDataRoamingMozillaFirefoxProfiles<br>
+<br>
+Bei SW gebe ich ein:<br>
+<br>
+C:sw<br>
+<br>
+Ich hoffe mir kann jemand helfen    </td>
+									<td width="100" align="center">16.02.13 13:00<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1537615"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> Hast du es in den Profiles Ordner gelegt oder in einen Unterordner von Profiles?    </td>
+									<td width="100" align="center">16.02.13 22:03<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1537648"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Rufus Dreyer vom Stutengarten (RIP)									</td>
+
+									<td width="75%"> Hatte die Datei im Ordner Profiles. Da du so gefragt hast, hab ich es in den vorhandenen Unterordner getan (d5ph170h.default), hat aber nichts genützt    </td>
+									<td width="100" align="center">17.02.13 8:31<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1537663"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Knuffel Flammenhaar (RIP)									</td>
+
+									<td width="75%"> C:sw<br>
+<br>
+also C:(backslash)sw(backslash)<br>
+<br>
+weiß nicht ob das erste hier im forum korrekt dargestellt wird    </td>
+									<td width="100" align="center">17.02.13 11:21<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1537679"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Rufus Dreyer vom Stutengarten (RIP)									</td>
+
+									<td width="75%"> Wird nicht richtig angezeigt, aber ja    </td>
+									<td width="100" align="center">17.02.13 17:43<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1537697"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Klaus Störtebeker</b> </b><br>  <img width="60"
+										src="pics/KlausStoertebeckerWappen.gif"> 									</td>
+
+									<td width="75%"> Der profiles-Unterordner mit dem &quot;default&quot; im Namen und sonst beliebigen Zeichen ist schon mal das richtige Ziel.<br>
+<br>
+Auch wenn es unter Windows ist, probiere im SW-Grafikpfad doch mal statt Backslashes Slashes aus, also dann C:/sw/<br>
+<br>
+<br>
+Und dann noch mal darauf achten, daß dort auch wirklich Grafiken sind, denn beim Entpacken würde u.U. ein weiteres Unterverzeichnis sw erstellt, und bei manchen stellte sich heraus, daß die dann im Verzeichnis C:/sw/sw/ gelandet sind.    </td>
+									<td width="100" align="center">17.02.13 19:31<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1537705"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20415)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Rufus Dreyer vom Stutengarten (RIP)									</td>
+
+									<td width="75%"> Jetzt hab ichs. Ich habe bei der user.js Datei, bei Freigabe/Erweiterte Freigabe bei Leseberechtigung ein Häckchen gesetzt, jetzt läuft es.    </td>
+									<td width="100" align="center">17.02.13 21:38<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1537714"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center">Pe King Ente (RIP)									</td>
+
+									<td width="75%"> <b> Danke Marduc</b><br>
+auch wenn du das eventuell nicht lesen wirst.<br>
+aber dein hinweis wegen dem NoSkript adon bei Firefox brachte meine lösung =) =)<br>
+<br>
+ansonsten funktioniert es bei mir scheinbar einwandfrei =)    </td>
+									<td width="100" align="center">22.03.13 10:31<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1539229"><img
+											border="0" src="smile.gif"> </a>  <br>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr >
+									<td width="10%" align="center"><b>Zadar</b> </b><br>  <img width="60"
+										src="http://laoch.hffp.de/zadar.gif"> 									</td>
+
+									<td width="75%"> user_pref(&quot;capability.policy.policynames&quot;, &quot;localfilelinks&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.sites&quot;, &quot;http://www.scherbenwelten.de http://loki.webtales.4players.de&quot;);<br>
+user_pref(&quot;capability.policy.localfilelinks.checkloaduri.enabled&quot;, &quot;allAccess&quot;);    </td>
+									<td width="100" align="center">23.06.15 11:30<br> <a
+										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=79411&amp;votefor=1558144"><img
+											border="0" src="smile.gif"> </a>  <br>  <a
+										href="javascript:oeffne(20564)"><img
+											border="0" src="brieffliege.gif"> </a>  									</td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3"><hr></td>
+								</tr>
+
+
+
+								
+								<tr>
+									<td colspan="3" align="right"><a
+										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										<a
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=5.html">Newbies und Fragen									</a><br>
+										<hr></td>
+								</tr>
+
+								
+
+							</table>
+						</td>
+					</tr>
+				</table> <div align="center"><hr size=1></div>
+				<table>
+					<tr>
+						<td>
+
+
+							</td>
+							</tr>
+						</table>
+
+
+
+
+
+						 			</td>
+			<td width="8" background="pics/rm.jpg"><img
+				src="pics/netscape.gif" width="5" height="5"
+				alt="netscape.gif (814 Byte)"></td>
+
+		</tr>
+
+		<tr>
+
+			<td width="38" height="48"
+				background="pics/ul.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td background="pics/um.jpg" height="48" width="*"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+			<td width="38" height="48"
+				background="pics/ur.jpg"><img
+				src="pics/netscape.gif" width="38" height="48">
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+	<br><br><div align='right' style='position:absolute; right:20px;'><a href="http://www.4players.de" target="_blank" ><img border="0" src="pics/160x44_hosted_by_4players.jpg" width="160" height="44" alt="4Players"></a></div><br>
+</body>
+				</html> 
