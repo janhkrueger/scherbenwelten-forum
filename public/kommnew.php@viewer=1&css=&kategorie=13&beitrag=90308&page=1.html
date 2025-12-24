@@ -1,7 +1,7 @@
  
 				<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta charset="UTF-8">
 <meta http-equiv="Page-Exit"
 	content="RevealTrans(Duration=0,Transition=6 )">
 <link rel=stylesheet type="text/css" href="pergament.css">
@@ -88,9 +88,9 @@
 
 																<tr>
 									<td colspan="2"><a
-										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										href="kommnew.php@viewer=1&amp;css=.html">Ãœbersicht</a>,
 										<a
-										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a></td>
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">VorschlÃ¤ge									</a></td>
 									<td></td>
 								</tr>
 																<tr>
@@ -102,52 +102,52 @@
 								<tr >
 									<td width="10%" align="center">Sine (RIP)									</td>
 
-									<td width="75%"> hm ok, vielleicht ist das noch nicht so ganz rübergekommen wie ich mir das mit der zielwahl vorstelle. ich versuch mal an einem ganz einfachen beispiel zu erklären wie ichs meine.<br>
+									<td width="75%"> hm ok, vielleicht ist das noch nicht so ganz rÃ¼bergekommen wie ich mir das mit der zielwahl vorstelle. ich versuch mal an einem ganz einfachen beispiel zu erklÃ¤ren wie ichs meine.<br>
 <br>
 Playergruppe besteht aus <br>
 1 Magier, 1 Heiler, 1 Krieger (Tactic 35), 1 Dieb (Fernkampf)<br>
 <br>
 Monstergruppe besteht aus<br>
 <br>
-1 Orkkrieger (Tactic 25), 1 Schamane (Heiler), 1 Orkschütze, 1 Anführer (Tactic 40)<br>
+1 Orkkrieger (Tactic 25), 1 Schamane (Heiler), 1 OrkschÃ¼tze, 1 AnfÃ¼hrer (Tactic 40)<br>
 <br>
 Player <br>
-Magier .. Fernkampf .. Ziel -&gt; Anführer<br>
+Magier .. Fernkampf .. Ziel -&gt; AnfÃ¼hrer<br>
 Heiler .. Heilen .. Ziel .. Krieger<br>
-Krieger .. Angriff .. Ziel -&gt; Anführer<br>
-Dieb .. Fernkampf .. Ziel -&gt; Anführer<br>
+Krieger .. Angriff .. Ziel -&gt; AnfÃ¼hrer<br>
+Dieb .. Fernkampf .. Ziel -&gt; AnfÃ¼hrer<br>
 <br>
 Monstertrupp.<br>
 If Self.Best.Tactic &gt; Player.Best.Tactic <br>
-..............Then Heiler grössten eigenen Schaden heilen .. Alle anderen greifen niedrigste gegnerLP an.<br>
+..............Then Heiler grÃ¶ssten eigenen Schaden heilen .. Alle anderen greifen niedrigste gegnerLP an.<br>
 <br>
 Else .. RandomAttack ..<br>
 <br>
-Dann würde der Kampf starten. <br>
-Initiativeauswürfelung könnte folgendes Ergebnis bringen.<br>
-1. Orkanführer<br>
+Dann wÃ¼rde der Kampf starten. <br>
+InitiativeauswÃ¼rfelung kÃ¶nnte folgendes Ergebnis bringen.<br>
+1. OrkanfÃ¼hrer<br>
 2. Player.Krieger<br>
 3. Orkkrieger<br>
 4. Player.Dieb<br>
-5. Orkschütze<br>
+5. OrkschÃ¼tze<br>
 6. Player.Heiler<br>
 7. Player.Magier<br>
 8. Orkschamane<br>
 <br>
-Orkanführer, greift den einzigen an den er angreifen kann, den Playerkrieger .. trifft mit 5 Schaden.<br>
-Playerkrieger, hat Ziel Anführer, trifft mit 10 Schaden.<br>
+OrkanfÃ¼hrer, greift den einzigen an den er angreifen kann, den Playerkrieger .. trifft mit 5 Schaden.<br>
+Playerkrieger, hat Ziel AnfÃ¼hrer, trifft mit 10 Schaden.<br>
 Orkkrieger, greift niedriegste LP an--ergo Player.Krieger .. trifft nicht<br>
-Player.Dieb greift Anführer an .. trifft mit 7 Schaden<br>
-Orkschütze greift niedrigste LP an -. ergo Playerkrieger .. Glückstreffer (oder noch kein Ausweichen geskillt, beim Krieger) 20 Schaden<br>
+Player.Dieb greift AnfÃ¼hrer an .. trifft mit 7 Schaden<br>
+OrkschÃ¼tze greift niedrigste LP an -. ergo Playerkrieger .. GlÃ¼ckstreffer (oder noch kein Ausweichen geskillt, beim Krieger) 20 Schaden<br>
 Player.Heiler .. heilt Player.Krieger um 1/5 HeilenSkill (80) .. also um 16 LP <br>
-Player.Magier greift Anführer an mit Eisregen .. macht 30+30+30 Schaden .. Anführer stirbt <br>
-Orkschamane kann primärFunktion nicht mehr ausüben -&gt; Sekundärfunktion -&gt; Fernkampf &gt; Ziel niedrigste LP .. ergo Playerkrieger -&gt; trifft mit 2 Schaden.<br>
+Player.Magier greift AnfÃ¼hrer an mit Eisregen .. macht 30+30+30 Schaden .. AnfÃ¼hrer stirbt <br>
+Orkschamane kann primÃ¤rFunktion nicht mehr ausÃ¼ben -&gt; SekundÃ¤rfunktion -&gt; Fernkampf &gt; Ziel niedrigste LP .. ergo Playerkrieger -&gt; trifft mit 2 Schaden.<br>
 <br>
-Dann würde die zweite Runde kommen, der Monstertrupp verliert den taktischen Vorteil da der Anführer weg ist und würden ergo zufällig angreifen.<br>
+Dann wÃ¼rde die zweite Runde kommen, der Monstertrupp verliert den taktischen Vorteil da der AnfÃ¼hrer weg ist und wÃ¼rden ergo zufÃ¤llig angreifen.<br>
 <br>
-Jetzt könnte man das ganze sogar noch weiterspinnen. Der Playertrupp ist ja nun im taktischen Vorteil was ganz neue Optionen eröffnet. Der Dieb konnte vorher nur Fernkampf/Nahkampf machen, nun kommt &quot;Diebstahl&quot; hinzu. Das bedeutet er steht dann in der ersten Reihe und versucht einem Frontgegner die Waffe zu entwenden. (er bekommt dadurch keinen gegenstand oder so .. aber die schlagkraft des gegners sinkt temporär für random.Runden, wenn es gelingt .. gefahr dabei ist natürlich das der Dieb in der ersten Reihe selber was abbekommt)<br>
+Jetzt kÃ¶nnte man das ganze sogar noch weiterspinnen. Der Playertrupp ist ja nun im taktischen Vorteil was ganz neue Optionen erÃ¶ffnet. Der Dieb konnte vorher nur Fernkampf/Nahkampf machen, nun kommt &quot;Diebstahl&quot; hinzu. Das bedeutet er steht dann in der ersten Reihe und versucht einem Frontgegner die Waffe zu entwenden. (er bekommt dadurch keinen gegenstand oder so .. aber die schlagkraft des gegners sinkt temporÃ¤r fÃ¼r random.Runden, wenn es gelingt .. gefahr dabei ist natÃ¼rlich das der Dieb in der ersten Reihe selber was abbekommt)<br>
 <br>
-Bei sehr grossem taktischen Vorteil (und nicht wesentlich grösserer Gegnergruppe) könnte die Option möglich werden, Gegner umgehen und von hinten angreifen. Praktisch sind dann beim Gegner die Fernkämpfer vorn und die Nahkämpfer hinten, was für zumindest 1 Runde einen recht enormen Vorteil bietet (nahkämpfer des Gegners können nicht angreifen .. weiche Fernkämpfer sind gefundenes Fressen für die eigenen Nahkämpfer)<br>
+Bei sehr grossem taktischen Vorteil (und nicht wesentlich grÃ¶sserer Gegnergruppe) kÃ¶nnte die Option mÃ¶glich werden, Gegner umgehen und von hinten angreifen. Praktisch sind dann beim Gegner die FernkÃ¤mpfer vorn und die NahkÃ¤mpfer hinten, was fÃ¼r zumindest 1 Runde einen recht enormen Vorteil bietet (nahkÃ¤mpfer des Gegners kÃ¶nnen nicht angreifen .. weiche FernkÃ¤mpfer sind gefundenes Fressen fÃ¼r die eigenen NahkÃ¤mpfer)<br>
 <br>
     </td>
 									<td width="100" align="center">07.11.06 12:00<br> <a
@@ -167,13 +167,13 @@ Bei sehr grossem taktischen Vorteil (und nicht wesentlich grösserer Gegnergruppe
 									<td width="10%" align="center">Gorm (RIP)									</td>
 
 									<td width="75%"> <br>
-Es wäre vielleicht ja spannend, wenn man seinen Recken generelle Anweisungen geben könnte. <br>
+Es wÃ¤re vielleicht ja spannend, wenn man seinen Recken generelle Anweisungen geben kÃ¶nnte. <br>
 Also z.B. <br>
-Angriff vermehrt auf 1. oder 2. Reihe, oder eher auf die stärksten oder schwächsten, verletzten oder gesunden.<br>
-Bei niedriger Taktik könnte diese Option z.B. zu 25% berücksichtig werden, bei hoher Taktik zu 80% oder so, damit der Zufall nicht abgeschafft wird.<br>
+Angriff vermehrt auf 1. oder 2. Reihe, oder eher auf die stÃ¤rksten oder schwÃ¤chsten, verletzten oder gesunden.<br>
+Bei niedriger Taktik kÃ¶nnte diese Option z.B. zu 25% berÃ¼cksichtig werden, bei hoher Taktik zu 80% oder so, damit der Zufall nicht abgeschafft wird.<br>
 <br>
-Aber ich bin gegen eine direkte Zielzuweisung und ein übermass an neuen Kampfoptionen. Erstens werden Nester viel einfacher (oder viel schwieriger bis unschaffbar, wenn die Monster das auch dürfen, und Magier ohne ausweichen wären grade direkt nutzlos), zweitens wird man ja fast gezwungen, jeden Angriff zu optimieren, was Zeit braucht, schliesslich will man ja keine AP verschwenden. Und damit würden grössere koordinierte Monsterhauausflüge sicher um einiges länger daueren, bei vielen Teilnehmern wohl auch im Stundenbereich.  <br>
-Und dann stellt sich noch die Frage, ob das auch im PvP möglich sein sollte...     </td>
+Aber ich bin gegen eine direkte Zielzuweisung und ein Ã¼bermass an neuen Kampfoptionen. Erstens werden Nester viel einfacher (oder viel schwieriger bis unschaffbar, wenn die Monster das auch dÃ¼rfen, und Magier ohne ausweichen wÃ¤ren grade direkt nutzlos), zweitens wird man ja fast gezwungen, jeden Angriff zu optimieren, was Zeit braucht, schliesslich will man ja keine AP verschwenden. Und damit wÃ¼rden grÃ¶ssere koordinierte MonsterhauausflÃ¼ge sicher um einiges lÃ¤nger daueren, bei vielen Teilnehmern wohl auch im Stundenbereich.  <br>
+Und dann stellt sich noch die Frage, ob das auch im PvP mÃ¶glich sein sollte...     </td>
 									<td width="100" align="center">07.11.06 17:26<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1147890"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -190,10 +190,10 @@ Und dann stellt sich noch die Frage, ob das auch im PvP möglich sein sollte...  
 								<tr >
 									<td width="10%" align="center">Elraldur (RIP)									</td>
 
-									<td width="75%"> Um dem Taktikskill tatsächlich mehr Gewicht beizumessen würde ich es schätzen, wenn folgendes úmgesetzt würde:<br>
+									<td width="75%"> Um dem Taktikskill tatsÃ¤chlich mehr Gewicht beizumessen wÃ¼rde ich es schÃ¤tzen, wenn folgendes Ãºmgesetzt wÃ¼rde:<br>
 <br>
-Man kann seinem Krieger einen Befehl geben (im Charmenu), der präzisiert, in welche Reihe er einschlagen soll. Die Chance, dass er das auch gebacken bekommt erhöht sich mit dem T&amp;S!<br>
-Smoins Hinweis, dass ein Taktisch besserer Krieger auf die bereits verwundeten einhaut, lässt sich damit ja kombinieren.    </td>
+Man kann seinem Krieger einen Befehl geben (im Charmenu), der prÃ¤zisiert, in welche Reihe er einschlagen soll. Die Chance, dass er das auch gebacken bekommt erhÃ¶ht sich mit dem T&amp;S!<br>
+Smoins Hinweis, dass ein Taktisch besserer Krieger auf die bereits verwundeten einhaut, lÃ¤sst sich damit ja kombinieren.    </td>
 									<td width="100" align="center">07.11.06 18:53<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1147916"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -211,16 +211,16 @@ Smoins Hinweis, dass ein Taktisch besserer Krieger auf die bereits verwundeten e
 									<td width="10%" align="center"><b>Laurana</b> </b><br>  <img width="60"
 										src="http://swinfo.square7.ch/Grafiken/Laurana1.gif"> 									</td>
 
-									<td width="75%"> Spieler von Magiertruppen wären zu Recht sicher nicht begeistert, finde ich:<br>
+									<td width="75%"> Spieler von Magiertruppen wÃ¤ren zu Recht sicher nicht begeistert, finde ich:<br>
 <br>
-Wenn man gegen Monster mit Fernis kämpft, dann ist die Wahrscheinlichkeit, daß ein Magier mehr verletzt wird, als der Blockerkrieger !sehr! hoch. Folglich schießen den Rest der Kampfrunde(n) alle Monster-Fernis auf den verletzten Magier, der dann sicher drauf geht, denn ihr vergeßt, wie schwer es ist Ausweichen zu skillen beim Magier, daß ein Magier keine Rüstung hat und daß er selbst von Fernis mit niedrigem Skill gut und hart getroffen wird.<br>
+Wenn man gegen Monster mit Fernis kÃ¤mpft, dann ist die Wahrscheinlichkeit, daÃŸ ein Magier mehr verletzt wird, als der Blockerkrieger !sehr! hoch. Folglich schieÃŸen den Rest der Kampfrunde(n) alle Monster-Fernis auf den verletzten Magier, der dann sicher drauf geht, denn ihr vergeÃŸt, wie schwer es ist Ausweichen zu skillen beim Magier, daÃŸ ein Magier keine RÃ¼stung hat und daÃŸ er selbst von Fernis mit niedrigem Skill gut und hart getroffen wird.<br>
 <br>
-Folgen wären:<br>
-Magiertruppen könnten es vergessen überhaupt eine Chance in Nestern mit Fernis zu haben, egal wie weit man seine Magier ausbildet und wie leicht das Nest ist.<br>
-Sogar im Kampf gegen normale Gruppen mit Ferni-Monster wären Magiertruppen dann wirklich ziemlich schlecht geworden.<br>
+Folgen wÃ¤ren:<br>
+Magiertruppen kÃ¶nnten es vergessen Ã¼berhaupt eine Chance in Nestern mit Fernis zu haben, egal wie weit man seine Magier ausbildet und wie leicht das Nest ist.<br>
+Sogar im Kampf gegen normale Gruppen mit Ferni-Monster wÃ¤ren Magiertruppen dann wirklich ziemlich schlecht geworden.<br>
 <br>
 <br>
-Also da würde noch ein Verbesserungsbedarf bestehen aus meiner Sicht    </td>
+Also da wÃ¼rde noch ein Verbesserungsbedarf bestehen aus meiner Sicht    </td>
 									<td width="100" align="center">08.11.06 16:31<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1148185"><img
 											border="0" src="smile.gif"> </a>  <br>  <a
@@ -239,7 +239,7 @@ Also da würde noch ein Verbesserungsbedarf bestehen aus meiner Sicht    </td>
 								<tr >
 									<td width="10%" align="center">Amon Ti Annuan (RIP)									</td>
 
-									<td width="75%"> Magiertruppen könnten dann auch den PVP dann noch mehr vergessen - weil Uni FK´s eingestellt auf &quot;zweite Reihe&quot; wären dann noch mehr im Hintertreffen als ohnehin schon.    </td>
+									<td width="75%"> Magiertruppen kÃ¶nnten dann auch den PVP dann noch mehr vergessen - weil Uni FKÂ´s eingestellt auf &quot;zweite Reihe&quot; wÃ¤ren dann noch mehr im Hintertreffen als ohnehin schon.    </td>
 									<td width="100" align="center">08.11.06 19:12<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1148275"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -257,13 +257,13 @@ Also da würde noch ein Verbesserungsbedarf bestehen aus meiner Sicht    </td>
 									<td width="10%" align="center"><b>Wurzelsepp</b> </b><br>  <img width="60"
 										src="pics/wappenWurzelsepp.gif"> 									</td>
 
-									<td width="75%"> Andere Variante (v.a. fürs PvP gedacht): Generelle Voreinstellung der Taktik für die ganze Gruppe, die dann ähnlich Stein-Schere-Papier gegeneinander aufgerechnet wird und zu Boni/Mali führt.<br>
+									<td width="75%"> Andere Variante (v.a. fÃ¼rs PvP gedacht): Generelle Voreinstellung der Taktik fÃ¼r die ganze Gruppe, die dann Ã¤hnlich Stein-Schere-Papier gegeneinander aufgerechnet wird und zu Boni/Mali fÃ¼hrt.<br>
 <br>
 Z.B.: <br>
 <br>
 &quot;Umgehungsbewegung&quot;, &quot;Frontalangriff&quot;, &quot;Einigeln&quot;, &quot;Verteidigungsline&quot;, &quot;Hit and run&quot;, usw.<br>
 <br>
-&quot;Umgehungsbewegung&quot; würde dann z.B. gegen die &quot;Verteidigungslinie&quot; einen Vorteil bringen, gegen &quot;Einigeln&quot; von Nachteil sein.<br>
+&quot;Umgehungsbewegung&quot; wÃ¼rde dann z.B. gegen die &quot;Verteidigungslinie&quot; einen Vorteil bringen, gegen &quot;Einigeln&quot; von Nachteil sein.<br>
 <br>
 ...alles nicht mit dem Anspruch, komplett durchdacht zu sein, nur eben als Anregung.<br>
     </td>
@@ -285,9 +285,9 @@ Z.B.: <br>
 								<tr >
 									<td width="10%" align="center">Apollonius von Tyana (RIP)									</td>
 
-									<td width="75%"> Nix ändern ! Es ist eigentlich ganz gut so wie es ist ... einfach/praktisch.<br>
+									<td width="75%"> Nix Ã¤ndern ! Es ist eigentlich ganz gut so wie es ist ... einfach/praktisch.<br>
 <br>
-Kämpfer sind ja nicht jede Sekunde ihres Lebens gleich gut drauf und machen deshalb hier und da mal einen Fehler oder verschlafen eine Parade oder verpatzen einen Schlag ... nur finde ich es seltsam dass man mit 40er Skill Riesenratten mit etwa derselben Häufigkeit trifft wie z.B. .. Goblins oder Riesenfliegen ... Vielleicht sollte der Skill der Gegener auch angezeigt werden, damit jeder sofort sieht .. oh ein Trollanführer hat aber einen viel höheren Skill als ein normaler Troll .. etc.    </td>
+KÃ¤mpfer sind ja nicht jede Sekunde ihres Lebens gleich gut drauf und machen deshalb hier und da mal einen Fehler oder verschlafen eine Parade oder verpatzen einen Schlag ... nur finde ich es seltsam dass man mit 40er Skill Riesenratten mit etwa derselben HÃ¤ufigkeit trifft wie z.B. .. Goblins oder Riesenfliegen ... Vielleicht sollte der Skill der Gegener auch angezeigt werden, damit jeder sofort sieht .. oh ein TrollanfÃ¼hrer hat aber einen viel hÃ¶heren Skill als ein normaler Troll .. etc.    </td>
 									<td width="100" align="center">09.11.06 19:17<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1148661"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -304,20 +304,20 @@ Kämpfer sind ja nicht jede Sekunde ihres Lebens gleich gut drauf und machen desh
 								<tr >
 									<td width="10%" align="center">Sine (RIP)									</td>
 
-									<td width="75%"> Perso (und einige andere) .. danke fürs lesen .. da steht im Eröffnungsthread doch eindeutig das sowieso grundsätzlich die jetzige (Normal)Variante auch weiterhin funktionieren soll. Jeder soll für sich einstellen können, wieviel Zufall er haben will.<br>
+									<td width="75%"> Perso (und einige andere) .. danke fÃ¼rs lesen .. da steht im ErÃ¶ffnungsthread doch eindeutig das sowieso grundsÃ¤tzlich die jetzige (Normal)Variante auch weiterhin funktionieren soll. Jeder soll fÃ¼r sich einstellen kÃ¶nnen, wieviel Zufall er haben will.<br>
 <br>
-das was du sonst noch sagst, kann ich für mich nicht nachvollziehen .. meine krieger treffen ratten schon wesentlich häufiger als gobos.<br>
+das was du sonst noch sagst, kann ich fÃ¼r mich nicht nachvollziehen .. meine krieger treffen ratten schon wesentlich hÃ¤ufiger als gobos.<br>
 <br>
 @laurana,<br>
 <br>
-ok ich mach auch keinen hehl draus .. ja ich bin ein Verfechter der gemischten Gruppe .. Reine Magiertrupps die sich Stubenfliegen oder auch Bäume für die Front als Blocker beschwören halte ich persönlich gelinde gesagt für einen Fehler im Kampfsystem<br>
+ok ich mach auch keinen hehl draus .. ja ich bin ein Verfechter der gemischten Gruppe .. Reine Magiertrupps die sich Stubenfliegen oder auch BÃ¤ume fÃ¼r die Front als Blocker beschwÃ¶ren halte ich persÃ¶nlich gelinde gesagt fÃ¼r einen Fehler im Kampfsystem<br>
 <br>
 @thema<br>
 <br>
-mittlerweile, wie ich mich so in die sache reindenke wird mir die &quot;Initiative&quot; immer wichtiger. Momentan ist es halt noch so mit diesem das eigentlich Tote noch zuhauen können, wenn sie eventuell hätten vorher dran sein können. Aber so richtig wirklich das wahre ist das imho noch nicht.<br>
+mittlerweile, wie ich mich so in die sache reindenke wird mir die &quot;Initiative&quot; immer wichtiger. Momentan ist es halt noch so mit diesem das eigentlich Tote noch zuhauen kÃ¶nnen, wenn sie eventuell hÃ¤tten vorher dran sein kÃ¶nnen. Aber so richtig wirklich das wahre ist das imho noch nicht.<br>
 <br>
-Besser wäre es in meinen Augen wenn halt wirklich für jeden Kampfteilnehmer seine &quot;Initiative&quot; ausgewürfelt würde. Der mit der höchsten Initiative greift als erster an, dann der mit der nächstniedrigeren u.s.w.<br>
-Während Magier sehr lange brauchen um halt Ihren Zauber vorzubereiten und loszuschicken, liegt der Pfeil schon etwas schneller auf der Sehne und am allerschnellsten ist letztendlich ein, mal kurz, nach vorn gestrecktes Schwert.    </td>
+Besser wÃ¤re es in meinen Augen wenn halt wirklich fÃ¼r jeden Kampfteilnehmer seine &quot;Initiative&quot; ausgewÃ¼rfelt wÃ¼rde. Der mit der hÃ¶chsten Initiative greift als erster an, dann der mit der nÃ¤chstniedrigeren u.s.w.<br>
+WÃ¤hrend Magier sehr lange brauchen um halt Ihren Zauber vorzubereiten und loszuschicken, liegt der Pfeil schon etwas schneller auf der Sehne und am allerschnellsten ist letztendlich ein, mal kurz, nach vorn gestrecktes Schwert.    </td>
 									<td width="100" align="center">09.11.06 22:47<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1148767"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -335,10 +335,10 @@ Während Magier sehr lange brauchen um halt Ihren Zauber vorzubereiten und loszus
 									<td width="10%" align="center"><b>upolein</b> </b><br>  <img width="60"
 										src="grafik/wappen/wa45.gif"> 									</td>
 
-									<td width="75%"> Finde ich dringlich wichtig das man weitere Einstellmöglichkeiten für die Kampfeinstellungen hat.<br>
-Schön wäre ne Prioritätseinstellung. Also zum Beispiel:<br>
-- ziele zuerst auf: Rassen; Beruf; Nah/Fernkämpfer<br>
-wobei dann Nahkämpfer natürlich nicht auf Fernkämpfer zielen können solang der Gegner noch was vorne hat....)    </td>
+									<td width="75%"> Finde ich dringlich wichtig das man weitere EinstellmÃ¶glichkeiten fÃ¼r die Kampfeinstellungen hat.<br>
+SchÃ¶n wÃ¤re ne PrioritÃ¤tseinstellung. Also zum Beispiel:<br>
+- ziele zuerst auf: Rassen; Beruf; Nah/FernkÃ¤mpfer<br>
+wobei dann NahkÃ¤mpfer natÃ¼rlich nicht auf FernkÃ¤mpfer zielen kÃ¶nnen solang der Gegner noch was vorne hat....)    </td>
 									<td width="100" align="center">13.02.11 12:59<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1489251"><img
 											border="0" src="smile.gif"> </a>  <br>  <a
@@ -357,7 +357,7 @@ wobei dann Nahkämpfer natürlich nicht auf Fernkämpfer zielen können solang der G
 								<tr >
 									<td width="10%" align="center">Quirinius Quirell (RIP)									</td>
 
-									<td width="75%"> wenn du ziele zuerst auf machen kannst, dann kann man sich gänzlich von magiern im pvp verabschieden... beschwören brauchste dann auch nichtmehr, weil dein beschwörer in der ersten runde tot ist!    </td>
+									<td width="75%"> wenn du ziele zuerst auf machen kannst, dann kann man sich gÃ¤nzlich von magiern im pvp verabschieden... beschwÃ¶ren brauchste dann auch nichtmehr, weil dein beschwÃ¶rer in der ersten runde tot ist!    </td>
 									<td width="100" align="center">13.02.11 22:34<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1489350"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -375,7 +375,7 @@ wobei dann Nahkämpfer natürlich nicht auf Fernkämpfer zielen können solang der G
 									<td width="10%" align="center"><b>upolein</b> </b><br>  <img width="60"
 										src="grafik/wappen/wa45.gif"> 									</td>
 
-									<td width="75%"> Soll doch für alle gelten - also Magier können dann auch ´zielen´.<br>
+									<td width="75%"> Soll doch fÃ¼r alle gelten - also Magier kÃ¶nnen dann auch Â´zielenÂ´.<br>
 Sollte also insgesamt ausgeglichen sein damit.<br>
 <br>
     </td>
@@ -398,7 +398,7 @@ Sollte also insgesamt ausgeglichen sein damit.<br>
 									<td width="10%" align="center"><b>Chihiro Takeshi</b> </b><br>  <img width="60"
 										src="http://www.oyla.de/userdaten/774/92495/bilder/C_T_SW_W1.gif"> 									</td>
 
-									<td width="75%"> Klingt irgendwie sinnvoll, wenn der Kampfteilnehmer mit höherer &quot;Initiative&quot; zuerst beginnt. Und &quot;Zielen&quot; wäre ebenfalls eine schöne Sache. Zum Beispiel wenn man noch einstellen könnte worauf man zielt.    </td>
+									<td width="75%"> Klingt irgendwie sinnvoll, wenn der Kampfteilnehmer mit hÃ¶herer &quot;Initiative&quot; zuerst beginnt. Und &quot;Zielen&quot; wÃ¤re ebenfalls eine schÃ¶ne Sache. Zum Beispiel wenn man noch einstellen kÃ¶nnte worauf man zielt.    </td>
 									<td width="100" align="center">16.02.11 0:18<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1489622"><img
 											border="0" src="smile.gif"> </a>  <br>  <a
@@ -418,7 +418,7 @@ Sollte also insgesamt ausgeglichen sein damit.<br>
 									<td width="10%" align="center"><b>Chihiro Takeshi</b> </b><br>  <img width="60"
 										src="http://www.oyla.de/userdaten/774/92495/bilder/C_T_SW_W1.gif"> 									</td>
 
-									<td width="75%"> Mit dem worauf ist natürlich ein Körperbereich gemeint.     </td>
+									<td width="75%"> Mit dem worauf ist natÃ¼rlich ein KÃ¶rperbereich gemeint.     </td>
 									<td width="100" align="center">16.02.11 0:20<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1489623"><img
 											border="0" src="smile.gif"> </a>  <br>  <a
@@ -438,9 +438,9 @@ Sollte also insgesamt ausgeglichen sein damit.<br>
 									<td width="10%" align="center"><b>Alberix, Sohn des Duglim</b> </b><br>  <img width="60"
 										src="pics/legionstandarte3.gif"> 									</td>
 
-									<td width="75%"> Chihiro: Der &quot;Initiative-Wert&quot; in SW ist Strategie und Taktik. Gibt´s also schon. Macht auch irgendwie Sinn, da es hier keine Einzelpersonen sind, sondern jeweils Gruppen die gegeneinander vorgehen.<br>
-Das mit dem Körpberbereich kann ich irgendwie auf die Art des SW-Kampf nicht umsetzten. Was wollt ihr? Höhere Treffer? Dies wird über die Angriffseinstellung gemacht. Ob vorsichtig, normal oder rücksichtslos. Die &quot;kritischen Treffer&quot; kann man durchaus als treffer auf z.B. Kopf oder sonstig wichtige Körperregionen betrachten.<br>
-Könnte man jetzt noch zusätzlich einstellen &quot;auf Kopf&quot;, &quot;auf Rumpf&quot; oder wat auch immer, dann ist das zwar eine lustige Einstellung - bringt aber irgendwie nix. Ausserdem wird dadurch wohl jeder einfach die optimalste Einstellung wählen - denn diese ist kaum abhängig von der Zusammenstellung des Gegners. Somit sind wir wieder bei &quot;vorsichtig&quot;, &quot;normal&quot; und &quot;rücksichtslos&quot;    </td>
+									<td width="75%"> Chihiro: Der &quot;Initiative-Wert&quot; in SW ist Strategie und Taktik. GibtÂ´s also schon. Macht auch irgendwie Sinn, da es hier keine Einzelpersonen sind, sondern jeweils Gruppen die gegeneinander vorgehen.<br>
+Das mit dem KÃ¶rpberbereich kann ich irgendwie auf die Art des SW-Kampf nicht umsetzten. Was wollt ihr? HÃ¶here Treffer? Dies wird Ã¼ber die Angriffseinstellung gemacht. Ob vorsichtig, normal oder rÃ¼cksichtslos. Die &quot;kritischen Treffer&quot; kann man durchaus als treffer auf z.B. Kopf oder sonstig wichtige KÃ¶rperregionen betrachten.<br>
+KÃ¶nnte man jetzt noch zusÃ¤tzlich einstellen &quot;auf Kopf&quot;, &quot;auf Rumpf&quot; oder wat auch immer, dann ist das zwar eine lustige Einstellung - bringt aber irgendwie nix. Ausserdem wird dadurch wohl jeder einfach die optimalste Einstellung wÃ¤hlen - denn diese ist kaum abhÃ¤ngig von der Zusammenstellung des Gegners. Somit sind wir wieder bei &quot;vorsichtig&quot;, &quot;normal&quot; und &quot;rÃ¼cksichtslos&quot;    </td>
 									<td width="100" align="center">16.02.11 8:03<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=1&amp;css=&amp;kategorie=13&amp;beitrag=90308&amp;votefor=1489634"><img
 											border="0" src="smile.gif"> </a>  <br>  <a
@@ -458,9 +458,9 @@ Könnte man jetzt noch zusätzlich einstellen &quot;auf Kopf&quot;, &quot;auf Rump
 								
 								<tr>
 									<td colspan="3" align="right"><a
-										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										href="kommnew.php@viewer=1&amp;css=.html">Ãœbersicht</a>,
 										<a
-										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a><br>
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">VorschlÃ¤ge									</a><br>
 										<hr></td>
 								</tr>
 

@@ -1,7 +1,7 @@
  
 				<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta charset="UTF-8">
 <meta http-equiv="Page-Exit"
 	content="RevealTrans(Duration=0,Transition=6 )">
 <link rel=stylesheet type="text/css" href="pergament.css">
@@ -88,9 +88,9 @@
 
 																<tr>
 									<td colspan="2"><a
-										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										href="kommnew.php@viewer=1&amp;css=.html">Ãœbersicht</a>,
 										<a
-										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a></td>
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">VorschlÃ¤ge									</a></td>
 									<td></td>
 								</tr>
 																<tr>
@@ -102,31 +102,31 @@
 								<tr >
 									<td width="10%" align="center">Freya san Gordar (RIP)									</td>
 
-									<td width="75%"> Ich hab mal Grafiken für die Innenstadtpflaster in der Normalansicht gebastelt. Dabei ist mir aufgefallen, dass es bei dem derzeitigen System mit der Beeinflussung der Nachbarfelder öfter zu unschönen Anzeigefeldern kommt. Daher hab ich mir gleich auch mal ein neues System ausgedacht. Dazu ist leider auch ein neues Indizierungssystem nötig. Die alten Nummern können mit einer Indexabbildung behalten werden.<br><br><br>
+									<td width="75%"> Ich hab mal Grafiken fÃ¼r die Innenstadtpflaster in der Normalansicht gebastelt. Dabei ist mir aufgefallen, dass es bei dem derzeitigen System mit der Beeinflussung der Nachbarfelder Ã¶fter zu unschÃ¶nen Anzeigefeldern kommt. Daher hab ich mir gleich auch mal ein neues System ausgedacht. Dazu ist leider auch ein neues Indizierungssystem nÃ¶tig. Die alten Nummern kÃ¶nnen mit einer Indexabbildung behalten werden.<br><br><br>
 <br>
 <b>Das Nummernsystem</b><br><br>
 Die automatisch generierten Felder sind 52**, die manuell gesetzten 53**, wie bisher.<br>
-Ich hab die Ecken binär gewichtet. Rechts unten 1, Links unten 2, Rechts oben 4, links oben 8. Der Index ergibt sich aus der (gewichteten) Summe der gepflasterten Ecken.<br>
+Ich hab die Ecken binÃ¤r gewichtet. Rechts unten 1, Links unten 2, Rechts oben 4, links oben 8. Der Index ergibt sich aus der (gewichteten) Summe der gepflasterten Ecken.<br>
 <img src="http://home.arcor.de/martinhaake/misc/pflaster/5207.gif" bbsimg> zB ist 5207 (1+2+4).<br>
-Die Wegegrafiken (53**) haben willkürliche Numerierungen, lediglich die Weganfänge haben den gleichen Index wie die entsprechenden 52**-Grafiken.<br><br><br>
+Die Wegegrafiken (53**) haben willkÃ¼rliche Numerierungen, lediglich die WeganfÃ¤nge haben den gleichen Index wie die entsprechenden 52**-Grafiken.<br><br><br>
 <br>
 <b>Feld pflastern</b><br>
-das aktuelle Feld wird auf 5215 gesetzt. Alle Nachbarfelder, die bisher den Index 0 haben (0.gif), werden (provisorisch auf) den Index 5200 gesetzt. 53**-Felder werden nicht verändert. Dann wird der genaue neue Index berechnet, indem der alte Index mit dem im folgenden aufgelisteten Inkrement stellenweise verodert wird.<br>
+das aktuelle Feld wird auf 5215 gesetzt. Alle Nachbarfelder, die bisher den Index 0 haben (0.gif), werden (provisorisch auf) den Index 5200 gesetzt. 53**-Felder werden nicht verÃ¤ndert. Dann wird der genaue neue Index berechnet, indem der alte Index mit dem im folgenden aufgelisteten Inkrement stellenweise verodert wird.<br>
 Nachbarfeld Nordwest (relative Koords -1/-1) mit dem Inkrement 1<br><br>
 Nord (0/-1) 3<br><br>
 Nordost (1/-1) 2<br><br>
 West (-1/0) 5<br><br>
 Ost (1/0) 10<br><br>
-Südwest (-1/1) 4<br><br>
-Süd (0/1) 12<br><br>
-Südost (1/1) 8<br><br><br>
+SÃ¼dwest (-1/1) 4<br><br>
+SÃ¼d (0/1) 12<br><br>
+SÃ¼dost (1/1) 8<br><br><br>
 <br>
 <b>Pflasterung abreissen</b><br><br>
-funktioniert genauso, lediglich die logische Verknüpfung ist hier anders. Es ist Index AND NOT Inkrement *duck*<br><br><br>
+funktioniert genauso, lediglich die logische VerknÃ¼pfung ist hier anders. Es ist Index AND NOT Inkrement *duck*<br><br><br>
 <br>
 <b>53**-Felder</b><br><br>
-Der Randeffekt ist der selbe wie beim Pflasterung abreiisen, jedoch sind nur die Felder betroffen, an die kein Weg angrenzt. Und natürlich werden die angrenzenden 53**-Felder ebenfalls nicht verändert.<br>
-<img src="http://home.arcor.de/martinhaake/misc/pflaster/5324.gif" bbsimg> Bei diesem Feld ist der Westen und der Süden nicht betroffen.    </td>
+Der Randeffekt ist der selbe wie beim Pflasterung abreiisen, jedoch sind nur die Felder betroffen, an die kein Weg angrenzt. Und natÃ¼rlich werden die angrenzenden 53**-Felder ebenfalls nicht verÃ¤ndert.<br>
+<img src="http://home.arcor.de/martinhaake/misc/pflaster/5324.gif" bbsimg> Bei diesem Feld ist der Westen und der SÃ¼den nicht betroffen.    </td>
 									<td width="100" align="center">27.03.04 1:56<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=36922&amp;votefor=480902"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -179,7 +179,7 @@ http://home.arcor.de/martinhaake/misc/pflaster/neu.zip<br>
 								<tr >
 									<td width="10%" align="center">Freya san Gordar (RIP)									</td>
 
-									<td width="75%"> wer sich die grafiken schon mal (im aktuellen Zahlensystem angucken will, kann sich dieses Archiv ziehen. Die Billder müssen im Verzeichnis Grafikpfad/sw entpackt werden<br>
+									<td width="75%"> wer sich die grafiken schon mal (im aktuellen Zahlensystem angucken will, kann sich dieses Archiv ziehen. Die Billder mÃ¼ssen im Verzeichnis Grafikpfad/sw entpackt werden<br>
 <br>
 http://home.arcor.de/martinhaake/misc/pflaster/altenummern.zip    </td>
 									<td width="100" align="center">27.03.04 12:05<br> <a
@@ -196,9 +196,9 @@ http://home.arcor.de/martinhaake/misc/pflaster/altenummern.zip    </td>
 
 								
 								<tr >
-									<td width="10%" align="center">Gódhel ô Gláneth (RIP)									</td>
+									<td width="10%" align="center">GÃ³dhel Ã´ GlÃ¡neth (RIP)									</td>
 
-									<td width="75%"> Also ich find das sieht gut aus, und so könnt man auch endlich die Weg-Grafiken in der Normalansicht sehen :-)    </td>
+									<td width="75%"> Also ich find das sieht gut aus, und so kÃ¶nnt man auch endlich die Weg-Grafiken in der Normalansicht sehen :-)    </td>
 									<td width="100" align="center">29.03.04 11:50<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=36922&amp;votefor=482198"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -215,9 +215,9 @@ http://home.arcor.de/martinhaake/misc/pflaster/altenummern.zip    </td>
 								<tr >
 									<td width="10%" align="center">Sinthoras (RIP)									</td>
 
-									<td width="75%"> Noch eine kleine Ergänzung: <br>
+									<td width="75%"> Noch eine kleine ErgÃ¤nzung: <br>
 <br>
-Es gibt derzeit für Mauern leider keine ´T´s und Kreuzungen, während es für Wege keine einfachen Kurven und auch keine ´T´s gibt. Die Grafiken dazu sind einfach zu machen. Doch eingebaut müsste´s werden. Denn einfache quadratische oder rechteckige Städte sind doch recht einfallslos.    </td>
+Es gibt derzeit fÃ¼r Mauern leider keine Â´TÂ´s und Kreuzungen, wÃ¤hrend es fÃ¼r Wege keine einfachen Kurven und auch keine Â´TÂ´s gibt. Die Grafiken dazu sind einfach zu machen. Doch eingebaut mÃ¼ssteÂ´s werden. Denn einfache quadratische oder rechteckige StÃ¤dte sind doch recht einfallslos.    </td>
 									<td width="100" align="center">29.03.04 18:56<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=36922&amp;votefor=482563"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -234,7 +234,7 @@ Es gibt derzeit für Mauern leider keine ´T´s und Kreuzungen, während es für Wege
 								<tr >
 									<td width="10%" align="center">Freya san Gordar (RIP)									</td>
 
-									<td width="75%"> wenn interesse besteht, das einzubauen mach ich gern die grafiken dafür. Ebenso fehlen diagonale Wege und Mauern.    </td>
+									<td width="75%"> wenn interesse besteht, das einzubauen mach ich gern die grafiken dafÃ¼r. Ebenso fehlen diagonale Wege und Mauern.    </td>
 									<td width="100" align="center">29.03.04 19:31<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=13&amp;beitrag=36922&amp;votefor=482602"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -268,9 +268,9 @@ Es gibt derzeit für Mauern leider keine ´T´s und Kreuzungen, während es für Wege
 								
 								<tr>
 									<td colspan="3" align="right"><a
-										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										href="kommnew.php@viewer=1&amp;css=.html">Ãœbersicht</a>,
 										<a
-										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">Vorschläge									</a><br>
+										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=13.html">VorschlÃ¤ge									</a><br>
 										<hr></td>
 								</tr>
 

@@ -1,7 +1,7 @@
  
 				<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta charset="UTF-8">
 <meta http-equiv="Page-Exit"
 	content="RevealTrans(Duration=0,Transition=6 )">
 <link rel=stylesheet type="text/css" href="pergament.css">
@@ -88,7 +88,7 @@
 
 																<tr>
 									<td colspan="2"><a
-										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										href="kommnew.php@viewer=1&amp;css=.html">Ãœbersicht</a>,
 										<a
 										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=5.html">Newbies und Fragen									</a></td>
 									<td></td>
@@ -103,9 +103,9 @@
 									<td width="10%" align="center">Tombadil (RIP)									</td>
 
 									<td width="75%"> Hallo Zusammen,<br>
-ist es möglich mit der Gerede Funtkion folgendes Beispiel umzusetzen.<br>
+ist es mÃ¶glich mit der Gerede Funtkion folgendes Beispiel umzusetzen.<br>
 <br>
-Mann geht zum einem NPC von Spieler A und erhält einen Token A. Diesen Token A bringt man zu einem NPC von Spieler B und erhält dafür als Beispiel 100 Gold?    </td>
+Mann geht zum einem NPC von Spieler A und erhÃ¤lt einen Token A. Diesen Token A bringt man zu einem NPC von Spieler B und erhÃ¤lt dafÃ¼r als Beispiel 100 Gold?    </td>
 									<td width="100" align="center">21.12.04 16:02<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=53067&amp;votefor=712286"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -161,13 +161,13 @@ Habe aber selber noch nie Token eingesetzt.    </td>
 									<td width="10%" align="center">Tombadil (RIP)									</td>
 
 									<td width="75%"> Hallo Support,<br>
-natürlich habe unter:<br>
+natÃ¼rlich habe unter:<br>
 <br>
 http://www.scherbenwelten.de/help.php?SEARCH=gerede<br>
 <br>
 schon nachgeschaut, aber dort steht keine Antwort zu meiner Frage.<br>
 <br>
-ALso nochmal kann ein token a von spieler a zu spieler b gebracht werden und von diesem abgenommen werden, damit er z.B. 100 gold erhält.    </td>
+ALso nochmal kann ein token a von spieler a zu spieler b gebracht werden und von diesem abgenommen werden, damit er z.B. 100 gold erhÃ¤lt.    </td>
 									<td width="100" align="center">22.12.04 9:19<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=53067&amp;votefor=712940"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -188,13 +188,13 @@ ALso nochmal kann ein token a von spieler a zu spieler b gebracht werden und von
 <br>
 gettoken=   is Spieler bezogen<br>
 <br>
-die Bedingung „hastoken=“   ist es nicht und man kann jeden Token abfragen falls man denn den genauen Token kennt... <br>
+die Bedingung Â„hastoken=Â“   ist es nicht und man kann jeden Token abfragen falls man denn den genauen Token kennt... <br>
 <br>
 kleines bsp. <br>
 <br>
 bei NPC A wird als Effekt &quot;gettoken=USER_20524_gold&quot; gesetzt<br>
 <br>
-nun hat der Spieler der den Satz ausgelöst hat diesen Token bekommen... <br>
+nun hat der Spieler der den Satz ausgelÃ¶st hat diesen Token bekommen... <br>
 <br>
 der Spieler geht zum NPC B vom Spieler B...<br>
 <br>
@@ -202,13 +202,13 @@ in der Bedingung wird nun abgefragt &quot;hastoken=USER_20524_gold&quot; und man
 <br>
 danach noch als Effekt &quot;deltoken=USER_20524_gold&quot; damit des nicht zweimal gemacht werden kann und fertig... <br>
 <br>
-der Token is bei jedem Spieler unterschiedlich also die Nummer ändert sich <br>
+der Token is bei jedem Spieler unterschiedlich also die Nummer Ã¤ndert sich <br>
 <br>
 USER_20524_[Bezeichnung]  &lt;---das is z.B. meiner... <br>
 <br>
 du kannst diesen nicht vergeben nur abfragen um raus zu bekommen wie deiner is musste einfach nen Satz machen und als Effekt &quot;gettoken=abc&quot; eingeben und du bekommst als Fehlermeldung deine Tokennummer... diese Nummer is bei jedem Spieler unterschiedlich... <br>
 <br>
-[Bezeichnung] &lt;---an dieser stelle kannste den token dann benennen ich empfehle da ne eindeutige Bezeichnung ^^ weil man schnell durcheinander kommt und wenn der Token an ner stelle abgefragt wurde und danach keine Verwendung in anderen Gesprächen oder texten findet am besten mit &quot;deltoken=&quot; löschen...<br>
+[Bezeichnung] &lt;---an dieser stelle kannste den token dann benennen ich empfehle da ne eindeutige Bezeichnung ^^ weil man schnell durcheinander kommt und wenn der Token an ner stelle abgefragt wurde und danach keine Verwendung in anderen GesprÃ¤chen oder texten findet am besten mit &quot;deltoken=&quot; lÃ¶schen...<br>
 <br>
 <br>
 bei weiteren fragen einfach diplo an mich oder hier fragen *fg*     </td>
@@ -230,9 +230,9 @@ bei weiteren fragen einfach diplo an mich oder hier fragen *fg*     </td>
 
 									<td width="75%"> ach kleiner nachtrag ^^ <br>
 <br>
-du kannste bedingungen und efekte mit einem &amp; mit einander verbinden... um mehr als ein item zu vergeben kannste das mit &quot;getitem=100&amp;200&amp;300&quot; also du musst nicht für jedes item neu &quot;getitem=&quot; sagen erst wenn du noch res oder so was geben möchtest oder eben nen token löschen musste das mit &quot;getitem=100&amp;200&amp;300&amp;deltoken=USER_20524_gold&quot;<br>
+du kannste bedingungen und efekte mit einem &amp; mit einander verbinden... um mehr als ein item zu vergeben kannste das mit &quot;getitem=100&amp;200&amp;300&quot; also du musst nicht fÃ¼r jedes item neu &quot;getitem=&quot; sagen erst wenn du noch res oder so was geben mÃ¶chtest oder eben nen token lÃ¶schen musste das mit &quot;getitem=100&amp;200&amp;300&amp;deltoken=USER_20524_gold&quot;<br>
 <br>
-hoff mal das war verständlich ^^     </td>
+hoff mal das war verstÃ¤ndlich ^^     </td>
 									<td width="100" align="center">22.12.04 13:23<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=53067&amp;votefor=713064"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -251,7 +251,7 @@ hoff mal das war verständlich ^^     </td>
 
 									<td width="75%"> *als Anmerkung dazu schreib*<br>
 <br>
-Die bisher qualifizierteste Hilfe zur Gerede-Funktion habe ich bisher von Valthnois bekommen, deswegen empfehle ich ihn in Zukunft für jeden, der Fragen dazu hat.    </td>
+Die bisher qualifizierteste Hilfe zur Gerede-Funktion habe ich bisher von Valthnois bekommen, deswegen empfehle ich ihn in Zukunft fÃ¼r jeden, der Fragen dazu hat.    </td>
 									<td width="100" align="center">23.12.04 6:16<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=5&amp;beitrag=53067&amp;votefor=713726"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -267,7 +267,7 @@ Die bisher qualifizierteste Hilfe zur Gerede-Funktion habe ich bisher von Valthn
 								
 								<tr>
 									<td colspan="3" align="right"><a
-										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										href="kommnew.php@viewer=1&amp;css=.html">Ãœbersicht</a>,
 										<a
 										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=5.html">Newbies und Fragen									</a><br>
 										<hr></td>

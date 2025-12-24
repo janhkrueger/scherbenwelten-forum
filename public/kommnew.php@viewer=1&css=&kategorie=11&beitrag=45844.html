@@ -1,7 +1,7 @@
  
 				<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta charset="UTF-8">
 <meta http-equiv="Page-Exit"
 	content="RevealTrans(Duration=0,Transition=6 )">
 <link rel=stylesheet type="text/css" href="pergament.css">
@@ -88,7 +88,7 @@
 
 																<tr>
 									<td colspan="2"><a
-										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										href="kommnew.php@viewer=1&amp;css=.html">Ãœbersicht</a>,
 										<a
 										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=11.html">Off-Topic									</a></td>
 									<td></td>
@@ -105,10 +105,10 @@
 									<td width="75%"> Hallo alle zusammen.<br>
 <br>
 Vielleicht kennt sich ja jemand hier mit folgendem Problem aus:<br>
-Ich möchte, genau wie in Scherbenwelten, Figuren über eine Karte bewegen lassen. Dazu habe ich mir eine Tabelle angelegt und diese erst ein mal in 4x4 gleich große Bereiche geteilt (50px x 50px). Dann habe ich eine Karte gezeichnet und diese ebenfalls in 16 gleich große Teile geschnitten und als Hintergrundbilder in die Zellen eingefügt. Zuletzt habe ich dann noch eine Spielfigur mit transparentem Hintergrund erstellt. Nun zur Frage:<br>
-Wie erreiche ich es nun, dass die Figur genau in die Zelle geladen wird, in die ich hinein klicke? In Scherbenwelten wird das über PHP gelöst, soweit ich das im Quellcode einsehen konnte. Jemand vielleicht eine Idee wie das zu lösen ist - vielleicht auch mittels Javasgript und dem onClick - Befehl? Hat vielleicht jamand ein fertiges sgript (egal ob PHP oder JS)?<br>
+Ich mÃ¶chte, genau wie in Scherbenwelten, Figuren Ã¼ber eine Karte bewegen lassen. Dazu habe ich mir eine Tabelle angelegt und diese erst ein mal in 4x4 gleich groÃŸe Bereiche geteilt (50px x 50px). Dann habe ich eine Karte gezeichnet und diese ebenfalls in 16 gleich groÃŸe Teile geschnitten und als Hintergrundbilder in die Zellen eingefÃ¼gt. Zuletzt habe ich dann noch eine Spielfigur mit transparentem Hintergrund erstellt. Nun zur Frage:<br>
+Wie erreiche ich es nun, dass die Figur genau in die Zelle geladen wird, in die ich hinein klicke? In Scherbenwelten wird das Ã¼ber PHP gelÃ¶st, soweit ich das im Quellcode einsehen konnte. Jemand vielleicht eine Idee wie das zu lÃ¶sen ist - vielleicht auch mittels Javasgript und dem onClick - Befehl? Hat vielleicht jamand ein fertiges sgript (egal ob PHP oder JS)?<br>
 <br>
-Würde mich über eure Posts freuen<br>
+WÃ¼rde mich Ã¼ber eure Posts freuen<br>
 <br>
 Hiigara    </td>
 									<td width="100" align="center">27.08.04 18:39<br> <a
@@ -127,13 +127,13 @@ Hiigara    </td>
 								<tr >
 									<td width="10%" align="center">Middyn Faraldar (RIP)									</td>
 
-									<td width="75%"> du könntest das ganze mit ner übergabe der Variablen in der url des links machen<br>
+									<td width="75%"> du kÃ¶nntest das ganze mit ner Ã¼bergabe der Variablen in der url des links machen<br>
 <br>
 das schaut dann so aus: &lt;a href =&quot;phpdatei.php?variable1=1&amp;variable2=2<br>
 <br>
 da kannst du dann per $var1=$_GET[&quot;variable1&quot;]; wieder auslesen (wenn ich mich dank der uhrzeit nicht irre.... ;) )<br>
 <br>
-alternativ (und ineffizienter) natürlich auch per auslesen aus der datenbank über die aktuelee position    </td>
+alternativ (und ineffizienter) natÃ¼rlich auch per auslesen aus der datenbank Ã¼ber die aktuelee position    </td>
 									<td width="100" align="center">28.08.04 2:34<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=45844&amp;votefor=609881"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -150,19 +150,19 @@ alternativ (und ineffizienter) natürlich auch per auslesen aus der datenbank übe
 								<tr >
 									<td width="10%" align="center">Flitwig ni Su (RIP)									</td>
 
-									<td width="75%"> In der Tat würde es am einfachsten mittels Übergabe funktionieren.<br>
+									<td width="75%"> In der Tat wÃ¼rde es am einfachsten mittels Ãœbergabe funktionieren.<br>
 <br>
 <br>
-Angenommen du übergibst die Variable  $aktion=gehen sowie noch weiterhin die Variablen  $x und  $y.<br>
+Angenommen du Ã¼bergibst die Variable  $aktion=gehen sowie noch weiterhin die Variablen  $x und  $y.<br>
 <br>
 Wenn dann dein Hauptskript feststellt das die Variable  $aktion=gehen ist <br>
 ( if ( $aktion == gehen) f_gehen ( $x,  $y,  $spieler,  $karte) )<br>
 <br>
-dann könnte eine Funktion in der Art wie die untere Aufgerufen werden. Im Beispiel sind spieler und karte Objekte aber das sollte ja kein Problem sein ggf. umzuändern.<br>
+dann kÃ¶nnte eine Funktion in der Art wie die untere Aufgerufen werden. Im Beispiel sind spieler und karte Objekte aber das sollte ja kein Problem sein ggf. umzuÃ¤ndern.<br>
 Aus dem Spielerobjekt wird in meinem Falle zum einen die Userid, die Koordinaten und die AP gelesen, ob sich der Spieler auf einem Schiff oer Luftschiff befindet und sowas.<br>
-Aus dem Kartenobjekt wird gelesen was für ein Feld passiert wird (könnte wichtig sein für den AP-Verbrauch ;) ) und ob das gewünschte Feld überhaupt begehbar ist. Soll ja vorkommen das meine Spieler nicht überall hindürfen.<br>
+Aus dem Kartenobjekt wird gelesen was fÃ¼r ein Feld passiert wird (kÃ¶nnte wichtig sein fÃ¼r den AP-Verbrauch ;) ) und ob das gewÃ¼nschte Feld Ã¼berhaupt begehbar ist. Soll ja vorkommen das meine Spieler nicht Ã¼berall hindÃ¼rfen.<br>
 <br>
-Und nun hoffe ich erstmal das der Code hier einigermaßen richtig ankommt. Die Bewegungsfunktion ist im übrigen nicht ganz so elegant wie die aus SW, also nicht wundern wenn er das Ergebnis nicht immer ganz so um Hindernisse läuft wie man es aus SW gewohnt ist.<br>
+Und nun hoffe ich erstmal das der Code hier einigermaÃŸen richtig ankommt. Die Bewegungsfunktion ist im Ã¼brigen nicht ganz so elegant wie die aus SW, also nicht wundern wenn er das Ergebnis nicht immer ganz so um Hindernisse lÃ¤uft wie man es aus SW gewohnt ist.<br>
     </td>
 									<td width="100" align="center">28.08.04 21:56<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=45844&amp;votefor=610682"><img
@@ -180,7 +180,7 @@ Und nun hoffe ich erstmal das der Code hier einigermaßen richtig ankommt. Die Be
 								<tr >
 									<td width="10%" align="center">Flitwig ni Su (RIP)									</td>
 
-									<td width="75%"> Das Forum ist hartnäckig...    </td>
+									<td width="75%"> Das Forum ist hartnÃ¤ckig...    </td>
 									<td width="100" align="center">28.08.04 22:01<br> <a
 										href="http://loki.webtales.4players.de/kommnew.php?viewer=1&amp;page=0&amp;css=&amp;kategorie=11&amp;beitrag=45844&amp;votefor=610697"><img
 											border="0" src="smile.gif"> </a>  <br>  									</td>
@@ -197,7 +197,7 @@ Und nun hoffe ich erstmal das der Code hier einigermaßen richtig ankommt. Die Be
 								<tr >
 									<td width="10%" align="center">Flitwig ni Su (RIP)									</td>
 
-									<td width="75%"> Ich habe alle Oders gegen || ausgetauscht, also bitte zurück ändern.<br>
+									<td width="75%"> Ich habe alle Oders gegen || ausgetauscht, also bitte zurÃ¼ck Ã¤ndern.<br>
 <br>
 function f_gehen( $x,  $y, &amp; $spieler, &amp; $karte) {<br>
  $userid =  $spieler-&gt;zeige(userid);<br>
@@ -240,7 +240,7 @@ function f_gehen( $x,  $y, &amp; $spieler, &amp; $karte) {<br>
     //$spieler-&gt;beenden();<br>
 <br>
   If ($karte-&gt;begehbar($x3, $y3, $spieler-&gt;zeige(auf_schiff), $spieler-&gt;zeige(luftschiff) ) == 1) {<br>
-     //Wenn das nächste Feld kein erlaubtes ist<br>
+     //Wenn das nÃ¤chste Feld kein erlaubtes ist<br>
      $spieler-&gt;set_altx($spieler-&gt;zeige(x));<br>
      $spieler-&gt;set_alty($spieler-&gt;zeige(y));<br>
      $spieler-&gt;set_x($ko||dsx);<br>
@@ -248,8 +248,8 @@ function f_gehen( $x,  $y, &amp; $spieler, &amp; $karte) {<br>
      $begehbar = 1;<br>
     }<br>
   else {<br>
-   //wenn das nächste Feld betretbar ist.<br>
-   //Geländetyp des neuen Felder holen<br>
+   //wenn das nÃ¤chste Feld betretbar ist.<br>
+   //GelÃ¤ndetyp des neuen Felder holen<br>
    $land = $karte-&gt;liesdaten($x3, $y3, gelaende);<br>
    //APverbrauch je nach Feldtyp bestimmen<br>
    switch ($land) {<br>
@@ -327,11 +327,11 @@ function f_gehen( $x,  $y, &amp; $spieler, &amp; $karte) {<br>
     }<br>
     //AP des Users ermitteln.<br>
      $ap =  $spieler-&gt;zeige(ap);<br>
-    if ( $ap &gt;=  $fakt||) //Wenn Rest-AP des Users größer gleich des APverbrauches des Feldes<br>
+    if ( $ap &gt;=  $fakt||) //Wenn Rest-AP des Users grÃ¶ÃŸer gleich des APverbrauches des Feldes<br>
 	{ <br>
 	   $spieler-&gt;set_ap(- $fakt||); //AP abziehen<br>
-	   $GLOBALS[basiskosten] =  $GLOBALS[basiskosten] +  $fakt||;		  //AP-Verbrauch zählen<br>
-	   $GLOBALS[echtekosten] =  $GLOBALS[echtekosten] +  $fakt||;		  //AP-Verbrauch zählen<br>
+	   $GLOBALS[basiskosten] =  $GLOBALS[basiskosten] +  $fakt||;		  //AP-Verbrauch zÃ¤hlen<br>
+	   $GLOBALS[echtekosten] =  $GLOBALS[echtekosten] +  $fakt||;		  //AP-Verbrauch zÃ¤hlen<br>
            $spieler-&gt;set_altx( $spieler-&gt;zeige(x));<br>
            $spieler-&gt;set_alty( $spieler-&gt;zeige(y));<br>
            $spieler-&gt;set_x( $x3);<br>
@@ -346,7 +346,7 @@ function f_gehen( $x,  $y, &amp; $spieler, &amp; $karte) {<br>
 	{<br>
 	 //set_ abbrechbedingung<br>
 	  $ende=1;<br>
-    $fehler = &lt;br&gt;&lt;div align=center STYLE=col||:red&gt;Du bist erschöpft. (Nicht genug AP)&lt;/div&gt;;<br>
+    $fehler = &lt;br&gt;&lt;div align=center STYLE=col||:red&gt;Du bist erschÃ¶pft. (Nicht genug AP)&lt;/div&gt;;<br>
     $GLOBALS[fehlermeldung] .=  $fehler;<br>
     }<br>
 <br>
@@ -373,7 +373,7 @@ function f_gehen( $x,  $y, &amp; $spieler, &amp; $karte) {<br>
 								
 								<tr>
 									<td colspan="3" align="right"><a
-										href="kommnew.php@viewer=1&amp;css=.html">Übersicht</a>,
+										href="kommnew.php@viewer=1&amp;css=.html">Ãœbersicht</a>,
 										<a
 										href="kommnew.php@viewer=1&amp;css=&amp;kategorie=11.html">Off-Topic									</a><br>
 										<hr></td>
